@@ -45,7 +45,7 @@ The extraction was reproduced into `/tmp` and all six files matched the hashes i
 - Linker 7.10; Rich header dominated by build 3077 (Visual C++ .NET 2003 RTM). PE timestamp 2007-02-16.
 - Imports: dynamic VC7.1 CRT (`msvcr71` 113, `msvcp71` 5), Miles `mss32` 71, Bink 10, Win32, OLE/ATL; no `d3d9.dll` or `dinput8.dll` import (D3D9 is loaded dynamically).
 - Engine strings: Gamebryo 10.1.0.0 for NiMain, NiAnimation, NiCollision, NiDX9; NIF/KFM; only four standard `.?AV` RTTI strings, so no class RTTI names.
-- Ghidra 12.2 inventory: 8,522 rows, 341 external, 8,181 internal, 7,932 placeholders, 140 thunks, 2,879,488 bytes of `.text`, median span 128 bytes.
+- Ghidra 12.2 inventory: 8,522 rows, 341 external, 8,181 internal, 8,099 placeholders, 140 thunks, 179 EH funclets (12 `Catch@` + 167 `Unwind@`), 7,862 matchable source functions, 2,879,488 bytes of `.text`, median span 128 bytes.
 
 Evidence paths:
 
@@ -59,6 +59,10 @@ Evidence paths:
 The target is a Gamebryo 10.1.0.0 game built with the VC7.1 RTM toolchain, with a dynamic CRT and almost no symbol information. The function inventory is complete enough to start matching (8,181 internal functions) but spans are next-entry deltas, not exact body lengths.
 
 Open alternatives: the GOG executable may differ from a retail CD 1.0.2.0 build; the exact per-unit compiler flags are unknown; no public PDB or decompilation source was found in the reviewed search. A retail-vs-GOG byte comparison is not possible without a retail copy.
+
+## Review gate
+
+A `jev_gate` run on the harness diff returned **6 claims verified, 0 contradicted, 0 unsupported**, with 3 low-confidence claim flags. Composite `0.7125`, `safe_to_apply` `0.56`; the overall `escalate` was driven by test-gap confidence, not a contradiction. No game function had been matched at that point.
 
 ## Retention
 

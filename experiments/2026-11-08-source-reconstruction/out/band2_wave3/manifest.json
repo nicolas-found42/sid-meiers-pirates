@@ -1,0 +1,242 @@
+[
+  {
+    "address": "0x004d3f50",
+    "name": "band2_wave3::FUN_004d3f50",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004d3f50(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4d3f50.c",
+    "status": "unverified",
+    "unknowns": [
+      "calling convention unknown; no stack entry"
+    ]
+  },
+  {
+    "address": "0x004d3f90",
+    "name": "band2_wave3::FUN_004d3f90",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004d3f90(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4d3f90.c",
+    "status": "unverified",
+    "unknowns": [
+      "calling convention unknown; no stack entry"
+    ]
+  },
+  {
+    "address": "0x004e4530",
+    "name": "band2_wave3::FUN_004e4530",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004e4530(unsigned char)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4e4530.c",
+    "status": "unverified",
+    "unknowns": [
+      "param width observed as undefined1"
+    ]
+  },
+  {
+    "address": "0x004f17b0",
+    "name": "band2_wave3::FUN_004f17b0",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004f17b0(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4f17b0.c",
+    "status": "unverified",
+    "unknowns": [
+      "calling convention unknown; no stack entry"
+    ]
+  },
+  {
+    "address": "0x004f2600",
+    "name": "band2_wave3::FUN_004f2600",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004f2600(void*, void*, unsigned char)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4f2600.c",
+    "status": "unverified",
+    "unknowns": [
+      "EDX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x004f3540",
+    "name": "band2_wave3::FUN_004f3540",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004f3540(void*, void*, unsigned char)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4f3540.c",
+    "status": "unverified",
+    "unknowns": [
+      "EDX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x004f6090",
+    "name": "band2_wave3::FUN_004f6090",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004f6090(void*, unsigned char)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4f6090.c",
+    "status": "unverified",
+    "unknowns": [
+      "param_1 purpose unknown"
+    ]
+  },
+  {
+    "address": "0x004f60b0",
+    "name": "band2_wave3::FUN_004f60b0",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004f60b0(void*, unsigned char)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4f60b0.c",
+    "status": "unverified",
+    "unknowns": [
+      "param_1 purpose unknown"
+    ]
+  },
+  {
+    "address": "0x004f8b40",
+    "name": "band2_wave3::FUN_004f8b40",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004f8b40(const char*, const void*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4f8b40.c",
+    "status": "unverified",
+    "unknowns": [
+      "va_list layout unknown"
+    ]
+  },
+  {
+    "address": "0x004f8b80",
+    "name": "band2_wave3::FUN_004f8b80",
+    "source": "src/band2_wave3_a.cpp",
+    "signature": "void FUN_004f8b80(const char*, const void*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4f8b80.c",
+    "status": "unverified",
+    "unknowns": [
+      "va_list layout unknown; target of PTR_FUN_007264d4 unknown"
+    ]
+  },
+  {
+    "address": "0x004e2490",
+    "name": "band2_wave3::FUN_004e2490",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "float FUN_004e2490(float)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4e2490.c",
+    "status": "unverified",
+    "unknowns": [
+      "float10 return width unknown"
+    ]
+  },
+  {
+    "address": "0x004fca80",
+    "name": "band2_wave3::FUN_004fca80",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "bool FUN_004fca80(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4fca80.c",
+    "status": "unverified",
+    "unknowns": [
+      "return of FUN_004f4ed0 semantics unknown"
+    ]
+  },
+  {
+    "address": "0x004ffe50",
+    "name": "band2_wave3::FUN_004ffe50",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "void FUN_004ffe50(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4ffe50.c",
+    "status": "unverified",
+    "unknowns": [
+      "DAT_008cad0c semantics unknown"
+    ]
+  },
+  {
+    "address": "0x005002d0",
+    "name": "band2_wave3::FUN_005002d0",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "unsigned FUN_005002d0(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x5002d0.c",
+    "status": "unverified",
+    "unknowns": [
+      "DAT_008ea08c/DAT_00727c30 semantics unknown"
+    ]
+  },
+  {
+    "address": "0x00508340",
+    "name": "band2_wave3::FUN_00508340",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "void FUN_00508340(void)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x508340.c",
+    "status": "unverified",
+    "unknowns": [
+      "vtable slot semantics unknown; uRam00000064 target unknown"
+    ]
+  },
+  {
+    "address": "0x00506a80",
+    "name": "band2_wave3::FUN_00506a80",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "void FUN_00506a80(void*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x506a80.c",
+    "status": "unverified",
+    "unknowns": [
+      "object layout unknown; field at +8"
+    ]
+  },
+  {
+    "address": "0x0050b070",
+    "name": "band2_wave3::FUN_0050b070",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "bool FUN_0050b070(short, short)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x50b070.c",
+    "status": "unverified",
+    "unknowns": [
+      "none"
+    ]
+  },
+  {
+    "address": "0x0050b1a0",
+    "name": "band2_wave3::FUN_0050b1a0",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "int FUN_0050b1a0(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x50b1a0.c",
+    "status": "unverified",
+    "unknowns": [
+      "FUN_0050b150 semantics unknown"
+    ]
+  },
+  {
+    "address": "0x0050c650",
+    "name": "band2_wave3::FUN_0050c650",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "void FUN_0050c650(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x50c650.c",
+    "status": "unverified",
+    "unknowns": [
+      "FUN_005f0ddc/FUN_0050c550 semantics unknown"
+    ]
+  },
+  {
+    "address": "0x0050c680",
+    "name": "band2_wave3::FUN_0050c680",
+    "source": "src/band2_wave3_b.cpp",
+    "signature": "void FUN_0050c680(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x50c680.c",
+    "status": "unverified",
+    "unknowns": [
+      "FUN_005f0ddc/FUN_0050c550 semantics unknown"
+    ]
+  }
+]

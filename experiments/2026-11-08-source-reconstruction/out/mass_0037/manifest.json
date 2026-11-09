@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x004b0ea0",
+  "name": "FUN_004b0ea0",
+  "source": "src/mass_0037.cpp",
+  "signature": "// string held by EDX (pointer to the caller's char*). Returns the matching\n// index, or 0xffffffff when the scan runs out. The inline byte compare is the\n// provider's unsigned strcmp.\n// ---------------------------------------------------------------------------\nuint32_t FUN_004b0ea0(StrTable* self, uint32_t index, const char** name)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b0ea0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b0f10",
+  "name": "FUN_004b0f10",
+  "source": "src/mass_0037.cpp",
+  "signature": "// Result is a non-zero flag (the listing returns `sign != 0`).\n// ---------------------------------------------------------------------------\nint32_t FUN_004b0f10(const char** lhs_eax, const char** rhs_ecx)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b0f10.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b0f60",
+  "name": "FUN_004b0f60",
+  "source": "src/mass_0037.cpp",
+  "signature": "void FUN_004b0f60(VtObj* self, uint8_t flag)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b0f60.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b0fa0",
+  "name": "FUN_004b0fa0",
+  "source": "src/mass_0037.cpp",
+  "signature": "// Same compare as 0x4b0f10 but returns the equality flag (1 when equal).\n// ---------------------------------------------------------------------------\nint32_t FUN_004b0fa0(const char** lhs_eax, const char** rhs_ecx)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b0fa0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b0ff0",
+  "name": "FUN_004b0ff0",
+  "source": "src/mass_0037.cpp",
+  "signature": "void FUN_004b0ff0(VtObj* self, uint8_t flag)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b0ff0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1050",
+  "name": "FUN_004b1050",
+  "source": "src/mass_0037.cpp",
+  "signature": "void FUN_004b1050(BucketTable* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1050.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b10d0",
+  "name": "FUN_004b10d0",
+  "source": "src/mass_0037.cpp",
+  "signature": "void FUN_004b10d0(LPCRITICAL_SECTION self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b10d0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1100",
+  "name": "FUN_004b1100",
+  "source": "src/mass_0037.cpp",
+  "signature": "void FUN_004b1100(LPCRITICAL_SECTION self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1100.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1130",
+  "name": "FUN_004b1130",
+  "source": "src/mass_0037.cpp",
+  "signature": "// String-buffer append. EAX points at the caller's string pointer (length\n// stored in the provider's [-4] prefix), ECX/param_1/param_2 as listed:\n// the first source replaces the buffer, the second is appended, then the\n// buffer is re-terminated and FUN_00412df0 runs. Returns param_1.\n// ---------------------------------------------------------------------------\nuint32_t FUN_004b1130(const char** src_eax, uint32_t param_1, void** param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1130.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1200",
+  "name": "FUN_004b1200",
+  "source": "src/mass_0037.cpp",
+  "signature": "// the old object is released (vtable[0] with flag 1) and FUN_005606f0 is given\n// the parameter slot address. No self reference is taken when unchanged.\n// ---------------------------------------------------------------------------\nvoid FUN_004b1200(void* self, void* value)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1200.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1230",
+  "name": "FUN_004b1230",
+  "source": "src/mass_0037.cpp",
+  "signature": "uint32_t FUN_004b1230(void* self, uint32_t index)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1230.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1260",
+  "name": "FUN_004b1260",
+  "source": "src/mass_0037.cpp",
+  "signature": "// provider's 1/255 constant (0x3b808081 -> 0.003921569f).\n// ---------------------------------------------------------------------------\nvoid FUN_004b1260(float* out_eax, uint32_t argb)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1260.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b12e0",
+  "name": "FUN_004b12e0",
+  "source": "src/mass_0037.cpp",
+  "signature": "uint32_t FUN_004b12e0(char* name)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b12e0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1740",
+  "name": "FUN_004b1740",
+  "source": "src/mass_0037.cpp",
+  "signature": "// Object initialiser (EBX = object base). Clears 0x2b dwords at +0x18, the\n// three +0xf4/+0xf8/+0xfc words and the selected index (+0x08 = -1), builds\n// the +0x14 small object and the +0x10 manager, publishes them into the three\n// globals at 0x008c9568, links the small object into the manager (+0x3e dword\n// slot) with a temporary reference, then clears 0x2b bytes at +0xc4.\n// ---------------------------------------------------------------------------\nvoid FUN_004b1740(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1740.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b17f0",
+  "name": "FUN_004b17f0",
+  "source": "src/mass_0037.cpp",
+  "signature": "// Slot install for index ECX over the object base in EDX (slots at base+0x18).\n// Indices 0xf..0x26 rescale param_3/param_4 before constructing a 0x294-byte\n// renderable whose vtable is 0x007116a0 and whose +0xa4 dword is 1. The new\n// object is reference-counted into the slot, the activate helper 0x4b1990\n// runs, and the selected index additionally triggers the 0x505920/0x506520\n// pair and the 0x506040(1,...)/0x505fc0(1,...) state.\n// ---------------------------------------------------------------------------\nvoid* FUN_004b17f0(int32_t index, int32_t* self, int32_t param_1, int32_t param_2,\n                   int32_t param_3, int32_t param_4, int32_t param_5)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b17f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1940",
+  "name": "FUN_004b1940",
+  "source": "src/mass_0037.cpp",
+  "signature": "// Slot teardown for index EDI over the object base in ESI (slots at +0x18,\n// per-slot activation bytes at +0xc4). An active slot is deactivated through\n// FUN_00504160 (clearing the selected index when it matches), then the slot\n// object is released and the slot zeroed.\n// ---------------------------------------------------------------------------\nvoid FUN_004b1940(void* self, int32_t index)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1940.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1990",
+  "name": "FUN_004b1990",
+  "source": "src/mass_0037.cpp",
+  "signature": "// manager's vtable slot at +0x70 receives (slotObject, 1), the two helpers run\n// and the +0xc4 activation byte is set.\n// ---------------------------------------------------------------------------\nvoid FUN_004b1990(void* self, int32_t index)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1990.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b1ec0",
+  "name": "FUN_004b1ec0",
+  "source": "src/mass_0037.cpp",
+  "signature": "// through FUN_00504070 plus the manager's vtable +0x74 entry (whose first\n// argument is the parameter slot itself), then every slot object is released.\n// Finally the +0xf8 link is released, the 0x008cac40 block is freed, the two\n// optional subsystem teardowns run, the +0x0d-gated flag bit is cleared, the\n// counter is decremented with the 0x007268f4 table reload, *self becomes -1\n// and FUN_004888e0(0x2e,-1,-1,-1.0f) is issued.\n// ---------------------------------------------------------------------------\nvoid FUN_004b1ec0(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b1ec0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b2040",
+  "name": "FUN_004b2040",
+  "source": "src/mass_0037.cpp",
+  "signature": "// Object destructor (EBX = object base): frees the +0x10 manager and its\n// release hook, releases the +0x14 object, clears the three global slots at\n// 0x008c9568, then walks the +0xfc, +0xf8 and all 0x2b slot objects from\n// +0xc0 down to +0x18, dropping one reference each.\n// ---------------------------------------------------------------------------\nvoid FUN_004b2040(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b2040.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004b20f0",
+  "name": "FUN_004b20f0",
+  "source": "src/mass_0037.cpp",
+  "signature": "// Per-index font rebuild (EBX = index): frees the global slot at\n// 0x008c9568[index], allocates a 0x68-byte object (FUN_00508120 construction),\n// stores it, loads the observed font name through FUN_00508670, then asks the\n// 0x00727b28 manager's vtable[1] for (2,0) and stores the result at +0x64.\n// ---------------------------------------------------------------------------\nvoid FUN_004b20f0(int32_t index)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b20f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

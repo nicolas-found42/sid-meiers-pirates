@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x0053c800",
+  "name": "FUN_0053c800",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053c800(float* self, float param_1, float param_2, float param_3, float param_4)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53c800.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053c8d0",
+  "name": "FUN_0053c8d0",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053c8d0(float* self, float* param_1, float* param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53c8d0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053c9e0",
+  "name": "FUN_0053c9e0",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053c9e0(float* self, float* param_1, float param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53c9e0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053ca60",
+  "name": "FUN_0053ca60",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053ca60(float* self, float* param_1, float* param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53ca60.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053cac0",
+  "name": "FUN_0053cac0",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053cac0(float* param_1, float* param_2, float* param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53cac0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053cb20",
+  "name": "FUN_0053cb20",
+  "source": "src/mass_0127.cpp",
+  "signature": "uint32_t FUN_0053cb20(float* self, float* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53cb20.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053cc20",
+  "name": "FUN_0053cc20",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053cc20(float* self, float* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53cc20.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053cca0",
+  "name": "FUN_0053cca0",
+  "source": "src/mass_0127.cpp",
+  "signature": "uint32_t FUN_0053cca0(float* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53cca0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053ce40",
+  "name": "FUN_0053ce40",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053ce40(float* self, float* param_1, float* param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53ce40.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053cf50",
+  "name": "FUN_0053cf50",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053cf50(float* self, float* param_1, float* param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53cf50.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d060",
+  "name": "FUN_0053d060",
+  "source": "src/mass_0127.cpp",
+  "signature": "uint32_t FUN_0053d060(float* self, float* param_1, float* param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d060.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d400",
+  "name": "FUN_0053d400",
+  "source": "src/mass_0127.cpp",
+  "signature": "uint32_t FUN_0053d400(float* self, float* param_1, float* param_2, float* param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d400.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d510",
+  "name": "FUN_0053d510",
+  "source": "src/mass_0127.cpp",
+  "signature": "uint32_t FUN_0053d510(float* self, float* param_1, float* param_2, float* param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d510.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d620",
+  "name": "FUN_0053d620",
+  "source": "src/mass_0127.cpp",
+  "signature": "uint32_t FUN_0053d620(float* self, float* param_1, float* param_2, float* param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d620.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d720",
+  "name": "FUN_0053d720",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053d720(float* self, float param_1, float param_2, float param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d720.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d850",
+  "name": "FUN_0053d850",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053d850(float* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d850.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d8a0",
+  "name": "FUN_0053d8a0",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053d8a0(float* self, void* param_1, float* param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d8a0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d980",
+  "name": "FUN_0053d980",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053d980(int* self, void* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d980.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053d9c0",
+  "name": "FUN_0053d9c0",
+  "source": "src/mass_0127.cpp",
+  "signature": "void FUN_0053d9c0(int* self, void* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53d9c0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0053da70",
+  "name": "FUN_0053da70",
+  "source": "src/mass_0127.cpp",
+  "signature": "char* FUN_0053da70(char* param_1, uint32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x53da70.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

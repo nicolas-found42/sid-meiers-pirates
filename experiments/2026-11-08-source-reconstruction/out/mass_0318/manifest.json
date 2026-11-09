@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x0065e58c",
+  "name": "FUN_0065e58c",
+  "source": "src/mass_0318.cpp",
+  "signature": "// set. Then walk the array-slot table and, for flagged slots (high bits of\n// the header word non-zero), compact entries whose node lacks flag 0x20,\n// rewrite the header word's low 20 bits, the stride at +4 and the count at\n// +0xc, and relink the node chain.\n// ---------------------------------------------------------------------------\nuint32_t FUN_0065e58c(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65e58c.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065e79d",
+  "name": "FUN_0065e79d",
+  "source": "src/mass_0318.cpp",
+  "signature": "bool FUN_0065e79d(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65e79d.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065e935",
+  "name": "FUN_0065e935",
+  "source": "src/mass_0318.cpp",
+  "signature": "uint32_t FUN_0065e935(void* self, int32_t* param_1, int32_t* param_2,\n                      int32_t param_3, int32_t param_4)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65e935.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065ea37",
+  "name": "FUN_0065ea37",
+  "source": "src/mass_0318.cpp",
+  "signature": "// slot header (0x10000001 / 0x20400001 / size|0x50000000) and its id list.\n// ---------------------------------------------------------------------------\nbool FUN_0065ea37(void* self, uint32_t* param_1, int32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65ea37.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065f0a1",
+  "name": "FUN_0065f0a1",
+  "source": "src/mass_0318.cpp",
+  "signature": "// surface carries bit 2 and whose owning array (reached through node+0x48)\n// either references param_1 directly (kind 0x10000000) or has a 0x20500000\n// pair whose left or right half reaches param_1. Recurses on the halves.\n// ---------------------------------------------------------------------------\nint32_t FUN_0065f0a1(void* self, int32_t param_1, int32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65f0a1.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065f17e",
+  "name": "FUN_0065f17e",
+  "source": "src/mass_0318.cpp",
+  "signature": "int32_t FUN_0065f17e(void* self, int32_t param_1, int32_t* param_2, double* param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65f17e.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065f408",
+  "name": "FUN_0065f408",
+  "source": "src/mass_0318.cpp",
+  "signature": "//   0x30000000  validates both operands' weights (0/1 and 1/0), then peels\n//               the child node's owning array: kind 0x10100000 negates and\n//               forwards, kind 0x20400000 pairs the two operands through\n//               the nested array, then commits the resolved pair.\n// ---------------------------------------------------------------------------\nint32_t FUN_0065f408(void* self, uint32_t param_1, int32_t* param_2, int32_t* param_3,\n                     int32_t* param_4, int32_t* param_5, int32_t* param_6)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65f408.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065fa14",
+  "name": "FUN_0065fa14",
+  "source": "src/mass_0318.cpp",
+  "signature": "// of the node records at table[a] and table[b] must all match (a and b are\n// pre-scaled by 4 before indexing).\n// ---------------------------------------------------------------------------\nint32_t FUN_0065fa14(void* self, int32_t param_1, int32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65fa14.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065fa89",
+  "name": "FUN_0065fa89",
+  "source": "src/mass_0318.cpp",
+  "signature": "int32_t FUN_0065fa89(void* self, int32_t param_1, int32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65fa89.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065fab6",
+  "name": "FUN_0065fab6",
+  "source": "src/mass_0318.cpp",
+  "signature": "// flag 0x40 and the two nodes differ structurally (FUN_0065fa14 == 0).\n// Returns 1 on the first such pair, else 0.\n// ---------------------------------------------------------------------------\nuint32_t FUN_0065fab6(void* self, uint32_t* param_1, int32_t param_2, int32_t param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65fab6.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065fb5b",
+  "name": "FUN_0065fb5b",
+  "source": "src/mass_0318.cpp",
+  "signature": "uint32_t FUN_0065fb5b(void* self, uint32_t* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65fb5b.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0065ff49",
+  "name": "FUN_0065ff49",
+  "source": "src/mass_0318.cpp",
+  "signature": "// built up level by level through FUN_0065d9d5(1.0) merges.\n// ---------------------------------------------------------------------------\nuint32_t FUN_0065ff49(void* self, uint32_t* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65ff49.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0066040e",
+  "name": "FUN_0066040e",
+  "source": "src/mass_0318.cpp",
+  "signature": "int32_t FUN_0066040e(void* self, int32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x66040e.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x006605b4",
+  "name": "FUN_006605b4",
+  "source": "src/mass_0318.cpp",
+  "signature": "// node of each row, set bit (key+0x24 & 0x1f) in the node's +0x40 mask and\n// store 1 at key+0x28. Pass 2: for the same nodes, clear key+0x28 and\n// advance the key at +0x24 modulo 32. Rows are advanced by printed\n// width*4 bytes per row.\n// ---------------------------------------------------------------------------\nuint32_t FUN_006605b4(void* self, uint32_t* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6605b4.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00660699",
+  "name": "FUN_00660699",
+  "source": "src/mass_0318.cpp",
+  "signature": "// new 0x10000001 slot, fill it (entry list, fresh 0x88 nodes with the\n// original chain links and node word), shift the slot table to insert it,\n// and bump *param_4. Returns 0x8007000e on allocation failure.\n// ---------------------------------------------------------------------------\nuint32_t FUN_00660699(void* self, uint32_t param_1, int32_t* param_2,\n                      uint32_t param_3, int32_t* param_4)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x660699.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0066098c",
+  "name": "FUN_0066098c",
+  "source": "src/mass_0318.cpp",
+  "signature": "// whose +0x2c low bit is set and whose key differs from its successor (the\n// loop body also advances the cursor twice when the keys match).\n// ---------------------------------------------------------------------------\nuint32_t FUN_0066098c(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x66098c.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00660a3e",
+  "name": "FUN_00660a3e",
+  "source": "src/mass_0318.cpp",
+  "signature": "uint32_t FUN_00660a3e(void* self, uint32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x660a3e.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00660ba6",
+  "name": "FUN_00660ba6",
+  "source": "src/mass_0318.cpp",
+  "signature": "// owned, require all members on one chain and no key mismatch (else abandon\n// the span), then copy the owner slot's +0x30 into every member and report\n// a change. For 0x10000000 slots, nodes without owner but with identical\n// shape/links and a null +0x3c adopt the operand's node as owner.\n// ---------------------------------------------------------------------------\nbool FUN_00660ba6(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x660ba6.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00660d40",
+  "name": "FUN_00660d40",
+  "source": "src/mass_0318.cpp",
+  "signature": "void FUN_00660d40(void* self, int32_t param_1, int32_t* param_2, int32_t param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x660d40.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00660d8e",
+  "name": "FUN_00660d8e",
+  "source": "src/mass_0318.cpp",
+  "signature": "// table: for each unowned (node+0x24 == 0) node, inspect its operands and\n// bias *param_3 by -0x10000 when the operand descends from param_4's side\n// and is itself owned, or by +0x10000 when it descends from the other side.\n// ---------------------------------------------------------------------------\nvoid FUN_00660d8e(void* self, uint32_t param_1, uint32_t param_2,\n                  int32_t* param_3, uint32_t param_4)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x660d8e.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

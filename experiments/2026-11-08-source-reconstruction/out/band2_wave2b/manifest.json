@@ -1,0 +1,302 @@
+[
+  {
+    "address": "0x004c3790",
+    "name": "band2_wave2b::FUN_004c3790",
+    "source": "src/band2_wave2b_a.cpp",
+    "signature": "void FUN_004c3790(void*)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4c3790.c; analysis/team/band2/deep/0x004c3790.md",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c3890",
+    "name": "band2_wave2b::FUN_004c3890",
+    "source": "src/band2_wave2b_a.cpp",
+    "signature": "void FUN_004c3890(void*)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4c3890.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c3940",
+    "name": "band2_wave2b::FUN_004c3940",
+    "source": "src/band2_wave2b_a.cpp",
+    "signature": "void FUN_004c3940(char**)",
+    "confidence": "low",
+    "evidence": "analysis/pseudocode/functions/0x4c3940.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c3a50",
+    "name": "band2_wave2b::FUN_004c3a50",
+    "source": "src/band2_wave2b_a.cpp",
+    "signature": "void FUN_004c3a50(char*, char*)",
+    "confidence": "low",
+    "evidence": "analysis/pseudocode/functions/0x4c3a50.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c3eb0",
+    "name": "band2_wave2b::FUN_004c3eb0",
+    "source": "src/band2_wave2b_a.cpp",
+    "signature": "int FUN_004c3eb0(int, void*)",
+    "confidence": "low",
+    "evidence": "analysis/pseudocode/functions/0x4c3eb0.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c42e0",
+    "name": "band2_wave2b_b::FUN_004c42e0",
+    "source": "src/band2_wave2b_b.cpp",
+    "signature": "void* FUN_004c42e0(int, void**, char*)",
+    "confidence": "low",
+    "evidence": "analysis/pseudocode/functions/0x4c42e0.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c4560",
+    "name": "band2_wave2b_b::FUN_004c4560",
+    "source": "src/band2_wave2b_b.cpp",
+    "signature": "void FUN_004c4560(unsigned, char*, char**)",
+    "confidence": "low",
+    "evidence": "analysis/pseudocode/functions/0x4c4560.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c4640",
+    "name": "band2_wave2b_b::FUN_004c4640",
+    "source": "src/band2_wave2b_b.cpp",
+    "signature": "void FUN_004c4640(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4c4640.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c4860",
+    "name": "band2_wave2b_b::FUN_004c4860",
+    "source": "src/band2_wave2b_b.cpp",
+    "signature": "void FUN_004c4860(int, void*)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4c4860.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c4980",
+    "name": "band2_wave2b_b::FUN_004c4980",
+    "source": "src/band2_wave2b_b.cpp",
+    "signature": "void FUN_004c4980(int, void*)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4c4980.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c4aa0",
+    "name": "band2_wave2b_c::FUN_004c4aa0",
+    "source": "src/band2_wave2b_c.cpp",
+    "signature": "void FUN_004c4aa0(unsigned, void*)",
+    "confidence": "low",
+    "evidence": "analysis/pseudocode/functions/0x4c4aa0.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c5030",
+    "name": "band2_wave2b_c::FUN_004c5030",
+    "source": "src/band2_wave2b_c.cpp",
+    "signature": "void FUN_004c5030(unsigned, void*)",
+    "confidence": "low",
+    "evidence": "analysis/pseudocode/functions/0x4c5030.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c56d0",
+    "name": "band2_wave2b_c::FUN_004c56d0",
+    "source": "src/band2_wave2b_c.cpp",
+    "signature": "void FUN_004c56d0(void*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4c56d0.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c5770",
+    "name": "band2_wave2b_c::FUN_004c5770",
+    "source": "src/band2_wave2b_c.cpp",
+    "signature": "void FUN_004c5770(char*, void*, int)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4c5770.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c5840",
+    "name": "band2_wave2b_c::FUN_004c5840",
+    "source": "src/band2_wave2b_c.cpp",
+    "signature": "void FUN_004c5840(void*, int)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4c5840.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c58c0",
+    "name": "band2_wave2b_d::FUN_004c58c0",
+    "source": "src/band2_wave2b_d.cpp",
+    "signature": "int FUN_004c58c0(char*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4c58c0.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c5910",
+    "name": "band2_wave2b_d::FUN_004c5910",
+    "source": "src/band2_wave2b_d.cpp",
+    "signature": "void FUN_004c5910(void*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4c5910.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c5960",
+    "name": "band2_wave2b_d::FUN_004c5960",
+    "source": "src/band2_wave2b_d.cpp",
+    "signature": "void FUN_004c5960(void*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4c5960.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c59b0",
+    "name": "band2_wave2b_d::FUN_004c59b0",
+    "source": "src/band2_wave2b_d.cpp",
+    "signature": "void FUN_004c59b0(int, void*)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4c59b0.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  },
+  {
+    "address": "0x004c5a60",
+    "name": "band2_wave2b_d::FUN_004c5a60",
+    "source": "src/band2_wave2b_d.cpp",
+    "signature": "void FUN_004c5a60(int, void*)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4c5a60.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "register-param convention (EAX/ECX/ESI/EDI)",
+      "string-heap layout (len at -4, cap at -8)",
+      "unrecovered callees referenced by address"
+    ]
+  }
+]

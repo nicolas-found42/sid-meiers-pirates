@@ -17,7 +17,92 @@
       "{flags}",
       "{src}"
     ],
-    "notes": "The image's linker version is 7.10 and the Rich header records build 3077, the VC7.1 RTM toolset. The exact per-unit optimization, runtime, RTTI, exception and inline flags are not yet proven; every unit must declare its own flags and justify them by matching bytes. A wrapper script can replace 'wine cl' when the toolchain lives in a Wine prefix."
+    "notes": "The image's linker version is 7.10 and the Rich header records build 3077, the VC7.1 RTM toolset. The exact per-unit optimization, runtime, RTTI, exception and inline flags are not yet proven; every unit must declare its own flags and justify them by matching bytes. A wrapper script can replace 'wine cl' when the toolchain lives in a Wine prefix. The verified unit below uses absolute /tmp paths from the 2026-11-09 extraction; those paths are ephemeral and must be restaged from findings/2026-11-08-compiler-availability.md."
   },
-  "units": []
+  "units": [
+    {
+      "id": "tiny_547610",
+      "source": "experiments/2026-11-08-source-reconstruction/out/verified/tiny_547610.cpp",
+      "path_style": "wine",
+      "compile_argv": [
+        "/tmp/pirates-wine-probe/mach9/wine/bin/wine",
+        "/tmp/compiler-research/stage/cl.exe",
+        "/nologo",
+        "/c",
+        "/Fo{obj}",
+        "{flags}",
+        "{src}"
+      ],
+      "flags": [
+        "/O2"
+      ],
+      "env": {
+        "WINEPREFIX": "/tmp/pirates-wine-probe/prefix2",
+        "WINEDEBUG": "-all"
+      },
+      "functions": [
+        {
+          "symbol": "?set_value@SetterTarget@@QAEXI@Z",
+          "address": "0x00547610"
+        }
+      ],
+      "evidence": "First real game-function PASS. VC7.1 cl 13.10.3077 /O2 emitted 8b 44 24 04 89 41 0c c2 04 00, identical to the shipped 9 bytes; the 7 trailing 0xCC bytes trim. The explicit __thiscall keyword is rejected by this compiler; a C++ member function supplies the packed thiscall ABI."
+    },
+    {
+      "id": "tiny_54a9f0",
+      "source": "experiments/2026-11-08-source-reconstruction/out/verified/tiny_54a9f0.cpp",
+      "path_style": "wine",
+      "compile_argv": [
+        "/tmp/pirates-wine-probe/mach9/wine/bin/wine",
+        "/tmp/compiler-research/stage/cl.exe",
+        "/nologo",
+        "/c",
+        "/Fo{obj}",
+        "{flags}",
+        "{src}"
+      ],
+      "flags": [
+        "/O2"
+      ],
+      "env": {
+        "WINEPREFIX": "/tmp/pirates-wine-probe/prefix2",
+        "WINEDEBUG": "-all"
+      },
+      "functions": [
+        {
+          "symbol": "?set_byte@ByteSetter@@QAEPAU1@E@Z",
+          "address": "0x0054a9f0"
+        }
+      ],
+      "evidence": "Second real game-function PASS. Returning this forces mov eax,ecx; the shipped 9 bytes are 8b c1 8a 4c 24 04 88 48 18 c2 04 00 and /O2 reproduces them exactly."
+    },
+    {
+      "id": "tiny_5366b0",
+      "source": "experiments/2026-11-08-source-reconstruction/out/verified/tiny_5366b0.cpp",
+      "path_style": "wine",
+      "compile_argv": [
+        "/tmp/pirates-wine-probe/mach9/wine/bin/wine",
+        "/tmp/compiler-research/stage/cl.exe",
+        "/nologo",
+        "/c",
+        "/Fo{obj}",
+        "{flags}",
+        "{src}"
+      ],
+      "flags": [
+        "/O2"
+      ],
+      "env": {
+        "WINEPREFIX": "/tmp/pirates-wine-probe/prefix2",
+        "WINEDEBUG": "-all"
+      },
+      "functions": [
+        {
+          "symbol": "?copy@T@@QAEXXZ",
+          "address": "0x005366b0"
+        }
+      ],
+      "evidence": "Third real game-function PASS: 12-byte struct assignment from +0x90 to +0x28 matches the shipped 26-byte body exactly under VC7.1 /O2."
+    }
+  ]
 }

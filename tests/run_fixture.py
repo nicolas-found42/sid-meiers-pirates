@@ -23,6 +23,7 @@ import tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 from pe import PE  # noqa: E402
+from match import build_compile_argv  # noqa: E402
 
 CC = "i686-w64-mingw32-gcc"
 EXPECTED = ["_add", "_call_add"]
@@ -82,6 +83,7 @@ def main() -> int:
                 "span": end - address,
                 "thunk": False,
                 "placeholder": False,
+                "category": "function",
             })
 
         inventory = {
@@ -99,6 +101,9 @@ def main() -> int:
                 "functions": len(functions),
                 "placeholders": 0,
                 "thunks": 0,
+                "eh_funclets": 0,
+                "matchable": len(functions),
+                "matchable_text_bytes": sum(row["span"] for row in functions),
                 "text_bytes": sum(row["span"] for row in functions),
                 "text_span": text_end - text_start,
             },
@@ -109,17 +114,37 @@ def main() -> int:
             "image": {"sha256": pe.sha256, "size": pe.size},
             "compiler": {
                 "id": "fixture-gcc",
-                "compile_argv": [CC, "-O2", "-fno-inline", "-c", "{src}", "-o", "{obj}"],
+                "compile_argv": [CC, "{flags}", "-c", "{src}", "-o", "{obj}"],
             },
             "units": [{
                 "id": "fixture",
                 "source": source,
+                "flags": ["-O2", "-fno-inline"],
                 "functions": [
                     {"symbol": name, "address": f"0x{address:08x}"}
                     for name, address in ordered
                 ],
             }],
         }
+
+        # The Wine path and flag expansion must not smuggle one argv element.
+        probe_unit = {"id": "probe", "source": source, "flags": ["/O2", "/MD"]}
+        probe_config = {"compiler": {
+            "compile_argv": ["cl", "/c", "{flags}", "{src}", "/Fo{obj}"],
+            "path_style": "windows",
+        }}
+        probe_argv, _ = build_compile_argv(probe_unit, probe_config, work)
+        if probe_argv[:4] != ["cl", "/c", "/O2", "/MD"]:
+            raise SystemExit(f"flags were not expanded as separate arguments: {probe_argv}")
+        if any(not arg for arg in probe_argv):
+            raise SystemExit(f"empty argv element: {probe_argv}")
+        if not all("\\" in arg for arg in probe_argv[4:]):
+            raise SystemExit(f"Wine-visible paths were not converted: {probe_argv}")
+        probe_unit["flags"] = []
+        empty_argv, _ = build_compile_argv(probe_unit, probe_config, work)
+        if "" in empty_argv:
+            raise SystemExit(f"empty flags produced an empty argument: {empty_argv}")
+        print("flag/path expansion OK")
 
         inv_path = os.path.join(work, "functions.json")
         cfg_path = os.path.join(work, "units.json")

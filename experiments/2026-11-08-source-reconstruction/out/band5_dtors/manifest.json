@@ -1,0 +1,2001 @@
+[
+  {
+    "address": "0x005930a0",
+    "name": "FUN_005930a0",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5930a0.c (operator_delete + *in_ECX vtable store ['0x6c5148'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c5148 -> Class_6c5148; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5930a0.c",
+    "span": 44,
+    "vtable": "0x6c5148",
+    "class_display": "Class_6c5148",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x00593830",
+    "name": "FUN_00593830",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x593830.c (operator_delete + *in_ECX vtable store ['0x6c514c', '0x6c4eb4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c4eb4 -> Class_6c4eb4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x593830.c",
+    "span": 62,
+    "vtable": "0x6c4eb4",
+    "class_display": "Class_6c4eb4",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005931d0"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x0059aa00",
+    "name": "FUN_0059aa00",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x59aa00.c (operator_delete + *in_ECX vtable store ['0x6c51d8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c51d8 -> Class_6c51d8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x59aa00.c",
+    "span": 44,
+    "vtable": "0x6c51d8",
+    "class_display": "Class_6c51d8",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005a8960",
+    "name": "FUN_005a8960",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5a8960.c (operator_delete + *in_ECX vtable store ['0x6c52d4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c52d4 -> Class_6c52d4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5a8960.c",
+    "span": 44,
+    "vtable": "0x6c52d4",
+    "class_display": "Class_6c52d4",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005ab980",
+    "name": "FUN_005ab980",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5ab980.c (operator_delete + *in_ECX vtable store ['0x6c5350'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c5350 -> Class_6c5350; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5ab980.c",
+    "span": 81,
+    "vtable": "0x6c5350",
+    "class_display": "Class_6c5350",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_00538400"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005ae850",
+    "name": "FUN_005ae850",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5ae850.c (operator_delete + *in_ECX vtable store ['0x6c5988'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c5988 -> NiMeshParticleSystem; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5ae850.c",
+    "span": 50,
+    "vtable": "0x6c5988",
+    "class_display": "NiMeshParticleSystem",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_00552d20"
+      ],
+      "free_offsets": [
+        "0x44"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005aebe0",
+    "name": "FUN_005aebe0",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5aebe0.c (operator_delete + *in_ECX vtable store ['0x6c5a40', '0x6c5a18'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c5a40 -> Class_6c5a40; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5aebe0.c",
+    "span": 42,
+    "vtable": "0x6c5a40",
+    "class_display": "Class_6c5a40",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005edba0"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005aec10",
+    "name": "FUN_005aec10",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5aec10.c (operator_delete + *in_ECX vtable store ['0x6c5a24'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c5a24 -> Class_6c5a24; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5aec10.c",
+    "span": 49,
+    "vtable": "0x6c5a24",
+    "class_display": "Class_6c5a24",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005aec50",
+    "name": "FUN_005aec50",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5aec50.c (operator_delete + *in_ECX vtable store ['0x6c5a4c', '0x6c5a24'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c5a4c -> Class_6c5a4c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5aec50.c",
+    "span": 62,
+    "vtable": "0x6c5a4c",
+    "class_display": "Class_6c5a4c",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005b4d30",
+    "name": "FUN_005b4d30",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "medium",
+    "evidence": "corpus analysis/pseudocode/functions/0x5b4d30.c (operator_delete + *in_ECX vtable store ['0x6fd148'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6fd148 -> none; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5b4d30.c",
+    "span": 53,
+    "vtable": "0x6fd148",
+    "class_display": "Class_6fd148",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e4780"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "vtable 0x6fd148 has no vtable-map record; class display unknown",
+      "Original class name unresolved",
+      "Layout beyond observed offsets; __thiscall inferred"
+    ]
+  },
+  {
+    "address": "0x005b83b0",
+    "name": "FUN_005b83b0",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5b83b0.c (operator_delete + *in_ECX vtable store ['0x6c66b4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c66b4 -> Class_6c66b4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5b83b0.c",
+    "span": 69,
+    "vtable": "0x6c66b4",
+    "class_display": "Class_6c66b4",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_00538400"
+      ],
+      "free_offsets": [
+        "0x10",
+        "0x1c"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005b93c0",
+    "name": "FUN_005b93c0",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5b93c0.c (operator_delete + *in_ECX vtable store ['0x6c6830'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c6830 -> Class_6c6830; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5b93c0.c",
+    "span": 50,
+    "vtable": "0x6c6830",
+    "class_display": "Class_6c6830",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_00559020"
+      ],
+      "free_offsets": [
+        "0x50"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005bbe70",
+    "name": "FUN_005bbe70",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5bbe70.c (operator_delete + *in_ECX vtable store ['0x6c6c18'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c6c18 -> Class_6c6c18; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5bbe70.c",
+    "span": 50,
+    "vtable": "0x6c6c18",
+    "class_display": "Class_6c6c18",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_00538400"
+      ],
+      "free_offsets": [
+        "0xc"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005bda90",
+    "name": "FUN_005bda90",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5bda90.c (operator_delete + *in_ECX vtable store ['0x6c6fdc'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c6fdc -> Class_6c6fdc; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5bda90.c",
+    "span": 49,
+    "vtable": "0x6c6fdc",
+    "class_display": "Class_6c6fdc",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005bdad0",
+    "name": "FUN_005bdad0",
+    "source": "src/band5_dtors_1.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5bdad0.c (operator_delete + *in_ECX vtable store ['0x6c7030', '0x6c6fdc'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7030 -> Class_6c7030; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5bdad0.c",
+    "span": 62,
+    "vtable": "0x6c7030",
+    "class_display": "Class_6c7030",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005bde80",
+    "name": "FUN_005bde80",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5bde80.c (operator_delete + *in_ECX vtable store ['0x6c6ff8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c6ff8 -> Class_6c6ff8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5bde80.c",
+    "span": 49,
+    "vtable": "0x6c6ff8",
+    "class_display": "Class_6c6ff8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005bdec0",
+    "name": "FUN_005bdec0",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5bdec0.c (operator_delete + *in_ECX vtable store ['0x6c704c', '0x6c6ff8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c704c -> Class_6c704c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5bdec0.c",
+    "span": 62,
+    "vtable": "0x6c704c",
+    "class_display": "Class_6c704c",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005bdf20",
+    "name": "FUN_005bdf20",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5bdf20.c (operator_delete + *in_ECX vtable store ['0x6c7014'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7014 -> Class_6c7014; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5bdf20.c",
+    "span": 49,
+    "vtable": "0x6c7014",
+    "class_display": "Class_6c7014",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005bdf60",
+    "name": "FUN_005bdf60",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5bdf60.c (operator_delete + *in_ECX vtable store ['0x6c7068', '0x6c7014'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7068 -> Class_6c7068; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5bdf60.c",
+    "span": 62,
+    "vtable": "0x6c7068",
+    "class_display": "Class_6c7068",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005bffc0",
+    "name": "FUN_005bffc0",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5bffc0.c (operator_delete + *in_ECX vtable store ['0x6c71c8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c71c8 -> Class_6c71c8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5bffc0.c",
+    "span": 49,
+    "vtable": "0x6c71c8",
+    "class_display": "Class_6c71c8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c0000",
+    "name": "FUN_005c0000",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c0000.c (operator_delete + *in_ECX vtable store ['0x6c7278', '0x6c71c8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7278 -> PURE; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c0000.c",
+    "span": 62,
+    "vtable": "0x6c7278",
+    "class_display": "PURE",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c0040",
+    "name": "FUN_005c0040",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c0040.c (operator_delete + *in_ECX vtable store ['0x6c71e4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c71e4 -> Class_6c71e4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c0040.c",
+    "span": 49,
+    "vtable": "0x6c71e4",
+    "class_display": "Class_6c71e4",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c0080",
+    "name": "FUN_005c0080",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c0080.c (operator_delete + *in_ECX vtable store ['0x6c7294', '0x6c71e4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7294 -> Class_6c7294; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c0080.c",
+    "span": 62,
+    "vtable": "0x6c7294",
+    "class_display": "Class_6c7294",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c0100",
+    "name": "FUN_005c0100",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c0100.c (operator_delete + *in_ECX vtable store ['0x6c72b0', '0x6c7200'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c72b0 -> Class_6c72b0; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c0100.c",
+    "span": 62,
+    "vtable": "0x6c72b0",
+    "class_display": "Class_6c72b0",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c0140",
+    "name": "FUN_005c0140",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c0140.c (operator_delete + *in_ECX vtable store ['0x6c721c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c721c -> Class_6c721c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c0140.c",
+    "span": 49,
+    "vtable": "0x6c721c",
+    "class_display": "Class_6c721c",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c0180",
+    "name": "FUN_005c0180",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c0180.c (operator_delete + *in_ECX vtable store ['0x6c72cc', '0x6c721c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c72cc -> Class_6c72cc; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c0180.c",
+    "span": 62,
+    "vtable": "0x6c72cc",
+    "class_display": "Class_6c72cc",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c01e0",
+    "name": "FUN_005c01e0",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c01e0.c (operator_delete + *in_ECX vtable store ['0x6c72e8', '0x6c7238'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c72e8 -> Class_6c72e8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c01e0.c",
+    "span": 42,
+    "vtable": "0x6c72e8",
+    "class_display": "Class_6c72e8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005edba0"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c7d70",
+    "name": "FUN_005c7d70",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c7d70.c (operator_delete + *in_ECX vtable store ['0x6c76f4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c76f4 -> Class_6c76f4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c7d70.c",
+    "span": 44,
+    "vtable": "0x6c76f4",
+    "class_display": "Class_6c76f4",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c7da0",
+    "name": "FUN_005c7da0",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c7da0.c (operator_delete + *in_ECX vtable store ['0x6c76f8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c76f8 -> Class_6c76f8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c7da0.c",
+    "span": 44,
+    "vtable": "0x6c76f8",
+    "class_display": "Class_6c76f8",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c8cd0",
+    "name": "FUN_005c8cd0",
+    "source": "src/band5_dtors_2.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c8cd0.c (operator_delete + *in_ECX vtable store ['0x6c76fc'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c76fc -> Class_6c76fc; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c8cd0.c",
+    "span": 49,
+    "vtable": "0x6c76fc",
+    "class_display": "Class_6c76fc",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c8d10",
+    "name": "FUN_005c8d10",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c8d10.c (operator_delete + *in_ECX vtable store ['0x6c77d4', '0x6c76fc'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c77d4 -> Class_6c77d4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c8d10.c",
+    "span": 62,
+    "vtable": "0x6c77d4",
+    "class_display": "Class_6c77d4",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c8d50",
+    "name": "FUN_005c8d50",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c8d50.c (operator_delete + *in_ECX vtable store ['0x6c7718'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7718 -> Class_6c7718; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c8d50.c",
+    "span": 49,
+    "vtable": "0x6c7718",
+    "class_display": "Class_6c7718",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c8d90",
+    "name": "FUN_005c8d90",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c8d90.c (operator_delete + *in_ECX vtable store ['0x6c77f0', '0x6c7718'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c77f0 -> Class_6c77f0; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c8d90.c",
+    "span": 62,
+    "vtable": "0x6c77f0",
+    "class_display": "Class_6c77f0",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c8dd0",
+    "name": "FUN_005c8dd0",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c8dd0.c (operator_delete + *in_ECX vtable store ['0x6c7734'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7734 -> Class_6c7734; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c8dd0.c",
+    "span": 49,
+    "vtable": "0x6c7734",
+    "class_display": "Class_6c7734",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c8e10",
+    "name": "FUN_005c8e10",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c8e10.c (operator_delete + *in_ECX vtable store ['0x6c780c', '0x6c7734'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c780c -> Class_6c780c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c8e10.c",
+    "span": 62,
+    "vtable": "0x6c780c",
+    "class_display": "Class_6c780c",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c8e50",
+    "name": "FUN_005c8e50",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c8e50.c (operator_delete + *in_ECX vtable store ['0x6c7750', '0x6fd148'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7750 -> Class_6c7750; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c8e50.c",
+    "span": 101,
+    "vtable": "0x6c7750",
+    "class_display": "Class_6c7750",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005c9530",
+    "name": "FUN_005c9530",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c9530.c (operator_delete + *in_ECX vtable store ['0x6c787c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c787c -> Class_6c787c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c9530.c",
+    "span": 44,
+    "vtable": "0x6c787c",
+    "class_display": "Class_6c787c",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c9a00",
+    "name": "FUN_005c9a00",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c9a00.c (operator_delete + *in_ECX vtable store ['0x6c78d8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c78d8 -> Class_6c78d8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c9a00.c",
+    "span": 72,
+    "vtable": "0x6c78d8",
+    "class_display": "Class_6c78d8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_00547650"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005c9e40",
+    "name": "FUN_005c9e40",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5c9e40.c (operator_delete + *in_ECX vtable store ['0x6c799c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c799c -> PSVERSION; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5c9e40.c",
+    "span": 88,
+    "vtable": "0x6c799c",
+    "class_display": "PSVERSION",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_0055a310"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cbef0",
+    "name": "FUN_005cbef0",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cbef0.c (operator_delete + *in_ECX vtable store ['0x6c7d60'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7d60 -> D3DFMT_R8G8B8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cbef0.c",
+    "span": 49,
+    "vtable": "0x6c7d60",
+    "class_display": "D3DFMT_R8G8B8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cbf30",
+    "name": "FUN_005cbf30",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cbf30.c (operator_delete + *in_ECX vtable store ['0x6c7d90', '0x6c7d60'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7d90 -> Class_6c7d90; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cbf30.c",
+    "span": 62,
+    "vtable": "0x6c7d90",
+    "class_display": "Class_6c7d90",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005cbf90",
+    "name": "FUN_005cbf90",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cbf90.c (operator_delete + *in_ECX vtable store ['0x6c7dac', '0x6c7d7c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7dac -> Class_6c7dac; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cbf90.c",
+    "span": 42,
+    "vtable": "0x6c7dac",
+    "class_display": "Class_6c7dac",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005edba0"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005cbfc0",
+    "name": "FUN_005cbfc0",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cbfc0.c (operator_delete + *in_ECX vtable store ['0x6c7d88'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7d88 -> Class_6c7d88; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cbfc0.c",
+    "span": 44,
+    "vtable": "0x6c7d88",
+    "class_display": "Class_6c7d88",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cbff0",
+    "name": "FUN_005cbff0",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cbff0.c (operator_delete + *in_ECX vtable store ['0x6c7d8c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7d8c -> Class_6c7d8c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cbff0.c",
+    "span": 44,
+    "vtable": "0x6c7d8c",
+    "class_display": "Class_6c7d8c",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cd3d0",
+    "name": "FUN_005cd3d0",
+    "source": "src/band5_dtors_3.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cd3d0.c (operator_delete + *in_ECX vtable store ['0x6c7df4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7df4 -> Class_6c7df4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cd3d0.c",
+    "span": 49,
+    "vtable": "0x6c7df4",
+    "class_display": "Class_6c7df4",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cd410",
+    "name": "FUN_005cd410",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cd410.c (operator_delete + *in_ECX vtable store ['0x6c7e10', '0x6c7df4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7e10 -> Class_6c7e10; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cd410.c",
+    "span": 62,
+    "vtable": "0x6c7e10",
+    "class_display": "Class_6c7e10",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005ce7b0",
+    "name": "FUN_005ce7b0",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5ce7b0.c (operator_delete + *in_ECX vtable store ['0x6c7e70'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7e70 -> Class_6c7e70; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5ce7b0.c",
+    "span": 36,
+    "vtable": "0x6c7e70",
+    "class_display": "Class_6c7e70",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_00552d20"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cee30",
+    "name": "FUN_005cee30",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cee30.c (operator_delete + *in_ECX vtable store ['0x6c7fb8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c7fb8 -> Class_6c7fb8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cee30.c",
+    "span": 76,
+    "vtable": "0x6c7fb8",
+    "class_display": "Class_6c7fb8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005cce50"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cf030",
+    "name": "FUN_005cf030",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cf030.c (operator_delete + *in_ECX vtable store ['0x6c8034'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8034 -> Class_6c8034; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cf030.c",
+    "span": 91,
+    "vtable": "0x6c8034",
+    "class_display": "Class_6c8034",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cf7a0",
+    "name": "FUN_005cf7a0",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cf7a0.c (operator_delete + *in_ECX vtable store ['0x6c8190'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8190 -> Class_6c8190; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cf7a0.c",
+    "span": 49,
+    "vtable": "0x6c8190",
+    "class_display": "Class_6c8190",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005cf7e0",
+    "name": "FUN_005cf7e0",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cf7e0.c (operator_delete + *in_ECX vtable store ['0x6c81b8', '0x6c8190'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c81b8 -> Class_6c81b8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cf7e0.c",
+    "span": 62,
+    "vtable": "0x6c81b8",
+    "class_display": "Class_6c81b8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005cf840",
+    "name": "FUN_005cf840",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5cf840.c (operator_delete + *in_ECX vtable store ['0x6c81d4', '0x6c81ac'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c81d4 -> Class_6c81d4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5cf840.c",
+    "span": 42,
+    "vtable": "0x6c81d4",
+    "class_display": "Class_6c81d4",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005edba0"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005d07d0",
+    "name": "FUN_005d07d0",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d07d0.c (operator_delete + *in_ECX vtable store ['0x6c824c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c824c -> Class_6c824c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d07d0.c",
+    "span": 49,
+    "vtable": "0x6c824c",
+    "class_display": "Class_6c824c",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d0810",
+    "name": "FUN_005d0810",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d0810.c (operator_delete + *in_ECX vtable store ['0x6c8268', '0x6c824c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8268 -> Class_6c8268; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d0810.c",
+    "span": 62,
+    "vtable": "0x6c8268",
+    "class_display": "Class_6c8268",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005d1880",
+    "name": "FUN_005d1880",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d1880.c (operator_delete + *in_ECX vtable store ['0x6c84c8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c84c8 -> Class_6c84c8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d1880.c",
+    "span": 58,
+    "vtable": "0x6c84c8",
+    "class_display": "Class_6c84c8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005cea90"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d2340",
+    "name": "FUN_005d2340",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d2340.c (operator_delete + *in_ECX vtable store ['0x6c85e4', '0x6c85d8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c85e4 -> Class_6c85e4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d2340.c",
+    "span": 57,
+    "vtable": "0x6c85e4",
+    "class_display": "Class_6c85e4",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005d2780",
+    "name": "FUN_005d2780",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d2780.c (operator_delete + *in_ECX vtable store ['0x6c86b4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c86b4 -> Class_6c86b4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d2780.c",
+    "span": 44,
+    "vtable": "0x6c86b4",
+    "class_display": "Class_6c86b4",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d5b60",
+    "name": "FUN_005d5b60",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d5b60.c (operator_delete + *in_ECX vtable store ['0x6c8798'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8798 -> Class_6c8798; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d5b60.c",
+    "span": 36,
+    "vtable": "0x6c8798",
+    "class_display": "Class_6c8798",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005db500"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d61a0",
+    "name": "FUN_005d61a0",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d61a0.c (operator_delete + *in_ECX vtable store ['0x6c88fc', '0x6c88ac'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c88fc -> Class_6c88fc; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d61a0.c",
+    "span": 50,
+    "vtable": "0x6c88fc",
+    "class_display": "Class_6c88fc",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005d61e0",
+    "name": "FUN_005d61e0",
+    "source": "src/band5_dtors_4.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d61e0.c (operator_delete + *in_ECX vtable store ['0x6c8930'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8930 -> Class_6c8930; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d61e0.c",
+    "span": 36,
+    "vtable": "0x6c8930",
+    "class_display": "Class_6c8930",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005d6040"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d7530",
+    "name": "FUN_005d7530",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d7530.c (operator_delete + *in_ECX vtable store ['0x6c8980'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8980 -> Class_6c8980; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d7530.c",
+    "span": 70,
+    "vtable": "0x6c8980",
+    "class_display": "Class_6c8980",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005c71a0"
+      ],
+      "free_offsets": [
+        "0x30"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d86a0",
+    "name": "FUN_005d86a0",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d86a0.c (operator_delete + *in_ECX vtable store ['0x6c8c28'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8c28 -> E_OUTOFMEMORY; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d86a0.c",
+    "span": 44,
+    "vtable": "0x6c8c28",
+    "class_display": "E_OUTOFMEMORY",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d86d0",
+    "name": "FUN_005d86d0",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d86d0.c (operator_delete + *in_ECX vtable store ['0x6c8c2c'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8c2c -> Class_6c8c2c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d86d0.c",
+    "span": 44,
+    "vtable": "0x6c8c2c",
+    "class_display": "Class_6c8c2c",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d8c50",
+    "name": "FUN_005d8c50",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d8c50.c (operator_delete + *in_ECX vtable store ['0x6c8c30'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8c30 -> Class_6c8c30; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d8c50.c",
+    "span": 49,
+    "vtable": "0x6c8c30",
+    "class_display": "Class_6c8c30",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d8c90",
+    "name": "FUN_005d8c90",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d8c90.c (operator_delete + *in_ECX vtable store ['0x6c8c4c', '0x6c8c30'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8c4c -> Class_6c8c4c; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d8c90.c",
+    "span": 62,
+    "vtable": "0x6c8c4c",
+    "class_display": "Class_6c8c4c",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005d8fb0",
+    "name": "FUN_005d8fb0",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d8fb0.c (operator_delete + *in_ECX vtable store ['0x6c8c68'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8c68 -> Class_6c8c68; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d8fb0.c",
+    "span": 86,
+    "vtable": "0x6c8c68",
+    "class_display": "Class_6c8c68",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005d8cd0",
+        "FUN_005e1490",
+        "FUN_005e1490",
+        "FUN_005dd9a0"
+      ],
+      "free_offsets": [
+        "0x18"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d9190",
+    "name": "FUN_005d9190",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d9190.c (operator_delete + *in_ECX vtable store ['0x6c8c98'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8c98 -> Class_6c8c98; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d9190.c",
+    "span": 56,
+    "vtable": "0x6c8c98",
+    "class_display": "Class_6c8c98",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005dd9a0"
+      ],
+      "free_offsets": [],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d9590",
+    "name": "FUN_005d9590",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d9590.c (operator_delete + *in_ECX vtable store ['0x6c8cc8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8cc8 -> Class_6c8cc8; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d9590.c",
+    "span": 49,
+    "vtable": "0x6c8cc8",
+    "class_display": "Class_6c8cc8",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d95d0",
+    "name": "FUN_005d95d0",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d95d0.c (operator_delete + *in_ECX vtable store ['0x6c8d04', '0x6c8cc8'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8d04 -> Class_6c8d04; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d95d0.c",
+    "span": 62,
+    "vtable": "0x6c8d04",
+    "class_display": "Class_6c8d04",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005d9610",
+    "name": "FUN_005d9610",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d9610.c (operator_delete + *in_ECX vtable store ['0x6c8ce4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8ce4 -> Class_6c8ce4; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d9610.c",
+    "span": 49,
+    "vtable": "0x6c8ce4",
+    "class_display": "Class_6c8ce4",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  },
+  {
+    "address": "0x005d9650",
+    "name": "FUN_005d9650",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d9650.c (operator_delete + *in_ECX vtable store ['0x6c8d20', '0x6c8ce4'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8d20 -> Class_6c8d20; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d9650.c",
+    "span": 62,
+    "vtable": "0x6c8d20",
+    "class_display": "Class_6c8d20",
+    "deleting_pattern": {
+      "body_calls": [
+        "FUN_005e1490",
+        "FUN_005e1490"
+      ],
+      "free_offsets": [
+        "0x8"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed",
+      "Multiple vtable stores in corpus (dual-store); all retained in order and free offsets preserved"
+    ]
+  },
+  {
+    "address": "0x005d9690",
+    "name": "FUN_005d9690",
+    "source": "src/band5_dtors_5.cpp",
+    "signature": "void __thiscall(void* self, uint8_t flags)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x5d9690.c (operator_delete + *in_ECX vtable store ['0x6c8d00'] + param_1 & 1); vtable-map out/classes/vtable-map.json entry 0x6c8d00 -> Class_6c8d00; scalar-deleting destructor pattern; corpus-only, no REA call this turn.",
+    "corpus": "analysis/pseudocode/functions/0x5d9690.c",
+    "span": 44,
+    "vtable": "0x6c8d00",
+    "class_display": "Class_6c8d00",
+    "deleting_pattern": {
+      "body_calls": [],
+      "free_offsets": [
+        "0x4"
+      ],
+      "flag_test": "(param_1 & 1) != 0",
+      "ret": "RET 0x4 (plain return in corpus; __thiscall one byte flag)"
+    },
+    "status": "unverified",
+    "unknowns": [
+      "Original class name unresolved (vtable-map synthetic unless named; e.g. NiMeshParticleSystem cases kept as observed)",
+      "Layout of `self` beyond vtable slot 0 and free offsets; __thiscall ECX convention inferred from in_ECX",
+      "Full file follows corpus vtable/member sequence; intermediate refcount-held member churn simplified to observation comment in source where needed"
+    ]
+  }
+]

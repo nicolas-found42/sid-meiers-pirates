@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x00414c00",
+  "name": "FUN_00414c00",
+  "source": "src/mass_0005.cpp",
+  "signature": "void FUN_00414c00(int param_1, int param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x414c00.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00414d00",
+  "name": "FUN_00414d00",
+  "source": "src/mass_0005.cpp",
+  "signature": "// in asStack_6fc from DAT_00816618/DAT_0081660e (stride 0x22e), asks\n// FUN_004135d0() for a free record, then scans DAT_00860b70 (stride 8) for\n// entries with bit 1 set, not owned by param_1, and nonnegative. For each it\n// computes a weighted distance from the player's coordinates\n// (DAT_00860b68/DAT_00860b6c) by five sector steps, doubling/halving by the\n// DAT_0085a168 relation flag, and keeps the best. On a hit it stores the\n// selected word from DAT_00722988 (+ (flag + local_71c)*4) into DAT_008142f8,\n// writes the candidate id at DAT_00814338, and calls FUN_00413430(iVar4).\n// Returns -1 when nothing matched, and -1 when the chosen slot is empty.\nint FUN_00414d00(int param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x414d00.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00414fc0",
+  "name": "FUN_00414fc0",
+  "source": "src/mass_0005.cpp",
+  "signature": "// Finds the first free record at DAT_008165d8 (stride 0x22e, starting index 8),\n// clears its 0x45c-byte body, flags DAT_00814350 with 0x800, seeds owner,\n// fitness, timer and counters, derives stats/value fields from the\n// DAT_00723b14 record block for param_2, and calls FUN_00413080().\n// Returns the record index, or -1 when all slots are occupied.\nint FUN_00414fc0(int param_1, short param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x414fc0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00415290",
+  "name": "FUN_00415290",
+  "source": "src/mass_0005.cpp",
+  "signature": "// FUN_0045b5d0(). Returns the record index or -1.\nint FUN_00415290(void *self, short param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x415290.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004154f0",
+  "name": "FUN_004154f0",
+  "source": "src/mass_0005.cpp",
+  "signature": "// Finds the first free record at DAT_008165d8 (stride 0x22e, starting index 8),\n// zeroes 0x45c-byte body, flags DAT_00814350 with 0x1400 (or | 0x800 if param_1 != 0x1a),\n// seeds owner, fitness, timer, derives stats/value fields from DAT_00723b14/18/1c,\n// sets positions to param_2 * 1000000 and param_3 * 1000000, and calls FUN_00413080().\n// Returns the record index, or -1 when all slots are occupied.\nint FUN_004154f0(int param_1, int param_2, int param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4154f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00415730",
+  "name": "FUN_00415730",
+  "source": "src/mass_0005.cpp",
+  "signature": "//   else creates two FUN_004154f0(0x1a, ..., ...) entries and stores\n//   iVar4*0x32+1 at DAT_00814354 + iVar2*0x45c.\nvoid FUN_00415730(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x415730.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004157c0",
+  "name": "FUN_004157c0",
+  "source": "src/mass_0005.cpp",
+  "signature": "void FUN_004157c0(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4157c0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00415860",
+  "name": "FUN_00415860",
+  "source": "src/mass_0005.cpp",
+  "signature": "// 0x414d00 \u2014 observed shape: int(int param_1)\n// Selects the nearest eligible trade/quest candidate for player param_1.\n// The routine zeroes a 0x700-byte scratch block, tallies per-island counters\n// in asStack_6fc from DAT_00816618/DAT_0081660e (stride 0x22e), asks\n// FUN_004135d0() for a free record, then scans DAT_00860b70 (stride 8) for\n// entries with bit 1 set, not owned by param_1, and nonnegative. For each it\n// computes a weighted distance from the player's coordinates\n// (DAT_00860b68/DAT_00860b6c) by five sector steps, doubling/halving by the\n// DAT_0085a168 relation flag, and keeps the best. On a hit it stores the\n// selected word from DAT_00722988 (+ (flag + local_71c)*4) into DAT_008142f8,\n// writes the candidate id at DAT_00814338, and calls FUN_00413430(iVar4).\n// Returns -1 when nothing matched, and -1 when the chosen slot is empty.\nint FUN_00414d00(int param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x415860.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004192f0",
+  "name": "FUN_004192f0",
+  "source": "src/mass_0005.cpp",
+  "signature": "uint32_t FUN_004192f0(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4192f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004199e0",
+  "name": "FUN_004199e0",
+  "source": "src/mass_0005.cpp",
+  "signature": "void FUN_004199e0(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4199e0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00419a20",
+  "name": "FUN_00419a20",
+  "source": "src/mass_0005.cpp",
+  "signature": "// 0x414d00 \u2014 observed shape: int(int param_1)\n// Selects the nearest eligible trade/quest candidate for player param_1.\n// The routine zeroes a 0x700-byte scratch block, tallies per-island counters\n// in asStack_6fc from DAT_00816618/DAT_0081660e (stride 0x22e), asks\n// FUN_004135d0() for a free record, then scans DAT_00860b70 (stride 8) for\n// entries with bit 1 set, not owned by param_1, and nonnegative. For each it\n// computes a weighted distance from the player's coordinates\n// (DAT_00860b68/DAT_00860b6c) by five sector steps, doubling/halving by the\n// DAT_0085a168 relation flag, and keeps the best. On a hit it stores the\n// selected word from DAT_00722988 (+ (flag + local_71c)*4) into DAT_008142f8,\n// writes the candidate id at DAT_00814338, and calls FUN_00413430(iVar4).\n// Returns -1 when nothing matched, and -1 when the chosen slot is empty.\nint FUN_00414d00(int param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x419a20.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00419a60",
+  "name": "FUN_00419a60",
+  "source": "src/mass_0005.cpp",
+  "signature": "uint32_t FUN_00419a60(void *self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x419a60.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00419ac0",
+  "name": "FUN_00419ac0",
+  "source": "src/mass_0005.cpp",
+  "signature": "void FUN_00419ac0(void *self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x419ac0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00419c20",
+  "name": "FUN_00419c20",
+  "source": "src/mass_0005.cpp",
+  "signature": "// with FUN_004c0cf0 (Cutlass_01_belt, Cutlass_02, Cutlass_03, sword_dummy).\n// Any successful detach sets DAT_008c9df4.\nvoid FUN_00419c20(void *self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x419c20.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00419cc0",
+  "name": "FUN_00419cc0",
+  "source": "src/mass_0005.cpp",
+  "signature": "// FUN_004baa30 (tav_s_iface.nif / tav_e_iface.nif / tav_f_iface.nif /\n// tav_d_iface.nif), returning its handle. Returns 0 when allocation fails.\nuint32_t FUN_00419cc0(void *self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x419cc0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00419de0",
+  "name": "FUN_00419de0",
+  "source": "src/mass_0005.cpp",
+  "signature": "void FUN_00419de0(void *self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x419de0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00419e90",
+  "name": "FUN_00419e90",
+  "source": "src/mass_0005.cpp",
+  "signature": "// 0x414d00 \u2014 observed shape: int(int param_1)\n// Selects the nearest eligible trade/quest candidate for player param_1.\n// The routine zeroes a 0x700-byte scratch block, tallies per-island counters\n// in asStack_6fc from DAT_00816618/DAT_0081660e (stride 0x22e), asks\n// FUN_004135d0() for a free record, then scans DAT_00860b70 (stride 8) for\n// entries with bit 1 set, not owned by param_1, and nonnegative. For each it\n// computes a weighted distance from the player's coordinates\n// (DAT_00860b68/DAT_00860b6c) by five sector steps, doubling/halving by the\n// DAT_0085a168 relation flag, and keeps the best. On a hit it stores the\n// selected word from DAT_00722988 (+ (flag + local_71c)*4) into DAT_008142f8,\n// writes the candidate id at DAT_00814338, and calls FUN_00413430(iVar4).\n// Returns -1 when nothing matched, and -1 when the chosen slot is empty.\nint FUN_00414d00(int param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x419e90.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00419ec0",
+  "name": "FUN_00419ec0",
+  "source": "src/mass_0005.cpp",
+  "signature": "// 0x414d00 \u2014 observed shape: int(int param_1)\n// Selects the nearest eligible trade/quest candidate for player param_1.\n// The routine zeroes a 0x700-byte scratch block, tallies per-island counters\n// in asStack_6fc from DAT_00816618/DAT_0081660e (stride 0x22e), asks\n// FUN_004135d0() for a free record, then scans DAT_00860b70 (stride 8) for\n// entries with bit 1 set, not owned by param_1, and nonnegative. For each it\n// computes a weighted distance from the player's coordinates\n// (DAT_00860b68/DAT_00860b6c) by five sector steps, doubling/halving by the\n// DAT_0085a168 relation flag, and keeps the best. On a hit it stores the\n// selected word from DAT_00722988 (+ (flag + local_71c)*4) into DAT_008142f8,\n// writes the candidate id at DAT_00814338, and calls FUN_00413430(iVar4).\n// Returns -1 when nothing matched, and -1 when the chosen slot is empty.\nint FUN_00414d00(int param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x419ec0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0041a000",
+  "name": "FUN_0041a000",
+  "source": "src/mass_0005.cpp",
+  "signature": "// Emits \"shadow_%02d\", evaluates FUN_004c1000(&DAT_008cacd0) into three\n// scratch values, then copies those values into the +0x78/+0x7c/+0x80\n// vector triple of the two receiver meshes and of param_2/param_3's first\n// three entries (skipping null entries).\nvoid FUN_0041a000(void *self, uint32_t param_1, int *param_2, int *param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x41a000.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0041a110",
+  "name": "FUN_0041a110",
+  "source": "src/mass_0005.cpp",
+  "signature": "// Maps DAT_0072ccd8 (1/8/7/2/6/4/9) onto an OR-mask (0x10000, 0x80000,\n// 0x400000, 0x20000, 0x800000, 0x100000, 0x200000) applied to the receiver,\n// then forwards FUN_00473b70(mask, param_1, 3). Other values pass the\n// receiver through unchanged.\nvoid FUN_0041a110(void *self, uint32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x41a110.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

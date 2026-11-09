@@ -34,7 +34,7 @@ innoextract -q -d /tmp/pirates-extract \
 
 Not extracted: `Assets/Pak0.FPK`–`Pak8.FPK` (about 808 MiB), four Bink movies (about 88 MiB), `Assets/lang0.FPK` (371 KiB), and GOG wrapper files (`goggame-1445250653.dll`, `.hashdb`, `.ico`, `.info`). The asset payload is outside the decompilation target and would exceed the per-experiment output bound; it remains in the installer.
 
-The installer is a 2007-era GOG repack with Inno Setup metadata. The executable's version resource still reports the Firaxis 2004 product and build (below). Equivalence to a retail CD 1.0.2.0 build was not tested; the GOG wrapper files were not extracted and may have patched the executable.
+The executable is a 2007 build (PE timestamp 2007-02-16) repacked by GOG; the installer's Inno Setup metadata is newer than the game and is not evidence of the source build date. The executable's version resource still reports the Firaxis 2004 product and build (below). Equivalence to a retail CD 1.0.2.0 build was not tested; the GOG wrapper files were not extracted and may have patched the executable.
 
 ## Executable identity
 
@@ -106,7 +106,7 @@ The image contains Gamebryo 10.1.0.0:
 
 The engine is statically linked: these are functions inside `Pirates!.exe`, not a separate DLL. That is a large part of the 2.88 MB of code.
 
-Only four `.?AV` RTTI strings exist (`type_info`, `exception`, `logic_error`, `length_error`). Game/engine class RTTI is not available, so names cannot be recovered from RTTI. ATL is present (`ATL::CSimpleArray`, `CAtlBaseModule`), and 12 `Catch@…` exception funclets confirm C++ exceptions.
+Only four `.?AV` RTTI strings exist (`type_info`, `exception`, `logic_error`, `length_error`). Game/engine class RTTI is not available, so names cannot be recovered from RTTI. ATL is present (`ATL::CSimpleArray`, `CAtlBaseModule`), and 179 compiler exception funclets (12 `Catch@…` handlers plus 167 `Unwind@…` unwinders) confirm C++ exceptions.
 
 ## Function inventory
 
@@ -117,16 +117,19 @@ Built from a Ghidra 12.2 session with REA (`list_procedures`), 8,522 rows:
 | Rows (including imports) | 8,522 |
 | External/import rows | 341 |
 | Internal functions | 8,181 |
-| Placeholder names | 7,932 |
+| Placeholder names | 8,099 |
 | `FUN_` names | 7,840 |
 | `thunk_` names | 80 |
 | `Catch@` names | 12 |
-| Non-placeholder names | 249 |
+| `Unwind@` names | 167 |
+| Other named functions | 82 |
 | Functions flagged as thunks | 140 |
+| EH funclets (Catch + Unwind) | 179 |
+| Matchable source functions | 7,862 |
 | Sum of spans | 2,879,488 bytes |
 | Span min / median / max | 3 / 128 / 40,256 bytes |
 
-The entry point is the named local function `entry` at `0x5f09ac` (span 512 bytes). The largest span is `FUN_0041b1d0` (40,256 bytes). The 249 named functions are mostly import thunks, CRT glue, and ATL; game and engine code is almost entirely placeholder-named.
+The entry point is the named local function `entry` at `0x5f09ac` (span 512 bytes). The largest span is `FUN_0041b1d0` (40,256 bytes). Named symbols are almost entirely import/stub labels, CRT/ATL glue, and compiler-generated thunk/EH labels; game and engine code is almost entirely placeholder-named.
 
 Spans are derived from the next function entry, not from Ghidra body lengths, and can include alignment padding. The matcher trims trailing padding on both sides and reports the trimmed counts. The inventory is committed as `build/functions.json` and is reproducible with `tools/build_inventory.py`.
 

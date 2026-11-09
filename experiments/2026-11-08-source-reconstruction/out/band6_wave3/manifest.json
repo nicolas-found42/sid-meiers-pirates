@@ -1,0 +1,52 @@
+[
+ {
+  "address": "0x005dbe30",
+  "name": "Band6Wave3_Get_5dbe30",
+  "source": "src/band6_wave3_getters.cpp",
+  "signature": "int __thiscall Band6Wave3_Get_5dbe30(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbe30.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x14 unknown."
+ },
+ {
+  "address": "0x005ece60",
+  "name": "Band6Wave3_Get_5ece60",
+  "source": "src/band6_wave3_getters.cpp",
+  "signature": "int __thiscall Band6Wave3_Get_5ece60(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5ece60.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x00 unknown."
+ },
+ {
+  "address": "0x005ece70",
+  "name": "Band6Wave3_Get_5ece70",
+  "source": "src/band6_wave3_getters.cpp",
+  "signature": "unsigned char __thiscall Band6Wave3_Get_5ece70(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5ece70.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x10 unknown."
+ },
+ {
+  "address": "0x005f0f28",
+  "name": "Band6Wave3_Stub_5f0f28",
+  "source": "src/band6_wave3_getters.cpp",
+  "signature": "int __thiscall Band6Wave3_Stub_5f0f28(void* self)",
+  "confidence": "low",
+  "evidence": "analysis/pseudocode/functions/0x5f0f28.c",
+  "status": "unverified",
+  "unknowns": "Calling convention unverified; observed body returns constant 0."
+ },
+ {
+  "address": "0x005f6015",
+  "name": "Band6Wave3_Stub_5f6015",
+  "source": "src/band6_wave3_getters.cpp",
+  "signature": "void __thiscall Band6Wave3_Stub_5f6015(void* self)",
+  "confidence": "low",
+  "evidence": "analysis/pseudocode/functions/0x5f6015.c",
+  "status": "unverified",
+  "unknowns": "Calling convention unverified; observed body is void return."
+ }
+]

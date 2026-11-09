@@ -64,6 +64,13 @@ Pirates is smaller in function count but proportionally denser in bytes (median 
 
 A static recompilation is the alternative if the immediate goal is a playable native build. It would not produce the matching source, and it would still require a clean split of code and data from a 3.3 MB image plus 900 MB of assets. For this project the chosen path is the matching decompilation, because it gives a deterministic, verifiable target and preserves the option of a port later.
 
+## Requested sources
+
+- YouTube, "How I Recompiled Fallout: New Vegas" — https://www.youtube.com/watch?v=Ff8su9nY4os — the matching-decomp account; the 70,611/11,537,067-byte and three-week/38-billion-token figures are the video's claims.
+- `dougchansan/pkmn-colosseum` — https://github.com/dougchansan/pkmn-colosseum — GameCube matching decomp; 8,677 functions / 2,504,940 bytes.
+- r/decomps, Super Mario All-Stars PC/Android — https://www.reddit.com/r/decomps/comments/1xo3yi8/super_mario_all_stars_pcandroid_coming_tomorrow/ — native port with a custom SNES core, not matching source.
+- r/decomps, Breath of the Wild native on a 2010 PC — https://www.reddit.com/r/decomps/comments/1xr1dx8/breath_of_the_wild_running_natively_on_a_2010/ — static recompilation (LAS Recomp), with an AMD K10 fork.
+
 ## Legal and distribution boundaries
 
 Every reviewed project requires the user's own copy of the game and ships no game data. The FNV README is explicit that building the decomp produces object files, not a game. This project follows the same rule: the repository contains addresses, names, source, and tools; the image and assets stay outside the repository, and no built game is distributed.

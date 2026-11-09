@@ -67,8 +67,16 @@ def build(rows: list[dict], pe: PE, image_path: str) -> dict:
             function["name"].startswith("FUN_")
             or function["name"].startswith("thunk_")
             or function["name"].startswith("Catch@")
+            or function["name"].startswith("Unwind@")
         )
+        if function["thunk"]:
+            function["category"] = "thunk"
+        elif function["name"].startswith(("Catch@", "Unwind@")):
+            function["category"] = "eh-funclet"
+        else:
+            function["category"] = "function"
 
+    matchable = [f for f in functions if f["category"] == "function"]
     return {
         "schema": 1,
         "image": {
@@ -84,6 +92,9 @@ def build(rows: list[dict], pe: PE, image_path: str) -> dict:
             "functions": len(functions),
             "placeholders": sum(1 for f in functions if f["placeholder"]),
             "thunks": sum(1 for f in functions if f["thunk"]),
+            "eh_funclets": sum(1 for f in functions if f["category"] == "eh-funclet"),
+            "matchable": len(matchable),
+            "matchable_text_bytes": sum(f["span"] for f in matchable),
             "text_bytes": sum(f["span"] for f in functions),
             "text_span": text_end - text_start,
         },
@@ -94,6 +105,7 @@ def build(rows: list[dict], pe: PE, image_path: str) -> dict:
                 "span": f["span"],
                 "thunk": f["thunk"],
                 "placeholder": f["placeholder"],
+                "category": f["category"],
             }
             for f in functions
         ],
@@ -108,7 +120,10 @@ def print_stats(inventory: dict) -> None:
     print(f"functions        {counts['functions']}")
     print(f"placeholders     {counts['placeholders']}")
     print(f"thunks           {counts['thunks']}")
+    print(f"eh funclets      {counts['eh_funclets']}")
+    print(f"matchable        {counts['matchable']}")
     print(f"inventoried text {counts['text_bytes']} bytes")
+    print(f"matchable text   {counts['matchable_text_bytes']} bytes")
     print(f".text span       {counts['text_span']} bytes")
     print(f"span min/median  {min(spans)} / {median} bytes")
     print(f"span max         {max(spans)} bytes")

@@ -1,0 +1,54 @@
+[
+ {
+  "address": "0x004cd150",
+  "name": "FUN_004cd150",
+  "source": "src/band2_leaves.cpp",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x004cd150.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "EAX/ECX register entry and original class unknown"
+  ]
+ },
+ {
+  "address": "0x004d0880",
+  "name": "FUN_004d0880",
+  "source": "src/band2_leaves.cpp",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x004d0880.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "EAX/ECX register entry and original class unknown"
+  ]
+ },
+ {
+  "address": "0x004d4600",
+  "name": "FUN_004d4600",
+  "source": "src/band2_leaves.cpp",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x004d4600.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "EAX/ECX register entry and original class unknown"
+  ]
+ },
+ {
+  "address": "0x004d4bc0",
+  "name": "FUN_004d4bc0",
+  "source": "src/band2_leaves.cpp",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x004d4bc0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "EAX/ECX register entry and original class unknown"
+  ]
+ }
+]

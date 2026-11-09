@@ -1,0 +1,267 @@
+[
+ {
+  "address": "0x0054ae10",
+  "name": "FUN_0054ae10",
+  "source": "src/refcount.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054ae40",
+  "name": "FUN_0054ae40",
+  "source": "src/refcount.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054b420",
+  "name": "FUN_0054b440",
+  "source": "src/deleting_dtors.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054b6a0",
+  "name": "FUN_0054b650",
+  "source": "src/deleting_dtors.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054b990",
+  "name": "FUN_0054b990",
+  "source": "src/vtable_init.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054bcb0",
+  "name": "FUN_0054bcb0",
+  "source": "src/slot_access.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054bcd0",
+  "name": "FUN_0054bcd0",
+  "source": "src/slot_access.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054bd10",
+  "name": "FUN_00533c78",
+  "source": "src/enum_fog.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054bd90",
+  "name": "FUN_00540c50",
+  "source": "src/factory_bd90.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054c2c0",
+  "name": "FUN_00539b70",
+  "source": "src/deleting_dtors.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054c3e0",
+  "name": "FUN_0054c3e0",
+  "source": "src/slot_access.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0054c400",
+  "name": "FUN_0054c400",
+  "source": "src/slot_access.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x005562a0",
+  "name": "FUN_005562a0",
+  "source": "src/vtable_init.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557b10",
+  "name": "FUN_00533c78",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557b50",
+  "name": "FUN_00557b50",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557bb0",
+  "name": "FUN_00557bb0",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557bf0",
+  "name": "FUN_00557bf0",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557c30",
+  "name": "FUN_00557c30",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557c70",
+  "name": "FUN_00557c70",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557cb0",
+  "name": "FUN_00557cb0",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557cf0",
+  "name": "FUN_00557cf0",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557d40",
+  "name": "FUN_00557d40",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557d80",
+  "name": "FUN_00557d80",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557e10",
+  "name": "FUN_00557e10",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00557ff0",
+  "name": "FUN_00557ff0",
+  "source": "src/property_fmt.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x005651a0",
+  "name": "FUN_005651a0",
+  "source": "src/keyed_insert.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x005713c0",
+  "name": "FUN_005bd960",
+  "source": "src/kfm_helpers.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00571a60",
+  "name": "FUN_00571a60",
+  "source": "src/kfm_helpers.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00571aa0",
+  "name": "FUN_00571aa0",
+  "source": "src/kfm_helpers.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00571ae0",
+  "name": "FUN_00571ae0",
+  "source": "src/kfm_helpers.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00572020",
+  "name": "FUN_005bd960",
+  "source": "src/kfm_helpers.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x005832a0",
+  "name": "FUN_00599230",
+  "source": "src/collision_kernels.cpp",
+  "status": "unverified",
+  "signature": "void __thiscall(void* self, const unsigned* src)"
+ },
+ {
+  "address": "0x00585940",
+  "name": "FUN_00585940",
+  "source": "src/collision_kernels.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x005859a0",
+  "name": "FUN_00491640",
+  "source": "src/collision_kernels.cpp",
+  "status": "unverified",
+  "signature": "void __thiscall(void* self, float* out, int s1, int s2, int s3)"
+ },
+ {
+  "address": "0x00589b60",
+  "name": "FUN_00589b60",
+  "source": "src/collision_kernels.cpp",
+  "status": "unverified",
+  "signature": "void __thiscall(void* self, const float* p1, const float* p2, const float* p3, const float* p4, const float* p5)"
+ },
+ {
+  "address": "0x0058b8e0",
+  "name": "FUN_0058b8e0",
+  "source": "src/collision_kernels.cpp",
+  "status": "unverified",
+  "signature": "void __thiscall(void* self, const unsigned* src)"
+ },
+ {
+  "address": "0x0058eb90",
+  "name": "FUN_00533c78",
+  "source": "src/collision_enums.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0058ec00",
+  "name": "FUN_00599230",
+  "source": "src/collision_kernels.cpp",
+  "status": "unverified",
+  "signature": "int __thiscall(void* self, int a, int b)"
+ },
+ {
+  "address": "0x0058ec30",
+  "name": "FUN_0058ec30",
+  "source": "src/collision_enums.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x0058ed10",
+  "name": "FUN_0058ed10",
+  "source": "src/collision_enums.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00591300",
+  "name": "FUN_00533c78",
+  "source": "src/factory_forwarders.cpp",
+  "status": "unverified"
+ },
+ {
+  "address": "0x00591380",
+  "name": "FUN_00533c78",
+  "source": "src/factory_forwarders.cpp",
+  "status": "unverified",
+  "signature": "void __thiscall(void* self, void* a1, void* a2, void* a3, void* a4)"
+ },
+ {
+  "address": "0x005913a0",
+  "name": "FUN_005913a0",
+  "source": "src/factory_forwarders.cpp",
+  "status": "unverified",
+  "signature": "void __thiscall(void* self, void* a1, void* a2, void* a3, void* a4)"
+ }
+]

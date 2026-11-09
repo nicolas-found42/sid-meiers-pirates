@@ -1,0 +1,6 @@
+=== sample of hello32 run (verbatim) ===
+00c4:err:ntoskrnl:ZwLoadDriver failed to create driver L"\\Registry\\Machine\\System\\CurrentControlSet\\Services\\winebth": c00000e5
+0044:fixme:service:scmdatabase_autostart_services Auto-start service L"winebth" failed to start: 1359
+hello from i386 PE
+0024:fixme:thread:set_native_thread_name setting other thread name not supported
+exit=0

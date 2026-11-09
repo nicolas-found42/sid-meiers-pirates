@@ -1,0 +1,52 @@
+[
+ {
+  "address": "0x005b4100",
+  "name": "FUN_005b4100",
+  "source": "src/band5_wave3.cpp",
+  "signature": "void __thiscall(void* self, uint8_t flags)",
+  "confidence": "high",
+  "evidence": "corpus analysis/pseudocode/functions/0x5b4100.c only; FUN_005b6ee0(); if ((param_1 & 1) != 0) operator_delete(in_ECX).",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "in_ECX is thiscall self; param_1 is flags byte.",
+   "FUN_005b6ee0 signature inferred as void(self)."
+  ]
+ },
+ {
+  "address": "0x005b4170",
+  "name": "FUN_005b4170",
+  "source": "src/band5_wave3.cpp",
+  "signature": "void __cdecl(uint32_t param_1)",
+  "confidence": "high",
+  "evidence": "corpus analysis/pseudocode/functions/0x5b4170.c only; FUN_005bbf20(param_1); FUN_00545d20();",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "FUN_005bbf20/FUN_00545d20 signatures inferred from call sites; no stack evidence beyond param_1."
+  ]
+ },
+ {
+  "address": "0x005b4720",
+  "name": "FUN_005b4720",
+  "source": "src/band5_wave3.cpp",
+  "signature": "void __thiscall(void* self, uint8_t flags)",
+  "confidence": "high",
+  "evidence": "corpus analysis/pseudocode/functions/0x5b4720.c only; FUN_005b46d0(); if ((param_1 & 1) != 0) operator_delete(in_ECX).",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "in_ECX is thiscall self; param_1 is flags byte.",
+   "FUN_005b46d0 signature inferred as void(self)."
+  ]
+ }
+]

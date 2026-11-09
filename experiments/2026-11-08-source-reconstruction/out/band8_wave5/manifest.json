@@ -1,0 +1,202 @@
+[
+ {
+  "address": "0x006bbe40",
+  "name": "FUN_006BBE40",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bbe40(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bbe40.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; FUN_00527040 arity opaque; atexit arg is observed FUN_006bf880 label"
+ },
+ {
+  "address": "0x006916d0",
+  "name": "FUN_006916D0",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "void FUN_006916d0(int param_1)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6916d0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; double-indirect at +0x1b8 layout/class unknown"
+ },
+ {
+  "address": "0x006ae3b0",
+  "name": "FUN_006AE3B0",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "void FUN_006ae3b0(unsigned int param_1, int param_2)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6ae3b0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; param_1 unused in body; fclose FILE* at param_2+0xc"
+ },
+ {
+  "address": "0x006a8cb0",
+  "name": "FUN_006A8CB0",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "void FUN_006a8cb0(int param_1)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6a8cb0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; FUN_006a8c60 arity opaque"
+ },
+ {
+  "address": "0x006beda0",
+  "name": "FUN_006BEDA0",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "void FUN_006beda0(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6beda0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; global slot types inferred"
+ },
+ {
+  "address": "0x006bf8f0",
+  "name": "FUN_006BF8F0",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bf8f0(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf8f0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; FUN_00530090 arity opaque; DAT_008ed540 type void*"
+ },
+ {
+  "address": "0x006bef90",
+  "name": "FUN_006BEF90",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bef90(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bef90.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; global slot/layout inferred"
+ },
+ {
+  "address": "0x006bf650",
+  "name": "FUN_006BF650",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bf650(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf650.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; global slot/layout inferred"
+ },
+ {
+  "address": "0x006bf6c0",
+  "name": "FUN_006BF6C0",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bf6c0(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf6c0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; global slot/layout inferred"
+ },
+ {
+  "address": "0x006bf780",
+  "name": "FUN_006BF780",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bf780(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf780.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; global slot/layout inferred"
+ },
+ {
+  "address": "0x006bf7a0",
+  "name": "FUN_006BF7A0",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bf7a0(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf7a0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; global slot/layout inferred"
+ },
+ {
+  "address": "0x006bef20",
+  "name": "FUN_006BEF20",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bef20(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bef20.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; operator_delete arg is DAT_00726ac4 (label in pseudocode)"
+ },
+ {
+  "address": "0x006bf730",
+  "name": "FUN_006BF730",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bf730(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf730.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; operator_delete arg is DAT_00727044"
+ },
+ {
+  "address": "0x006bf830",
+  "name": "FUN_006BF830",
+  "source": "src/band8_wave5_teardown.cpp",
+  "signature": "void FUN_006bf830(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf830.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; operator_delete arg is DAT_0072706c"
+ },
+ {
+  "address": "0x006923d0",
+  "name": "FUN_006923D0",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "int FUN_006923d0(int param_1, int param_2)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6923d0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; arithmetic shape observed verbatim"
+ },
+ {
+  "address": "0x0069359e",
+  "name": "FUN_0069359E",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "unsigned int FUN_0069359e(const unsigned char* param_1)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x69359e.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; CONCAT encoding expanded to byte shifts preserving order"
+ },
+ {
+  "address": "0x006ab890",
+  "name": "FUN_006AB890",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "void FUN_006ab890(unsigned int param_1, unsigned int param_2, unsigned int param_3, unsigned int* param_4)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6ab890.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; params 1-2 unused"
+ },
+ {
+  "address": "0x006b5090",
+  "name": "FUN_006B5090",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "int FUN_006b5090(int* param_1, unsigned int param_2)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6b5090.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; vft+8 callee signature inferred; param_1 layout unknown"
+ },
+ {
+  "address": "0x006a3cfb",
+  "name": "FUN_006A3CFB",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "void FUN_006a3cfb(unsigned char param_1, void* in_ecx)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6a3cfb.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; in_ECX this-pointer layout unknown; guarded delete"
+ },
+ {
+  "address": "0x006b3380",
+  "name": "FUN_006B3380",
+  "source": "src/band8_wave5_leaves.cpp",
+  "signature": "void FUN_006b3380(unsigned char param_1, void* in_ecx)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6b3380.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown; in_ECX this-pointer layout unknown; guarded delete"
+ }
+]

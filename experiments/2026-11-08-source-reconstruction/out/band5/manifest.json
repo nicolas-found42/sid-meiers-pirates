@@ -1,0 +1,651 @@
+[
+  {
+    "address": "0x00591460",
+    "name": "Dispatch5_6x6_728b00",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(void*,void*,void*,void*,void*)",
+    "confidence": "high",
+    "evidence": "corpus analysis/pseudocode/functions/0x591460.c only (no REA call this turn); triage fallback 'game' low-confidence does not apply \u2014 behaviour read from corpus.",
+    "corpus": "analysis/pseudocode/functions/0x591460.c",
+    "span": 128,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Two virt-slot-0x0c indexes, 6x6 table at DAT_00728b00, null fallback swaps args."
+    ]
+  },
+  {
+    "address": "0x005914e0",
+    "name": "Dispatch10_6x6_728b04",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(void* x10)",
+    "confidence": "high",
+    "evidence": "corpus 0x5914e0.c",
+    "corpus": "analysis/pseudocode/functions/0x5914e0.c",
+    "span": 176,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "10-arg twin over DAT_00728b04; last two args swapped on fallback path."
+    ]
+  },
+  {
+    "address": "0x00591590",
+    "name": "Dispatch7_728b08",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(void* x7)",
+    "confidence": "high",
+    "evidence": "corpus 0x591590.c + deep dossier 0x00591590.md (REA evidence IDs in that file).",
+    "corpus": "analysis/pseudocode/functions/0x591590.c",
+    "span": 64,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Single-index 7-arg tail call; caller-cleans 7 args; table DAT_00728b08."
+    ]
+  },
+  {
+    "address": "0x005915d0",
+    "name": "Dispatch12_728b0c",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(void* x12)",
+    "confidence": "high",
+    "evidence": "corpus 0x5915d0.c",
+    "corpus": "analysis/pseudocode/functions/0x5915d0.c",
+    "span": 96,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "12-arg single-index dispatch over DAT_00728b0c."
+    ]
+  },
+  {
+    "address": "0x00591630",
+    "name": "CallFn_728b14",
+    "source": "src/band5.cpp",
+    "signature": "void* __cdecl()",
+    "confidence": "medium",
+    "evidence": "corpus 0x591630.c",
+    "corpus": "analysis/pseudocode/functions/0x591630.c",
+    "span": 16,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Null-guarded indirect call; decompiler notes jumptable ambiguity."
+    ]
+  },
+  {
+    "address": "0x00591640",
+    "name": "CallFn3_728b10",
+    "source": "src/band5.cpp",
+    "signature": "void* __cdecl(void*)",
+    "confidence": "medium",
+    "evidence": "corpus 0x591640.c",
+    "corpus": "analysis/pseudocode/functions/0x591640.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Null-guarded call fn(*(obj+0xc), obj, *(obj+0xc))."
+    ]
+  },
+  {
+    "address": "0x005be900",
+    "name": "SetGlobal_717c64",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5be900.c",
+    "corpus": "analysis/pseudocode/functions/0x5be900.c",
+    "span": 16,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Stores arg to 0x00717c64."
+    ]
+  },
+  {
+    "address": "0x005be910",
+    "name": "SetGlobal_717c68",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5be910.c",
+    "corpus": "analysis/pseudocode/functions/0x5be910.c",
+    "span": 16,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Stores arg to 0x00717c68."
+    ]
+  },
+  {
+    "address": "0x005be920",
+    "name": "SetGlobal_717c6c",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5be920.c",
+    "corpus": "analysis/pseudocode/functions/0x5be920.c",
+    "span": 16,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Stores arg to 0x00717c6c."
+    ]
+  },
+  {
+    "address": "0x005bfa10",
+    "name": "GetGlobal_728d80",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __cdecl()",
+    "confidence": "high",
+    "evidence": "corpus 0x5bfa10.c",
+    "corpus": "analysis/pseudocode/functions/0x5bfa10.c",
+    "span": 16,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Returns 0x00728d80."
+    ]
+  },
+  {
+    "address": "0x005bd940",
+    "name": "GetGlobal_728cf4",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __cdecl()",
+    "confidence": "high",
+    "evidence": "corpus 0x5bd940.c",
+    "corpus": "analysis/pseudocode/functions/0x5bd940.c",
+    "span": 32,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Returns 0x00728cf4."
+    ]
+  },
+  {
+    "address": "0x005be890",
+    "name": "GetGlobal_728cfc",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __cdecl()",
+    "confidence": "high",
+    "evidence": "corpus 0x5be890.c",
+    "corpus": "analysis/pseudocode/functions/0x5be890.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Returns 0x00728cfc."
+    ]
+  },
+  {
+    "address": "0x005d7d60",
+    "name": "SetGlobal_728eb4",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5d7d60.c",
+    "corpus": "analysis/pseudocode/functions/0x5d7d60.c",
+    "span": 16,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Stores arg to 0x00728eb4."
+    ]
+  },
+  {
+    "address": "0x005c0650",
+    "name": "D3D9LoadLibrary_Lazy",
+    "source": "src/band5.cpp",
+    "signature": "int __cdecl()",
+    "confidence": "high",
+    "evidence": "corpus 0x5c0650.c + triage platform strings D3D9.DLL/Direct3DCreate9.",
+    "corpus": "analysis/pseudocode/functions/0x5c0650.c",
+    "span": 160,
+    "triage_category": "platform",
+    "triage_strings": [
+      "D3D9.DLL",
+      "Direct3DCreate9"
+    ],
+    "triage_confidence": "medium",
+    "status": "unverified",
+    "unknowns": [
+      "Lazy LoadLibraryA(D3D9.DLL)+GetProcAddress(Direct3DCreate9), calls fn(0x20)."
+    ]
+  },
+  {
+    "address": "0x005c5ec0",
+    "name": "D3D9DeviceCreateFactory",
+    "source": "src/band5.cpp",
+    "signature": "void* __cdecl(13 params)",
+    "confidence": "low",
+    "evidence": "corpus 0x5c5ec0.c + triage platform strings (4x Creation failed: ...). Large body with unresolved thiscall/vtable traffic.",
+    "corpus": "analysis/pseudocode/functions/0x5c5ec0.c",
+    "span": 1520,
+    "triage_category": "platform",
+    "triage_strings": [
+      "Creation failed: Could not initialize DirectX9",
+      "Creation failed: Invalid 3D device type",
+      "Creation failed: Invalid Adapter",
+      "Creation failed: Requested device not valid"
+    ],
+    "triage_confidence": "medium",
+    "status": "unverified",
+    "unknowns": [
+      "Calls FUN_005c0650, allocates via FUN_00533c78, validates device/adapter, delegates to FUN_005c06f0. Candidate is semantic-only, NOT byte-faithful."
+    ]
+  },
+  {
+    "address": "0x005bfe80",
+    "name": "MapIdentity_0_16",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __cdecl(unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5bfe80.c",
+    "corpus": "analysis/pseudocode/functions/0x5bfe80.c",
+    "span": 192,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Returns input for 2..16 else 0."
+    ]
+  },
+  {
+    "address": "0x005bff40",
+    "name": "MapPow2_0_4",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __cdecl(unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5bff40.c",
+    "corpus": "analysis/pseudocode/functions/0x5bff40.c",
+    "span": 80,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "0->0x80000000,1->1,2->2,3->4,4->8 else 0."
+    ]
+  },
+  {
+    "address": "0x005d8450",
+    "name": "HrName_D3DERR",
+    "source": "src/band5.cpp",
+    "signature": "const char* __cdecl(unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5d8450.c \u2014 full 24-case HRESULT->name table incl UNKNOWN! fallback.",
+    "corpus": "analysis/pseudocode/functions/0x5d8450.c",
+    "span": 416,
+    "triage_category": "game",
+    "triage_strings": [
+      "D3DERR_CONFLICTINGRENDERSTATE",
+      "D3DERR_CONFLICTINGTEXTUREFILTER",
+      "D3DERR_CONFLICTINGTEXTUREPALETTE",
+      "D3DERR_DEVICELOST",
+      "D3DERR_DEVICENOTRESET"
+    ],
+    "triage_confidence": "medium",
+    "status": "unverified",
+    "unknowns": [
+      "Includes E_INVALIDARG/E_FAIL/E_OUTOFMEMORY and D3DERR_* device/texture cases."
+    ]
+  },
+  {
+    "address": "0x005cb9d0",
+    "name": "FmtName_D3DFMT",
+    "source": "src/band5.cpp",
+    "signature": "const char* __cdecl(int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5cb9d0.c \u2014 full 60-case D3DFMT value->name table incl FourCC DXT/YUY2/UYVY.",
+    "corpus": "analysis/pseudocode/functions/0x5cb9d0.c",
+    "span": 784,
+    "triage_category": "game",
+    "triage_strings": [
+      "D3DFMT_A16B16G16R16",
+      "D3DFMT_A16B16G16R16F",
+      "D3DFMT_A1R5G5B5",
+      "D3DFMT_A2B10G10R10",
+      "D3DFMT_A2R10G10B10"
+    ],
+    "triage_confidence": "medium",
+    "status": "unverified",
+    "unknowns": [
+      "UNKNOWN fallback."
+    ]
+  },
+  {
+    "address": "0x005da3a0",
+    "name": "RefCacheSync_Return38",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __thiscall(void*)",
+    "confidence": "high",
+    "evidence": "corpus 0x5da3a0.c + deep dossier (REA evidence IDs in that file).",
+    "corpus": "analysis/pseudocode/functions/0x5da3a0.c",
+    "span": 64,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Clears +0x34, resyncs cached +0x3c vs *(*(+0x44)) with refcount at +0x68, destroy via 0x5bf480, returns +0x38."
+    ]
+  },
+  {
+    "address": "0x005da3e0",
+    "name": "RefCacheAdvance",
+    "source": "src/band5.cpp",
+    "signature": "int __thiscall(void*)",
+    "confidence": "high",
+    "evidence": "corpus 0x5da3e0.c",
+    "corpus": "analysis/pseudocode/functions/0x5da3e0.c",
+    "span": 96,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Same resync plus +0x34++ index advance and vt[3] tick; returns +0x38-+0x34."
+    ]
+  },
+  {
+    "address": "0x005bf480",
+    "name": "RefMultiRelease_Clear",
+    "source": "src/band5.cpp",
+    "signature": "void __thiscall(void*)",
+    "confidence": "medium",
+    "evidence": "corpus 0x5bf480.c",
+    "corpus": "analysis/pseudocode/functions/0x5bf480.c",
+    "span": 224,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Releases slots +0x3c/+0x4c/+0x50/+0x60, calls 0x5ca660, frees +0x40..+0x5c, calls 0x5bf050/0x5bf090."
+    ]
+  },
+  {
+    "address": "0x005bf670",
+    "name": "PoolPop_RefTouch",
+    "source": "src/band5.cpp",
+    "signature": "void* __cdecl(void**)",
+    "confidence": "medium",
+    "evidence": "corpus 0x5bf670.c",
+    "corpus": "analysis/pseudocode/functions/0x5bf670.c",
+    "span": 112,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Pops from pool DAT_00728d04, INC-then-DEC quirk at +0x68, conditional 0x5bf480."
+    ]
+  },
+  {
+    "address": "0x005bfa20",
+    "name": "SetErrorString_727b30",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(const char*)",
+    "confidence": "high",
+    "evidence": "corpus 0x5bfa20.c",
+    "corpus": "analysis/pseudocode/functions/0x5bfa20.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "strncpy 0xff into DAT_00727b30; null clears."
+    ]
+  },
+  {
+    "address": "0x005bf9b0",
+    "name": "Tab12Read_728d08",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(void*,int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5bf9b0.c",
+    "corpus": "analysis/pseudocode/functions/0x5bf9b0.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "dst[3]={t[idx*3..]} from table 0x00728d08."
+    ]
+  },
+  {
+    "address": "0x005bf9e0",
+    "name": "Tab12Write_728d08",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(int,uint,uint,uint)",
+    "confidence": "high",
+    "evidence": "corpus 0x5bf9e0.c",
+    "corpus": "analysis/pseudocode/functions/0x5bf9e0.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "t[idx*3..]={a,b,c}."
+    ]
+  },
+  {
+    "address": "0x005bf990",
+    "name": "Pair8Read_728d50",
+    "source": "src/band5.cpp",
+    "signature": "Pair8 __cdecl(int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5bf990.c",
+    "corpus": "analysis/pseudocode/functions/0x5bf990.c",
+    "span": 32,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Returns {lo[728d50+idx*8], hi[728d54+idx*8]}."
+    ]
+  },
+  {
+    "address": "0x005bfb30",
+    "name": "ArrayFetch_Checked",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __thiscall(void*,unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5bfb30.c",
+    "corpus": "analysis/pseudocode/functions/0x5bfb30.c",
+    "span": 32,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Bounds check idx < *(+0x14) then *( *(+0x1c)+idx*4 ) else 0."
+    ]
+  },
+  {
+    "address": "0x005bff90",
+    "name": "AdapterFlagMask",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __thiscall(void*,int)",
+    "confidence": "medium",
+    "evidence": "corpus 0x5bff90.c",
+    "corpus": "analysis/pseudocode/functions/0x5bff90.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Selects +0x468 vs +0x46c, returns base or 0 if +4 null."
+    ]
+  },
+  {
+    "address": "0x00594f50",
+    "name": "TriStateMatch",
+    "source": "src/band5.cpp",
+    "signature": "unsigned int __cdecl(int,char)",
+    "confidence": "medium",
+    "evidence": "corpus 0x594f50.c",
+    "corpus": "analysis/pseudocode/functions/0x594f50.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "3-way matcher; else branch returns masked (a-2)&0xffffff00."
+    ]
+  },
+  {
+    "address": "0x0059fcc0",
+    "name": "IsNonEmpty_80_84",
+    "source": "src/band5.cpp",
+    "signature": "int __thiscall(void*)",
+    "confidence": "high",
+    "evidence": "corpus 0x59fcc0.c",
+    "corpus": "analysis/pseudocode/functions/0x59fcc0.c",
+    "span": 32,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Returns 0 iff *(+0x80)==0 && *(+0x84)==0 else 1."
+    ]
+  },
+  {
+    "address": "0x005c9a50",
+    "name": "VsprintfWrap_1024",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(const char*,char)",
+    "confidence": "low",
+    "evidence": "corpus 0x5c9a50.c",
+    "corpus": "analysis/pseudocode/functions/0x5c9a50.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "vsprintf into 1024-byte stack buffer."
+    ]
+  },
+  {
+    "address": "0x005c9a80",
+    "name": "SplitpathWrap_Return1",
+    "source": "src/band5.cpp",
+    "signature": "int __cdecl(char*,char*,char*,char*,char*)",
+    "confidence": "high",
+    "evidence": "corpus 0x5c9a80.c",
+    "corpus": "analysis/pseudocode/functions/0x5c9a80.c",
+    "span": 48,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "_splitpath(...) then return 1."
+    ]
+  },
+  {
+    "address": "0x005bfe40",
+    "name": "Is_46_49_50",
+    "source": "src/band5.cpp",
+    "signature": "int __cdecl(unsigned int)",
+    "confidence": "high",
+    "evidence": "corpus 0x5bfe40.c",
+    "corpus": "analysis/pseudocode/functions/0x5bfe40.c",
+    "span": 64,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "1 iff v in {0x46,0x49,0x50}."
+    ]
+  },
+  {
+    "address": "0x005c00c0",
+    "name": "ScalarDeletingDtor_6c7200",
+    "source": "src/band5.cpp",
+    "signature": "void* __thiscall(void*,unsigned char)",
+    "confidence": "high",
+    "evidence": "corpus 0x5c00c0.c + deep dossier (REA evidence IDs in that file).",
+    "corpus": "analysis/pseudocode/functions/0x5c00c0.c",
+    "span": 64,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Installs vtable 0x6c7200, calls 0x5e1490, frees +8, conditional delete this."
+    ]
+  },
+  {
+    "address": "0x005c86f0",
+    "name": "ReleaseGlobal_728de4",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl()",
+    "confidence": "high",
+    "evidence": "corpus 0x5c86f0.c",
+    "corpus": "analysis/pseudocode/functions/0x5c86f0.c",
+    "span": 32,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Calls vt[0](1) on DAT_00728de4 if non-null then clears."
+    ]
+  },
+  {
+    "address": "0x005c8c10",
+    "name": "ListPrepend_727868",
+    "source": "src/band5.cpp",
+    "signature": "void __cdecl(void*)",
+    "confidence": "medium",
+    "evidence": "corpus 0x5c8c10.c",
+    "corpus": "analysis/pseudocode/functions/0x5c8c10.c",
+    "span": 64,
+    "triage_category": "game",
+    "triage_strings": [],
+    "triage_confidence": "low",
+    "status": "unverified",
+    "unknowns": [
+      "Zeroes node[2], locks, clears node[1], pushes onto DAT_00727868, unlocks."
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+ {
+  "address": "0x0054bc90",
+  "name": "FUN_0054bc90",
+  "source": "src/small_54bc90_54bfc0_54c050.cpp",
+  "signature": "void __thiscall FUN_0054bc90(Obj54bc90* self)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54bc90.c: FUN_005383d0(); vtable 0x711788; in_ECX[3]=0",
+  "status": "unverified",
+  "unknowns": [
+   "thiscall ECX-only ctor; vtable identity 0x711788"
+  ]
+ },
+ {
+  "address": "0x0054bfc0",
+  "name": "FUN_0054bfc0",
+  "source": "src/small_54bc90_54bfc0_54c050.cpp",
+  "signature": "void __cdecl FUN_0054bfc0(void)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54bfc0.c: alloc 0x34, vtable 0x70dea4, 1.0f at +0x24, DAT_00727424/28/2c, swap DAT_00727980",
+  "status": "unverified",
+  "unknowns": [
+   "global slot type; float constants layout"
+  ]
+ },
+ {
+  "address": "0x0054c050",
+  "name": "FUN_0054c050",
+  "source": "src/small_54bc90_54bfc0_54c050.cpp",
+  "signature": "void __cdecl FUN_0054c050(void)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c050.c: release DAT_00727980 then zero",
+  "status": "unverified",
+  "unknowns": [
+   "global slot ownership"
+  ]
+ },
+ {
+  "address": "0x0054c1c0",
+  "name": "FUN_0054c1c0",
+  "source": "src/ctor_factory_54c1c0_54c210.cpp",
+  "signature": "void __thiscall FUN_0054c1c0(Obj54c1c0* self)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c1c0.c: vtable 0x6c0a50, slots 6/2/3/0 at +0x20..+0x2c, FUN_00539760, vtable 0x6c215c",
+  "status": "unverified",
+  "unknowns": [
+   "vtable identities; slot semantics"
+  ]
+ },
+ {
+  "address": "0x0054c210",
+  "name": "FUN_0054c210",
+  "source": "src/ctor_factory_54c1c0_54c210.cpp",
+  "signature": "uint32_t* __cdecl FUN_0054c210(uint32_t p1,uint32_t p2,void* p3,uint32_t* p4)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c210.c: pow2 guards, alloc 0x40, ctor, fill +0x38/+0x3c/+0x20, vcall +0x104 validate",
+  "status": "unverified",
+  "unknowns": [
+   "validator signature; free-on-fail path"
+  ]
+ },
+ {
+  "address": "0x0054c2e0",
+  "name": "FUN_0054c2e0",
+  "source": "src/floatvec_54c2e0_54c420.cpp",
+  "signature": "void __thiscall FUN_0054c2e0(Vec* self,uint32_t count,const float* src)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c2e0.c: operator_delete +0x14; +0x10/+0x14=0 on null; alloc count*4, 4-wide copy + tail",
+  "status": "unverified",
+  "unknowns": [
+   "non-contiguous 0x54c2e0-0x54c3a8+0x54c3b0-0x54c3d8; ECX-only base"
+  ]
+ },
+ {
+  "address": "0x0054c420",
+  "name": "FUN_0054c420",
+  "source": "src/floatvec_54c2e0_54c420.cpp",
+  "signature": "uint32_t __thiscall FUN_0054c420(Vec* self,const Vec* other)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c420.c: count +0x10, buffers +0x14, per-float == loop with NaN flags, returns 1 on equal",
+  "status": "unverified",
+  "unknowns": [
+   "EAX flag widening on null path; NaN order"
+  ]
+ },
+ {
+  "address": "0x0054c4a0",
+  "name": "FUN_0054c4a0",
+  "source": "src/dtor_assign_54c4a0_54c570.cpp",
+  "signature": "void __thiscall FUN_0054c4a0(Obj54c4a0* self,uint32_t count,const float* src)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c4a0.c: FUN_00547c80, vtable 0x6c21ac, +0x14=0, FUN_0054c2e0",
+  "status": "unverified",
+  "unknowns": [
+   "base ctor role"
+  ]
+ },
+ {
+  "address": "0x0054c570",
+  "name": "FUN_0054c570",
+  "source": "src/dtor_assign_54c4a0_54c570.cpp",
+  "signature": "void __thiscall FUN_0054c570(Obj54c4a0* self,uint32_t flag)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c570.c: vtable 0x6c21ac, operator_delete +0x14, FUN_00547d10, flag&1 self-delete",
+  "status": "unverified",
+  "unknowns": [
+   "delete callback"
+  ]
+ },
+ {
+  "address": "0x0054c5b0",
+  "name": "FUN_0054c5b0",
+  "source": "src/vtable_54c5b0.cpp",
+  "signature": "void __thiscall FUN_0054c5b0(uint32_t* self,void* p1)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c5b0.c: FUN_00547e30; two vcall +0x0c via *(p1+0x160) with (+0x10,4),(+0x14,+0x10<<2)",
+  "status": "unverified",
+  "unknowns": [
+   "vtable object at +0x160; arg widths"
+  ]
+ },
+ {
+  "address": "0x0054c720",
+  "name": "FUN_0054c720",
+  "source": "src/copy_clear_54c720_54c750_54c780.cpp",
+  "signature": "void __cdecl FUN_0054c720(void)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c720.c: copy 9 dwords DAT_00727484->DAT_00717a00",
+  "status": "unverified",
+  "unknowns": [
+   "static tables"
+  ]
+ },
+ {
+  "address": "0x0054c750",
+  "name": "FUN_0054c750",
+  "source": "src/copy_clear_54c720_54c750_54c780.cpp",
+  "signature": "void __cdecl FUN_0054c750(void)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c750.c: release/zero DAT_007279c8[7] over 0x1c bytes",
+  "status": "unverified",
+  "unknowns": [
+   "table element type"
+  ]
+ },
+ {
+  "address": "0x0054c780",
+  "name": "FUN_0054c780",
+  "source": "src/copy_clear_54c720_54c750_54c780.cpp",
+  "signature": "void __cdecl FUN_0054c780(const uint32_t* src)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c780.c: copy 9 dwords param->DAT_00717a00 then clear table",
+  "status": "unverified",
+  "unknowns": [
+   "overlap of 54c720/54c750"
+  ]
+ },
+ {
+  "address": "0x0054c7c0",
+  "name": "FUN_0054c7c0",
+  "source": "src/texcompose_54c7c0.cpp",
+  "signature": "void* __cdecl FUN_0054c7c0(void* out1,void* out2,void* src)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c7c0.c: alloc 0x50, FUN_00539210(8,8), masks DAT_00717860-6c/shifts 70-7c, 8x FUN_005f0ddc, 8x8 tile",
+  "status": "unverified",
+  "unknowns": [
+   "desc layout; tile stride order"
+  ]
+ },
+ {
+  "address": "0x0054c9c0",
+  "name": "FUN_0054c9c0",
+  "source": "src/texcache_54c9c0.cpp",
+  "signature": "void* __cdecl FUN_0054c9c0(int32_t idx)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54c9c0.c: bounds -1..6; cache DAT_007279c8; 1.0f matrix cases; FUN_0054c7c0+FUN_0051ac30",
+  "status": "unverified",
+  "unknowns": [
+   "cache store target"
+  ]
+ },
+ {
+  "address": "0x0054cc80",
+  "name": "FUN_0054cc80",
+  "source": "src/append_54cc80.cpp",
+  "signature": "void __cdecl FUN_0054cc80(uint32_t* arr)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54cc80.c: FUN_00541080; FUN_00557b10(DAT_007279a0); grow FUN_006b34a0; FUN_005606f0",
+  "status": "unverified",
+  "unknowns": [
+   "array base offsets; realloc semantics"
+  ]
+ },
+ {
+  "address": "0x0054ce20",
+  "name": "FUN_0054ce20",
+  "source": "src/unscale_54ce20.cpp",
+  "signature": "void __cdecl FUN_0054ce20(int c,int r,uint16_t* d,uint16_t* u,const uint8_t* desc,const uint8_t* src)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54ce20.c: 3-byte->ushort unscale, CONCAT22 stages, masks desc[0,2,4,6]",
+  "status": "unverified",
+  "unknowns": [
+   "desc shift/mask field order; EDX state"
+  ]
+ },
+ {
+  "address": "0x0054cf60",
+  "name": "FUN_0054cf60",
+  "source": "src/unscale_54cf60.cpp",
+  "signature": "void __cdecl FUN_0054cf60(int c,int r,uint32_t* d,const uint8_t* src,const uint8_t* desc)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54cf60.c: 3-byte->u32 unscale, three terms OR desc[0..3]",
+  "status": "unverified",
+  "unknowns": [
+   "desc index map"
+  ]
+ },
+ {
+  "address": "0x0054d020",
+  "name": "FUN_0054d020",
+  "source": "src/unscale_54d020.cpp",
+  "signature": "void __cdecl FUN_0054d020(int c,int r,short* d,const uint8_t* src,const uint8_t* desc)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54d020.c: 4-byte->short unscale, CONCAT22 regs, short store",
+  "status": "unverified",
+  "unknowns": [
+   "register-accumulated masks; EBX/EDX state"
+  ]
+ },
+ {
+  "address": "0x0054d720",
+  "name": "FUN_0054d720",
+  "source": "src/unscale_54d720.cpp",
+  "signature": "void __cdecl FUN_0054d720(int c,int r,short* d,const uint8_t* src,const uint8_t* desc)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54d720.c: 3-byte stride-4 ->short, CONCAT22, short store",
+  "status": "unverified",
+  "unknowns": [
+   "pad byte; desc layout"
+  ]
+ }
+]

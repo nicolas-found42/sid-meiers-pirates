@@ -1,0 +1,370 @@
+{
+ "band": "band6",
+ "image_sha256": "6e88b90e4e2e30248d9e4de747b521cc03822b7ffeb214fd272b8ad1817447c9",
+ "address_start": "0x005db0a0",
+ "address_end": "0x0061003c",
+ "status_note": "UNVERIFIED: no cl 13.10.3077 on this host; no PASS claims. Clean-room reconstructions only.",
+ "functions": [
+  {
+   "address": "0x005db600",
+   "name": "Band6ShaderWrapper_DeletingDtor",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "void* __thiscall Band6ShaderWrapper_DeletingDtor(Band6ShaderWrapper* self, unsigned char deleteFlag)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5db600.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Deleting-dtor shape fully observed in REA assembly; owner class unverified."
+  },
+  {
+   "address": "0x005edd70",
+   "name": "Band6Object_DeletingDtor",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "void* __thiscall Band6Object_DeletingDtor(Band6Object* self, unsigned char deleteFlag)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5edd70.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Same deleting-dtor shape; vtable slot 0x006ca088 observed."
+  },
+  {
+   "address": "0x0060f79a",
+   "name": "Band6GraphNode_Init",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "void __thiscall Band6GraphNode_Init(Band6GraphNode* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x60f79a.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Six stores observed; field semantics inferred."
+  },
+  {
+   "address": "0x0060c029",
+   "name": "Band6HLSLDiag",
+   "source": "src/band6_hlsl.cpp",
+   "signature": "void __cdecl Band6HLSLDiag(HLSLParserContext* ctx, const char* msg, char ch)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x60c029.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Strings + branch structure observed."
+  },
+  {
+   "address": "0x005e0b40",
+   "name": "Band6EffectLoad",
+   "source": "src/band6_effects.cpp",
+   "signature": "unsigned long __cdecl Band6EffectLoad(const char* filename, int* outFlag)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5e0b40.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Loader flow + 4 strings observed."
+  },
+  {
+   "address": "0x005dc190",
+   "name": "Band6ShaderWrapper_Load",
+   "source": "src/band6_shaders_b.cpp",
+   "signature": "unsigned long __thiscall Band6ShaderWrapper_Load(void* self, const char* filename, unsigned long a, unsigned long b, void** outBuf, unsigned long* outSize, void* opts)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5dc190.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Loader + 4 strings observed; middle params inferred."
+  },
+  {
+   "address": "0x005db220",
+   "name": "Band6ShaderWrapper_Ctor",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "void __thiscall Band6ShaderWrapper_Ctor(Band6ShaderWrapper* self, unsigned long param)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5db220.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Array fills + flags observed; trailing index tables data-only."
+  },
+  {
+   "address": "0x005de120",
+   "name": "Band6ShaderWrapper_IsCapable",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "bool __thiscall Band6ShaderWrapper_IsCapable(const Band6ShaderWrapper* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5de120.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Table lookup + lazy init observed."
+  },
+  {
+   "address": "0x005f8d40",
+   "name": "Band6D3DTableInit",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "int __cdecl Band6D3DTableInit(int mode)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5f8d40.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Table swap + registry strings observed."
+  },
+  {
+   "address": "0x005f124e",
+   "name": "NiMathCubicBlend",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "void __cdecl NiMathCubicBlend(float* out, const float* p1, const float* p2, const float* p3, const float* p4, float t)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5f124e.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Float weights observed; arg-order mapping inferred."
+  },
+  {
+   "address": "0x005e43e0",
+   "name": "Band6ArrayHolder_Dtor",
+   "source": "src/band6_small.cpp",
+   "signature": "void __thiscall Band6ArrayHolder_Dtor(Band6ArrayHolder* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5e43e0.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Vtable + EH vector dtor observed."
+  },
+  {
+   "address": "0x005e1570",
+   "name": "Band6ModAccessor",
+   "source": "src/band6_small.cpp",
+   "signature": "unsigned long __thiscall Band6ModAccessor(const void* self, unsigned long value)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5e1570.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Single modulo observed."
+  },
+  {
+   "address": "0x005e0b30",
+   "name": "Band6GetGlobal7290B0",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "unsigned long __cdecl Band6GetGlobal7290B0(void)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5e0b30.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Global address observed; name inferred."
+  },
+  {
+   "address": "0x005e0270",
+   "name": "NiD3DXEffectVTableInit",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "void __thiscall NiD3DXEffectVTableInit(NiD3DXEffectWrapper* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5e0270.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Single store observed; vtable contents unknown."
+  },
+  {
+   "address": "0x005db810",
+   "name": "Band6ShaderWrapper_InitSlot",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "void __thiscall Band6ShaderWrapper_InitSlot(Band6ShaderWrapper* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5db810.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Clear/init/set-flag observed; global type inferred."
+  },
+  {
+   "address": "0x005db6a0",
+   "name": "Band6ShaderBase_Init",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "void __thiscall Band6ShaderBase_Init(Band6ShaderBase* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5db6a0.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Two vtable stores + refcount observed."
+  },
+  {
+   "address": "0x005dbd60",
+   "name": "Band6GetFieldPlus8",
+   "source": "src/band6_shaders_a.cpp",
+   "signature": "unsigned long __thiscall Band6GetFieldPlus8(const Band6ShaderWrapper* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5dbd60.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Single load observed."
+  },
+  {
+   "address": "0x005dc360",
+   "name": "Band6ShaderAssemble",
+   "source": "src/band6_shaders_b.cpp",
+   "signature": "unsigned long __thiscall Band6ShaderAssemble(void* self, void* buf, unsigned long len, void* a, void* b, void** outBuf, unsigned long* outSize, void* opts)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5dc360.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Assembler + 3 strings observed."
+  },
+  {
+   "address": "0x005dc640",
+   "name": "Band6CreateVertexShader",
+   "source": "src/band6_shaders_b.cpp",
+   "signature": "void* __thiscall Band6CreateVertexShader(void* self, void* buf, unsigned long len, const char* name, void* profile, unsigned long a, unsigned char b, unsigned long c, unsigned long d)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5dc640.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Create pattern observed; suffix routing inferred."
+  },
+  {
+   "address": "0x005dc900",
+   "name": "Band6CreatePixelShader",
+   "source": "src/band6_shaders_b.cpp",
+   "signature": "void* __thiscall Band6CreatePixelShader(void* self, void* buf, unsigned long len, const char* name, void* profile)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5dc900.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Pixel twin observed."
+  },
+  {
+   "address": "0x005dce40",
+   "name": "Band6CreateVertexShaderFromContext",
+   "source": "src/band6_shader_variants.cpp",
+   "signature": "void* __thiscall Band6CreateVertexShaderFromContext(void* self, void* a, void* b)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5dce40.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Variant routing via vtable+0x24 observed."
+  },
+  {
+   "address": "0x005dcf80",
+   "name": "Band6CreateVertexShaderFromContext2",
+   "source": "src/band6_shader_variants.cpp",
+   "signature": "void* __thiscall Band6CreateVertexShaderFromContext2(void* self, void* a, void* b)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5dcf80.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Variant routing via vtable+0x28 observed."
+  },
+  {
+   "address": "0x005dd0c0",
+   "name": "Band6CreatePixelShaderFromContext",
+   "source": "src/band6_shader_variants.cpp",
+   "signature": "void* __thiscall Band6CreatePixelShaderFromContext(void* self, void* a)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5dd0c0.c + triage basis",
+   "status": "unverified",
+   "unknowns": "0x28-byte alloc + CreatePixelShader observed."
+  },
+  {
+   "address": "0x005dd1b0",
+   "name": "Band6CreatePixelShaderFromContext2",
+   "source": "src/band6_shader_variants.cpp",
+   "signature": "void* __thiscall Band6CreatePixelShaderFromContext2(void* self, void* a, void* b)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5dd1b0.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Variant twin observed."
+  },
+  {
+   "address": "0x005e0880",
+   "name": "Band6NiD3DXEffectShaderLib_Ctor",
+   "source": "src/band6_shader_variants.cpp",
+   "signature": "void __thiscall Band6NiD3DXEffectShaderLib_Ctor(void* self)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5e0880.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Vtable pockets + 0x94 alloc observed."
+  },
+  {
+   "address": "0x005e09d0",
+   "name": "Band6FindEffectFile",
+   "source": "src/band6_effects.cpp",
+   "signature": "unsigned long __cdecl Band6FindEffectFile(const char* filename, char* outPath)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5e09d0.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Resolve flow + 3 strings observed."
+  },
+  {
+   "address": "0x005e44d0",
+   "name": "Band6EffectTechniqueSet_Dtor",
+   "source": "src/band6_hlsl.cpp",
+   "signature": "void __thiscall Band6EffectTechniqueSet_Dtor(void* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5e44d0.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Dtor steps + string observed."
+  },
+  {
+   "address": "0x005e47a0",
+   "name": "Band6EffectTechnique_Dtor",
+   "source": "src/band6_hlsl.cpp",
+   "signature": "void __thiscall Band6EffectTechnique_Dtor(void* self)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5e47a0.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Dtor steps + string observed."
+  },
+  {
+   "address": "0x005e9fb0",
+   "name": "Band6GetD3DShader",
+   "source": "src/band6_hlsl.cpp",
+   "signature": "void* __thiscall Band6GetD3DShader(void* self, unsigned long hash, int implIndex)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5e9fb0.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Impl-select flow + 7 strings observed; middle helpers external."
+  },
+  {
+   "address": "0x005f79a8",
+   "name": "Band6PixelShaderProfile",
+   "source": "src/band6_effects.cpp",
+   "signature": "const char* __cdecl Band6PixelShaderProfile(void* caps)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5f79a8.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Profile table observed."
+  },
+  {
+   "address": "0x005f7a58",
+   "name": "Band6VertexShaderProfile",
+   "source": "src/band6_effects.cpp",
+   "signature": "const char* __cdecl Band6VertexShaderProfile(void* caps)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x5f7a58.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Profile table observed."
+  },
+  {
+   "address": "0x005f8042",
+   "name": "Band6MatchShaderVersion",
+   "source": "src/band6_effects.cpp",
+   "signature": "long __cdecl Band6MatchShaderVersion(unsigned long a, unsigned long b, void* out)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x5f8042.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Table scan structure observed; entry layout inferred."
+  },
+  {
+   "address": "0x0060c459",
+   "name": "Band6HLSLHandleElif",
+   "source": "src/band6_hlsl.cpp",
+   "signature": "long __thiscall Band6HLSLHandleElif(HLSLParserContext* self, int cond)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x60c459.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Elif state machine + 2 strings observed."
+  },
+  {
+   "address": "0x0060c598",
+   "name": "Band6HLSLParseStorageQualifier",
+   "source": "src/band6_hlsl.cpp",
+   "signature": "int __thiscall Band6HLSLParseStorageQualifier(HLSLParserContext* self)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x60c598.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Flag mapping observed; lexer calls external."
+  },
+  {
+   "address": "0x0060d4a1",
+   "name": "Band6HLSLEvalConstant",
+   "source": "src/band6_hlsl.cpp",
+   "signature": "unsigned long __thiscall Band6HLSLEvalConstant(HLSLParserContext* self, const char* name)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x60d4a1.c + triage basis",
+   "status": "unverified",
+   "unknowns": "__LINE__ + 2 error strings observed."
+  },
+  {
+   "address": "0x0060fef7",
+   "name": "Band6HLSLFormatToken",
+   "source": "src/band6_hlsl.cpp",
+   "signature": "void __cdecl Band6HLSLFormatToken(unsigned long code, void* token)",
+   "confidence": "high",
+   "evidence": "analysis/pseudocode/functions/0x60fef7.c + triage basis",
+   "status": "unverified",
+   "unknowns": "Token-kind table + 10 strings observed."
+  }
+ ],
+ "count": 36
+}

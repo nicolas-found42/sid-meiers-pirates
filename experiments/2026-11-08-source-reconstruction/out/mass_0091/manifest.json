@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x0050c4d0",
+  "name": "FUN_0050c4d0",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: ESI (int* field view). Receiver/arg: EDI float[4].\nvoid FUN_0050c4d0(void* self, float* fparam)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50c4d0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050c550",
+  "name": "FUN_0050c550",
+  "source": "src/mass_0091.cpp",
+  "signature": "void FUN_0050c550(void* self, int32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50c550.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050c5d0",
+  "name": "FUN_0050c5d0",
+  "source": "src/mass_0091.cpp",
+  "signature": "void FUN_0050c5d0(void* self, int32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50c5d0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050c7b0",
+  "name": "FUN_0050c7b0",
+  "source": "src/mass_0091.cpp",
+  "signature": "// screen size from DAT_008ea08c vtables (+0x58 / +0x5c), clamps to [0,limit].\nvoid FUN_0050c7b0(void* self, float param_1, int32_t eax_x)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50c7b0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050ca90",
+  "name": "FUN_0050ca90",
+  "source": "src/mass_0091.cpp",
+  "signature": "uint32_t FUN_0050ca90(void* self, int32_t param_1, int32_t param_2, uint32_t param_3)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50ca90.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050cd70",
+  "name": "FUN_0050cd70",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: ESI. Selection index: EBX (caller-carried). Bounds-checks the index\n// against *(*(self+0x298)+0x2e8), then rebuilds the 256-byte state block and\n// sets bit 0 of *(*(self+0x298)+0x20).\nvoid FUN_0050cd70_recon(void* self, int32_t index_ebx)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50cd70.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050cde0",
+  "name": "FUN_0050cde0",
+  "source": "src/mass_0091.cpp",
+  "signature": "int FUN_0050cde0_recon(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50cde0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050ce20",
+  "name": "FUN_0050ce20",
+  "source": "src/mass_0091.cpp",
+  "signature": "// *(*(self+0x298)+0x20) on the (0x290, 0) pair.\nchar FUN_0050ce20(void* self, int32_t param_1, int32_t param_2, uint32_t param_3, uint32_t param_4)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50ce20.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050cf80",
+  "name": "FUN_0050cf80",
+  "source": "src/mass_0091.cpp",
+  "signature": "void FUN_0050cf80(void* self, int* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50cf80.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050d070",
+  "name": "FUN_0050d070",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: ESI (byte view). Initialiser: resolves the child chain of param_1,\n// builds the renderer object graph at +0x58/+0x5c/+0x60/+0x64 from the provider\n// block at *(self+8)+0xbc, then picks the geometry builder from the\n// *(self+8)+0xc0 and self+1/self+2 flags.\nvoid FUN_0050d070(void* self, int* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50d070.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050d2f0",
+  "name": "FUN_0050d2f0",
+  "source": "src/mass_0091.cpp",
+  "signature": "// child slots (already null) in reverse order.\nvoid FUN_0050d2f0(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50d2f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050d3e0",
+  "name": "FUN_0050d3e0",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: param_1 (byte view). Builds the local 9-dword transform from\n// *(self+8)+0x6c, transforms the base vector at self+0x14 into self+0x20..0x28,\n// then runs the face builder selected by self[0]/self[1]/self[2] and finally\n// re-submits the two vertex streams when a geometry build occurred.\nvoid FUN_0050d3e0(void* self, uint32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50d3e0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050d520",
+  "name": "FUN_0050d520",
+  "source": "src/mass_0091.cpp",
+  "signature": "void FUN_0050d520_recon(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50d520.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050d630",
+  "name": "FUN_0050d630",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: ESI (byte view). Same culled-triangle build as 0x50d520 but with an\n// explicit face-normal test and an optional local vertex remap at self+0x2c/\n// self+0x30 (built through 0x5542d0) when self[2] is set.\nvoid FUN_0050d630_recon(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50d630.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050d880",
+  "name": "FUN_0050d880",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: ESI (byte view). Culled-triangle build over the pre-tessellated index\n// list at self+0x4c (three ushorts per triangle) with the vertex array at\n// self+0x48 and the triangle count at self+0x44.\nvoid FUN_0050d880_recon(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50d880.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050d9c0",
+  "name": "FUN_0050d9c0",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: param_1 (byte view). Rebuilds the renderer geometry: expands the index\n// list at self+0x10 (pairs), appends the culled triangles collected at\n// self+0x54, then either re-points the D3D buffers at *(self+8)+0xbc or creates\n// a fresh mesh/surface object at self+0x58 and rebinds the three children.\nvoid FUN_0050d9c0(void* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50d9c0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050dec0",
+  "name": "FUN_0050dec0",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: EAX (byte view: edge count at +0xc, pair array at +0x10). Removes the\n// edge {param_bx, param_1} from the pair list, compacting with the last entry,",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50dec0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050df50",
+  "name": "FUN_0050df50",
+  "source": "src/mass_0091.cpp",
+  "signature": "// Self: param_1 (byte view). Builds per-triangle face normals from the vertex\n// array at *(*(self+8)+0xbc)+0x20 and the triangle index array at\n// *(*(self+8)+0xbc)+0x44 (count at +0x3c), then stores the copy at self+0x48.\n// The forced 4x unrolled body and the zero-length tail copy are preserved.\nvoid FUN_0050df50(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50df50.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050e4d0",
+  "name": "FUN_0050e4d0",
+  "source": "src/mass_0091.cpp",
+  "signature": "void FUN_0050e4d0_recon(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50e4d0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0050ee00",
+  "name": "FUN_0050ee00",
+  "source": "src/mass_0091.cpp",
+  "signature": "void FUN_0050ee00(void* self, uint32_t in_ECX, uint32_t in_EAX, int32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x50ee00.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

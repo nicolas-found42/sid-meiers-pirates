@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x004ed490",
+  "name": "FUN_004ed490",
+  "source": "src/mass_0064.cpp",
+  "signature": "// DAT_008610e8 fills (x*1000, y*1000, 5.0, 500.0) quads into a singly linked\n// list, then the byte map at DAT_0076ef10 with per-cell heights at\n// DAT_007d2168 emits (col, row, height, 500.0) quads for cells equal to 0x12.\nvoid FUN_004ed490(std::int32_t param_1, char param_2) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ed490.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ed7b0",
+  "name": "FUN_004ed7b0",
+  "source": "src/mass_0064.cpp",
+  "signature": "// Hash-map insert-or-update: self = in_ESI (int* container: [0]=vtable,\n// [1]=count, [2]=bucket array, [3]=size), index = in_EDI (bucket index).\n// vtable[1]=hash(param), vtable[2]=equal, vtable[3]=assign(dst,a,b),\n// vtable[4]=free, vtable[5]=alloc, vtable[6] unused here.\nvoid FUN_004ed7b0(std::uint32_t* param_1, std::int32_t* self, std::int32_t index) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ed7b0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ed860",
+  "name": "FUN_004ed860",
+  "source": "src/mass_0064.cpp",
+  "signature": "void FUN_004ed860(std::int32_t** param_1, std::uint8_t* out, std::int32_t* table,\n                  std::int32_t** slot) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ed860.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ed8f0",
+  "name": "FUN_004ed8f0",
+  "source": "src/mass_0064.cpp",
+  "signature": "std::uint32_t FUN_004ed8f0(std::uint32_t param_1, std::int32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ed8f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ed9a0",
+  "name": "FUN_004ed9a0",
+  "source": "src/mass_0064.cpp",
+  "signature": "// Resizes a sparse float-vector's backing store. self = in_ESI (int*:\n// [1]=data, [2]=capacity/allocated size, [3]=used, [4]=nonzero count),\n// newSize = in_EDI. Dropped slots below newSize are cleared and uncounted.\nvoid FUN_004ed9a0(std::uint32_t* self, std::uint32_t newSize) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ed9a0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004eda50",
+  "name": "FUN_004eda50",
+  "source": "src/mass_0064.cpp",
+  "signature": "// Sparse float-vector write. self = in_ECX (same [1]=data,[2]=capacity,\n// [3]=used,[4]=nonzero layout as 0x4ed9a0), index = in_EDX, value = in_ESI.\n// Maintains the nonzero counter across transitions to/from 0.0f.\nvoid FUN_004eda50(std::uint32_t* self, std::uint32_t index, float* value) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4eda50.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004edc40",
+  "name": "FUN_004edc40",
+  "source": "src/mass_0064.cpp",
+  "signature": "// Deleting destructor (scalar-delete flag in param_1). self = in_ECX.\nvoid FUN_004edc40(std::uint8_t param_1, std::uint32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4edc40.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004edcc0",
+  "name": "FUN_004edcc0",
+  "source": "src/mass_0064.cpp",
+  "signature": "void FUN_004edcc0(std::uint8_t param_1, std::uint32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4edcc0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004edd60",
+  "name": "FUN_004edd60",
+  "source": "src/mass_0064.cpp",
+  "signature": "void FUN_004edd60(std::uint8_t param_1, std::uint32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4edd60.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004edd90",
+  "name": "FUN_004edd90",
+  "source": "src/mass_0064.cpp",
+  "signature": "void FUN_004edd90(std::uint8_t param_1, std::uint32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4edd90.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004eddd0",
+  "name": "FUN_004eddd0",
+  "source": "src/mass_0064.cpp",
+  "signature": "void FUN_004eddd0(std::uint8_t param_1, std::uint32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4eddd0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ede10",
+  "name": "FUN_004ede10",
+  "source": "src/mass_0064.cpp",
+  "signature": "void FUN_004ede10(std::int32_t param_1) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ede10.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004edf70",
+  "name": "FUN_004edf70",
+  "source": "src/mass_0064.cpp",
+  "signature": "// Pops the head node of a container (self = in_ESI, int*: [0]=vtable,\n// [1]=tail, [2]=head, [3]=count), publishes its retained payload to *out\n// (in_EBX), and releases the popped node through vtable[2].\nvoid FUN_004edf70(std::int32_t* self, std::int32_t* out) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4edf70.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004edfd0",
+  "name": "FUN_004edfd0",
+  "source": "src/mass_0064.cpp",
+  "signature": "std::int32_t* FUN_004edfd0(std::uint32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4edfd0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ee010",
+  "name": "FUN_004ee010",
+  "source": "src/mass_0064.cpp",
+  "signature": "// Appends a newly allocated node holding *value (in_EBX) to the list at\n// self (in_EDI, [0]=vtable, [1]=tail, [2]=head, [3]=count).\nvoid FUN_004ee010(std::int32_t* self, std::int32_t* value) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ee010.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ee070",
+  "name": "FUN_004ee070",
+  "source": "src/mass_0064.cpp",
+  "signature": "std::uint32_t FUN_004ee070(float* param_1, float* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ee070.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ee0c0",
+  "name": "FUN_004ee0c0",
+  "source": "src/mass_0064.cpp",
+  "signature": "void FUN_004ee0c0(std::int32_t* param_1, std::uint32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ee0c0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ee100",
+  "name": "FUN_004ee100",
+  "source": "src/mass_0064.cpp",
+  "signature": "std::int32_t FUN_004ee100(std::int32_t param_1, std::uint32_t param_2) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ee100.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ee1c0",
+  "name": "FUN_004ee1c0",
+  "source": "src/mass_0064.cpp",
+  "signature": "// Constructor: self = in_ESI (int*: [0]=retained object, [1]=value,\n// [2]=vtable 0x70fce8, [3..5]=0) adopting param_1 (undefined4*) and storing\n// param_2, then releasing the caller's reference.\nvoid FUN_004ee1c0(std::uint32_t* param_1, std::int32_t param_2, std::int32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ee1c0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004ee250",
+  "name": "FUN_004ee250",
+  "source": "src/mass_0064.cpp",
+  "signature": "// Clears the list at self (in_ECX: [0]=vtable, [1]=tail, [2]=head, [3]=count),\n// freeing every node through vtable[2], then installs the tail vtable\n// 0x70fe14. Nodes are walked through their first dword link.\nvoid FUN_004ee250(std::uint32_t* self) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4ee250.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

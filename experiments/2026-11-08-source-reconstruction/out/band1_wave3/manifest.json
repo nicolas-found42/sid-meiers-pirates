@@ -1,0 +1,342 @@
+[
+  {
+    "address": "0x004b2160",
+    "name": "repeat_helper_3x",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_004b2160_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4b2160.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: 3x repeat of FUN_004b20f0"
+    ]
+  },
+  {
+    "address": "0x00412da0",
+    "name": "set_cursor",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_00412da0_recon(void* eax_handle)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x412da0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: SetCursor(*EAX); EAX register-only"
+    ]
+  },
+  {
+    "address": "0x004aaef0",
+    "name": "return_zero",
+    "source": "src/small_leaves.cpp",
+    "signature": "uint32_t FUN_004aaef0_recon(void)",
+    "confidence": "high",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4aaef0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: return 0"
+    ]
+  },
+  {
+    "address": "0x004aaea0",
+    "name": "init_const_fields",
+    "source": "src/mem_init.cpp",
+    "signature": "void FUN_004aaea0_recon(void* ecx_this)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4aaea0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: FUN_00540c50; vtbl PTR_FUN_0070bf4c; +0x20=0xec; +0x22=0"
+    ]
+  },
+  {
+    "address": "0x0042c110",
+    "name": "deleting_dtor_42c110",
+    "source": "src/deleting_dtors.cpp",
+    "signature": "void __thiscall DtorHost_42c110::FUN_0042c110(unsigned char flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x42c110.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: body FUN_004baef0; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x004313a0",
+    "name": "deleting_dtor_4313a0",
+    "source": "src/deleting_dtors.cpp",
+    "signature": "void __thiscall DtorHost_4313a0::FUN_004313a0(unsigned char flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4313a0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: body FUN_00431210; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x0045a100",
+    "name": "deleting_dtor_45a100",
+    "source": "src/deleting_dtors.cpp",
+    "signature": "void __thiscall DtorHost_45a100::FUN_0045a100(unsigned char flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x45a100.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: body FUN_0045a050; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x004a1050",
+    "name": "forward_4a1100",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_004a1050_recon(void)",
+    "confidence": "high",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4a1050.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: tail-call FUN_004a1100"
+    ]
+  },
+  {
+    "address": "0x004ab0b0",
+    "name": "deleting_dtor_4ab0b0",
+    "source": "src/deleting_dtors.cpp",
+    "signature": "void __thiscall DtorHost_4ab0b0::FUN_004ab0b0(unsigned char flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4ab0b0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: body FUN_004ab7c0; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x004abb30",
+    "name": "refcount_release",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_004abb30_recon(int* ecx_ref)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4abb30.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: *ECX!=0; (+0x68)-=1; if 0 FUN_005bf480"
+    ]
+  },
+  {
+    "address": "0x004b1030",
+    "name": "deleting_dtor_4b1030",
+    "source": "src/deleting_dtors.cpp",
+    "signature": "void __thiscall DtorHost_4b1030::FUN_004b1030(unsigned char flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4b1030.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: body FUN_004b1050; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x004b9780",
+    "name": "vtable_install_delete",
+    "source": "src/mem_init.cpp",
+    "signature": "void FUN_004b9780_recon(void* ecx_this, uint8_t flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4b9780.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: *ECX=&PTR_FUN_0070c4d0; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x004b97a0",
+    "name": "field_copy_flag",
+    "source": "src/mem_init.cpp",
+    "signature": "void FUN_004b97a0_recon(uint32_t* edi_reg, uint32_t eax_reg)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4b97a0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: *EDI=EAX; FUN_005044d0(EDI[4]); +0xef=1"
+    ]
+  },
+  {
+    "address": "0x004ba8c0",
+    "name": "deleting_dtor_4ba8c0",
+    "source": "src/deleting_dtors.cpp",
+    "signature": "void __thiscall DtorHost_4ba8c0::FUN_004ba8c0(unsigned char flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4ba8c0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: body FUN_004ba2c0; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x004c2930",
+    "name": "deleting_dtor_4c2930",
+    "source": "src/deleting_dtors.cpp",
+    "signature": "void __thiscall DtorHost_4c2930::FUN_004c2930(unsigned char flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4c2930.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: body FUN_004c2600; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x004c2af0",
+    "name": "deleting_dtor_4c2af0",
+    "source": "src/deleting_dtors.cpp",
+    "signature": "void __thiscall DtorHost_4c2af0::FUN_004c2af0(unsigned char flags)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4c2af0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: body FUN_004c2b10; if(flags&1) delete"
+    ]
+  },
+  {
+    "address": "0x004c2d70",
+    "name": "float_pair_forward",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_004c2d70_recon(int param_1, int param_2)",
+    "confidence": "high",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4c2d70.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: FUN_004e8770((float)p1,(float)p2)"
+    ]
+  },
+  {
+    "address": "0x004c2df0",
+    "name": "field_set_notify",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_004c2df0_recon(void* ecx_this, uint32_t param_1)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4c2df0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: +0x2c=p1; FUN_0058f6e0(*(ECX+0xc),p1); ECX register"
+    ]
+  },
+  {
+    "address": "0x004ae700",
+    "name": "push_save",
+    "source": "src/stack_ops.cpp",
+    "signature": "void FUN_004ae700_recon(uint32_t edx_reg)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4ae700.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: DAT_007268f4[idx]=DAT_007263bc; idx++; DAT_007263bc=EDX"
+    ]
+  },
+  {
+    "address": "0x004ae720",
+    "name": "pop_save",
+    "source": "src/stack_ops.cpp",
+    "signature": "void FUN_004ae720_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4ae720.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: idx--; DAT_007263bc=DAT_007268f4[idx]"
+    ]
+  }
+]

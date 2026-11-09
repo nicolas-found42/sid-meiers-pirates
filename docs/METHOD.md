@@ -14,7 +14,7 @@ The image is fixed by SHA-256 `6e88b90e4e2e30248d9e4de747b521cc03822b7ffeb214fd2
 {
   "id": "area-name-address",
   "source": "src/area/Name.cpp",
-  "flags": ["/O2", "/MT", "/DNDEBUG", "/DWIN32"],
+  "flags": ["/O2", "/MD", "/DNDEBUG", "/DWIN32"],
   "functions": [
     {"symbol": "?DecoratedSymbol@@...", "address": "0x00401000"}
   ],
@@ -55,7 +55,7 @@ The image is fixed by SHA-256 `6e88b90e4e2e30248d9e4de747b521cc03822b7ffeb214fd2
 The compiler version is fixed; the flags are hypotheses that must be proven per unit. Start from the Release plausibility set and vary one axis at a time:
 
 - optimization: `/O2`, `/O1`, `/Ox`, `/Ot`, `/Os`, `/Ob0`–`/Ob2`, `/Oi`, `/Oy`;
-- runtime: `/MT` (static CRT linkage changes startup, though this image imports the CRT dynamically), `/MD`;
+- runtime: `/MD` (default: the image imports `msvcr71.dll`/`msvcp71.dll`, so it links the CRT dynamically), `/MT` (variant worth testing; static CRT changes calls and startup);
 - C++: `/GR-` (no class RTTI is visible), `/EHsc` or `/EHa` (the image has C++ exception funclets), `/GX-`;
 - processor: `/G6` (P6) or `/G7` (Pentium 4), `/arch:SSE`;
 - stack: `/GS-` or `/GS`;
@@ -74,6 +74,8 @@ Do not assume the retail build used a single global flag set. A unit's flags are
 3. Applies these relocation types: `ABSOLUTE`, `DIR32`, `DIR32NB`, `REL32`, `REL32_1`–`REL32_5`, `SECREL`, `SECTION`.
 4. Extracts each function's bytes, trims trailing `0xCC`/`0x90`/`0x00` padding on both sides, and compares with the image span.
 5. Reports PASS/FAIL per function, the first differing byte, and the trimmed lengths.
+
+The compile template is an argv list, not a shell string. A `{flags}` element expands to one argument per flag; `{src}` and `{obj}` convert to Wine-visible paths when `path_style` is `wine` (auto-detected for a `wine` wrapper) or `windows`. `check` reports coverage twice: all inventory entries, and the subset categorized as matchable source functions (thunks and EH funclets excluded).
 
 `check` verifies the image hash, the inventory hash, address existence, duplicate claims, and coverage. The fixture in `tests/run_fixture.py` proves the relocation path and verifies that a changed image byte fails.
 

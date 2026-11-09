@@ -1,0 +1,22 @@
+[
+  {
+    "address": "0x00497420",
+    "name": "FUN_00497420",
+    "source": "src/tiny_leaves.cpp",
+    "signature": "void __cdecl FUN_00497420()",
+    "confidence": "low",
+    "evidence": ["analysis/pseudocode/functions/0x497420.c", "body C3; 56 callers in earlier pass"],
+    "status": "unverified",
+    "unknowns": ["original symbol/class", "why 56 callers target an empty function", "calling convention only inferred from RET"]
+  },
+  {
+    "address": "0x005456b0",
+    "name": "FUN_005456b0",
+    "source": "src/tiny_leaves.cpp",
+    "signature": "int Vec_005456b0::get(int index)",
+    "confidence": "medium",
+    "evidence": ["ev_5fe772eaf2c37b742c429f16a52621eecca99c6b341ff20c920700555565abed", "ev_31d6582d2bac7b7d8c65a93d17fc3ff2cf99a634887e83cf92c207cc38225bc8", "analysis/team/band3/deep/0x005456b0.md"],
+    "status": "unverified",
+    "unknowns": ["ECX receiver vs stdcall mismatch", "container identity"]
+  }
+]

@@ -1,0 +1,324 @@
+[
+ {
+  "address": "0x005ae050",
+  "name": "FUN_005ae050",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self)",
+  "confidence": "high",
+  "evidence": "corpus analysis/pseudocode/functions/0x5ae050.c only; Inner pointer at self+0xc null-guarded, then call via slot 0x40 of inner vtable. WARNING jumptable unrecovered, treated as call.",
+  "span": 16,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Slot 0x40 byte offset vs index count; jumptable recovery failed.",
+   "thiscall vs __cdecl ECX convention inferred from in_ECX."
+  ]
+ },
+ {
+  "address": "0x005c9270",
+  "name": "FUN_005c9270",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __cdecl(void)",
+  "confidence": "high",
+  "evidence": "corpus 0x5c9270.c; direct read of global DAT_00728dec, calls FUN_005c9200 when zero.",
+  "span": 16,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Type/meaning of DAT_00728dec (int hypothesis).",
+   "FUN_005c9200 signature inferred as void()."
+  ]
+ },
+ {
+  "address": "0x005cce50",
+  "name": "FUN_005cce50",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self)",
+  "confidence": "high",
+  "evidence": "corpus 0x5cce50.c; single store of PTR_LAB_006c7db8 address to *self.",
+  "span": 16,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Concrete vtable identity at PTR_LAB_006c7db8."
+  ]
+ },
+ {
+  "address": "0x005cd3c0",
+  "name": "FUN_005cd3c0",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self)",
+  "confidence": "high",
+  "evidence": "corpus 0x5cd3c0.c; byte-exact read-modify-write at self+0x3c.",
+  "span": 16,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Field name/semantics at offset 0x3c (counter hypothesis)."
+  ]
+ },
+ {
+  "address": "0x005d01f0",
+  "name": "FUN_005d01f0",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self, uint8_t value)",
+  "confidence": "high",
+  "evidence": "corpus 0x5d01f0.c; stores param_1 byte at self+0x18.",
+  "span": 16,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Field semantics at 0x18; param type as single byte."
+  ]
+ },
+ {
+  "address": "0x005da350",
+  "name": "FUN_005da350",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __cdecl(void)",
+  "confidence": "high",
+  "evidence": "corpus 0x5da350.c; two sequential no-arg calls in order.",
+  "span": 16,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Callee signatures inferred as void()."
+  ]
+ },
+ {
+  "address": "0x00594f80",
+  "name": "FUN_00594f80",
+  "source": "src/band5_wave2.cpp",
+  "signature": "uint8_t __cdecl(void*,void*,void*,void*)",
+  "confidence": "high",
+  "evidence": "corpus 0x594f80.c; pure 4-arg forwarder, returns callee byte result.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Callee return type as single byte; args typed as opaque pointers."
+  ]
+ },
+ {
+  "address": "0x005a03a0",
+  "name": "FUN_005a03a0",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void*,uint8_t)",
+  "confidence": "high",
+  "evidence": "corpus 0x5a03a0.c; unconditional call then conditional operator_delete on (param&1).",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Deleting-destructor shape inferred from flag pattern."
+  ]
+ },
+ {
+  "address": "0x005aa990",
+  "name": "FUN_005aa990",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void*,uint8_t)",
+  "confidence": "high",
+  "evidence": "corpus 0x5aa990.c; identical shape with FUN_005a8c00.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Deleting-destructor shape inferred."
+  ]
+ },
+ {
+  "address": "0x005ac600",
+  "name": "FUN_005ac600",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __cdecl(void*)",
+  "confidence": "high",
+  "evidence": "corpus 0x5ac600.c; passes param to FUN_005ae010 then calls FUN_00545d20().",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Param concrete type unknown; kept opaque."
+  ]
+ },
+ {
+  "address": "0x005ac9c0",
+  "name": "FUN_005ac9c0",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void*,uint8_t)",
+  "confidence": "high",
+  "evidence": "corpus 0x5ac9c0.c; deleting-destructor shape with FUN_005ac850.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Deleting-destructor shape inferred."
+  ]
+ },
+ {
+  "address": "0x005adcb0",
+  "name": "FUN_005adcb0",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self,void* dest,void* p2)",
+  "confidence": "medium",
+  "evidence": "corpus 0x5adcb0.c; call FUN_005ae060(p1,p2) then dword copy at +0x14 from ECX to param_1. ECX-vs-param roles inferred.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "ECX source vs param dest roles; whether param_1 is object or pointer."
+  ]
+ },
+ {
+  "address": "0x005ae010",
+  "name": "FUN_005ae010",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __cdecl(void*)",
+  "confidence": "high",
+  "evidence": "corpus 0x5ae010.c; three calls in order, no return value.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "FUN_00545cc0 arity assumed zero."
+  ]
+ },
+ {
+  "address": "0x005ae030",
+  "name": "FUN_005ae030",
+  "source": "src/band5_wave2.cpp",
+  "signature": "int __thiscall(void* self)",
+  "confidence": "high",
+  "evidence": "corpus 0x5ae030.c; null inner returns 1 else tail-calls slot 0x3c. Jumptable warning as call.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Slot 0x3c byte offset; return type int inferred."
+  ]
+ },
+ {
+  "address": "0x005ae0d0",
+  "name": "FUN_005ae0d0",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self,void*)",
+  "confidence": "high",
+  "evidence": "corpus 0x5ae0d0.c; unconditional call then null-guarded inner vt[0x28] call with param.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Slot 0x28 byte offset."
+  ]
+ },
+ {
+  "address": "0x005ae700",
+  "name": "FUN_005ae700",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self)",
+  "confidence": "high",
+  "evidence": "corpus 0x5ae700.c; call, zero fields 0x11/0x12 (dword slots), store vtable.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Field semantics at dwords 0x11/0x12; vtable identity 6c5988."
+  ]
+ },
+ {
+  "address": "0x005ae720",
+  "name": "FUN_005ae720",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self)",
+  "confidence": "high",
+  "evidence": "corpus 0x5ae720.c; store vtable, delete self[0x11], tail call.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "self[0x11] type as void* delete target."
+  ]
+ },
+ {
+  "address": "0x005aea60",
+  "name": "FUN_005aea60",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self,void*,void*)",
+  "confidence": "high",
+  "evidence": "corpus 0x5aea60.c; virtual slot 0x6c call with no args then 2-arg call.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Slot 0x6c byte offset; virtual callee arity inferred zero args."
+  ]
+ },
+ {
+  "address": "0x005aec90",
+  "name": "FUN_005aec90",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void* self)",
+  "confidence": "high",
+  "evidence": "corpus 0x5aec90.c; two vtable stores bracketing one call.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Constructor-phase vtable pair semantics."
+  ]
+ },
+ {
+  "address": "0x005b0ed0",
+  "name": "FUN_005b0ed0",
+  "source": "src/band5_wave2.cpp",
+  "signature": "void __thiscall(void*,uint8_t)",
+  "confidence": "high",
+  "evidence": "corpus 0x5b0ed0.c; deleting-destructor shape with FUN_005bbd50.",
+  "span": 32,
+  "triage_category": "game",
+  "triage_strings": [],
+  "triage_confidence": "low",
+  "status": "unverified",
+  "unknowns": [
+   "Deleting-destructor shape inferred."
+  ]
+ }
+]

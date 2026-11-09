@@ -1,0 +1,342 @@
+[
+  {
+    "address": "0x004bcd90",
+    "name": "appearance_player_head",
+    "source": "src/appearance.cpp",
+    "signature": "void FUN_004bcd90_recon(int mesh, int slot, int head)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4bcd90.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x004b19e0",
+    "name": "pause_menu",
+    "source": "src/menu_systems.cpp",
+    "signature": "void FUN_004b19e0_recon(int* menu, uint8_t param_2, uint8_t param_3)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4b19e0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x0046e080",
+    "name": "difficulty_help",
+    "source": "src/quest_dialog.cpp",
+    "signature": "void FUN_0046e080_recon(int difficulty, int showNamePrompt)",
+    "confidence": "high",
+    "evidence": [
+      "analysis/pseudocode/functions/0x46e080.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x004102a0",
+    "name": "retirement_loot_division",
+    "source": "src/quest_dialog.cpp",
+    "signature": "int FUN_004102a0_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4102a0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x00419370",
+    "name": "setup_wizard",
+    "source": "src/quest_dialog.cpp",
+    "signature": "void FUN_00419370_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x419370.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x004517b0",
+    "name": "prison_escape",
+    "source": "src/quest_dialog.cpp",
+    "signature": "void FUN_004517b0_recon(int cityIndex)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4517b0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x0040b340",
+    "name": "mission_caravan",
+    "source": "src/quest_dialog.cpp",
+    "signature": "void FUN_0040b340_recon(int cityId)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x40b340.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x00428fd0",
+    "name": "engine_init",
+    "source": "src/scene_cinematic.cpp",
+    "signature": "int FUN_00428fd0_recon(void)",
+    "confidence": "high",
+    "evidence": [
+      "analysis/pseudocode/functions/0x428fd0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x0040a670",
+    "name": "pirate_recruitment",
+    "source": "src/quest_dialog.cpp",
+    "signature": "void FUN_0040a670_recon(int cityId)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x40a670.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x0044fa40",
+    "name": "lost_city_cinematic",
+    "source": "src/scene_cinematic.cpp",
+    "signature": "void FUN_0044fa40_recon(void* param_1)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x44fa40.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x0040ae10",
+    "name": "governor_agriculture",
+    "source": "src/quest_dialog.cpp",
+    "signature": "void FUN_0040ae10_recon(int cityId)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x40ae10.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x00452890",
+    "name": "hidden_treasure_cinematic",
+    "source": "src/scene_cinematic.cpp",
+    "signature": "void FUN_00452890_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x452890.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x0041a300",
+    "name": "captain_appearance",
+    "source": "src/menu_systems.cpp",
+    "signature": "int FUN_0041a300_recon(int seed, int kind, int variant, uint8_t flag)",
+    "confidence": "high",
+    "evidence": [
+      "analysis/pseudocode/functions/0x41a300.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x00471120",
+    "name": "ship_name_entry",
+    "source": "src/menu_systems.cpp",
+    "signature": "void FUN_00471120_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x471120.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x0044b8a0",
+    "name": "top10_parchment",
+    "source": "src/appearance.cpp",
+    "signature": "void FUN_0044b8a0_recon(int rank)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x44b8a0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x00482a00",
+    "name": "npc_appearance",
+    "source": "src/appearance.cpp",
+    "signature": "void* FUN_00482a00_recon(int kind, char* handle)",
+    "confidence": "high",
+    "evidence": [
+      "analysis/pseudocode/functions/0x482a00.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x00466f00",
+    "name": "sailing_arrival",
+    "source": "src/menu_systems.cpp",
+    "signature": "void FUN_00466f00_recon(int cityId)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x466f00.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x00418dd0",
+    "name": "floor_camera_pan",
+    "source": "src/scene_cinematic.cpp",
+    "signature": "uint8_t FUN_00418dd0_recon(int count)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x418dd0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x00453030",
+    "name": "governor_scene",
+    "source": "src/appearance.cpp",
+    "signature": "void FUN_00453030_recon(int cityId, void* renderCtx)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x453030.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  },
+  {
+    "address": "0x0040ba80",
+    "name": "native_war_canoe",
+    "source": "src/quest_dialog.cpp",
+    "signature": "void FUN_0040ba80_recon(int cityId)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x40ba80.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "string literals observed in triage/pseudocode; surrounding UI state machine approximated"
+    ]
+  }
+]

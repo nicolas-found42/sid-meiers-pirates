@@ -1,0 +1,138 @@
+[
+  {
+    "address": "0x004c3a20",
+    "name": "band2_candidate::TwoWord_4c3a20::IsNotEqualToRef",
+    "source": "src/band2_batch1.cpp",
+    "signature": "int __thiscall TwoWord_4c3a20::IsNotEqualToRef(void) const",
+    "confidence": "medium",
+    "evidence": "analysis/team/band2/deep/0x004c3a20.md; analysis/pseudocode/functions/0x4c3a20.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class unknown",
+      "global semantics DAT_008dc30c/DAT_008dc310",
+      "EAX register param convention"
+    ]
+  },
+  {
+    "address": "0x004d5850",
+    "name": "band2_candidate::FUN_004d5850",
+    "source": "src/band2_batch1.cpp",
+    "signature": "int __cdecl FUN_004d5850(void)",
+    "confidence": "high",
+    "evidence": "analysis/team/band2/deep/0x004d5850.md; analysis/team/band2/candidates/0x004d5850_return7.cpp; analysis/pseudocode/functions/4d5850.c",
+    "status": "unverified",
+    "unknowns": [
+      "owner class / enum meaning of 7",
+      "decorated symbol"
+    ]
+  },
+  {
+    "address": "0x004f4e50",
+    "name": "band2_candidate::FUN_004f4e50",
+    "source": "src/band2_batch1.cpp",
+    "signature": "void* __thiscall FUN_004f4e50(void*)",
+    "confidence": "high",
+    "evidence": "analysis/team/band2/deep/0x004f4e50.md; analysis/team/band2/candidates/0x004f4e50_fieldgetter.cpp; analysis/pseudocode/functions/4f4e50.c",
+    "status": "unverified",
+    "unknowns": [
+      "field semantics +0x24/+0x2c/+0x18",
+      "return type"
+    ]
+  },
+  {
+    "address": "0x004f8bc0",
+    "name": "band2_candidate::FUN_004f8bc0",
+    "source": "src/band2_batch1.cpp",
+    "signature": "void __cdecl FUN_004f8bc0(LPCSTR)",
+    "confidence": "high",
+    "evidence": "analysis/team/band2/deep/0x004f8bc0.md; analysis/team/band2/candidates/0x004f8bc0_trace.cpp; analysis/pseudocode/functions/4f8bc0.c",
+    "status": "unverified",
+    "unknowns": [
+      "IAT ordinal",
+      "cdecl vs stdcall"
+    ],
+    "externals": {
+      "OutputDebugStringA": "kernel32!OutputDebugStringA via IAT 0x006c0134"
+    }
+  },
+  {
+    "address": "0x0050b060",
+    "name": "band2_candidate::Modulo_50b060::Mod",
+    "source": "src/band2_batch1.cpp",
+    "signature": "unsigned __thiscall Modulo_50b060::Mod(unsigned short)",
+    "confidence": "high",
+    "evidence": "analysis/team/band2/deep/0x0050b060.md; analysis/team/band2/candidates/0x0050b060_modulo.cpp; analysis/pseudocode/functions/50b060.c",
+    "status": "unverified",
+    "unknowns": [
+      "divisor field +4 semantics",
+      "divide-by-zero"
+    ]
+  },
+  {
+    "address": "0x00513ce0",
+    "name": "band2_candidate::FUN_00513ce0",
+    "source": "src/band2_batch1.cpp",
+    "signature": "void __stdcall FUN_00513ce0(int)",
+    "confidence": "high",
+    "evidence": "analysis/team/band2/deep/0x00513ce0.md; analysis/pseudocode/functions/513ce0.c",
+    "status": "unverified",
+    "unknowns": [
+      "argument semantics",
+      "no-op virtual override vs stub"
+    ]
+  },
+  {
+    "address": "0x004ccc10",
+    "name": "band2_candidate::ScalarDtor_4ccc10::~ScalarDtor_4ccc10",
+    "source": "src/band2_batch1.cpp",
+    "signature": "void* __thiscall FUN_004ccc10(void*, unsigned)",
+    "confidence": "medium",
+    "evidence": "analysis/team/band2/deep/0x004ccc10.md; analysis/pseudocode/functions/4ccc10.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class",
+      "body 0x4cd250 unreconstructed",
+      "deleting-dtor bytes are compiler lowering"
+    ]
+  },
+  {
+    "address": "0x004f7dc0",
+    "name": "band2_candidate::Dtor_4f7dc0::~Dtor_4f7dc0",
+    "source": "src/band2_batch1.cpp",
+    "signature": "void* __thiscall FUN_004f7dc0(void*, unsigned)",
+    "confidence": "medium",
+    "evidence": "analysis/team/band2/deep/0x004f7dc0.md; analysis/pseudocode/functions/0x4f7dc0.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class / vtable membership",
+      "0x4e6420 role inferred"
+    ]
+  },
+  {
+    "address": "0x00514060",
+    "name": "band2_candidate::Dtor_514060::~Dtor_514060",
+    "source": "src/band2_batch1.cpp",
+    "signature": "void* __thiscall FUN_00514060(void*, unsigned)",
+    "confidence": "medium",
+    "evidence": "analysis/team/band2/deep/0x00514060.md; analysis/pseudocode/functions/0x514060.c",
+    "status": "unverified",
+    "unknowns": [
+      "owning class",
+      "member_4 semantics",
+      "deleting-dtor bytes are compiler lowering"
+    ]
+  },
+  {
+    "address": "0x00500460",
+    "name": "band2_candidate::FUN_00500460",
+    "source": "src/band2_batch1.cpp",
+    "signature": "void* __cdecl FUN_00500460(const char*, void*, void*, void*, void*, void*)",
+    "confidence": "high",
+    "evidence": "analysis/team/band2/deep/0x00500460.md; analysis/pseudocode/functions/500460.c",
+    "status": "unverified",
+    "unknowns": [
+      "shader arg types",
+      "return object type"
+    ]
+  }
+]

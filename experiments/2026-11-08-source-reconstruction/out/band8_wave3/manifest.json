@@ -1,0 +1,202 @@
+[
+ {
+  "address": "0x0068f924",
+  "name": "FUN_0068f924",
+  "source": "src/band8_rt.cpp",
+  "signature": "void FUN_0068f924(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x0068f924.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006a6863",
+  "name": "FUN_006a6863",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a6863(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006a6863.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006a686d",
+  "name": "FUN_006a686d",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a686d(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006a686d.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006a692a",
+  "name": "FUN_006a692a",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a692a(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006a692a.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006a6934",
+  "name": "FUN_006a6934",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a6934(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006a6934.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006a693e",
+  "name": "FUN_006a693e",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a693e(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006a693e.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006a6948",
+  "name": "FUN_006a6948",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a6948(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006a6948.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006b3910",
+  "name": "FUN_006b3910",
+  "source": "src/band8_rt.cpp",
+  "signature": "void FUN_006b3910(void* thisptr)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006b3910.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006be2f0",
+  "name": "FUN_006be2f0",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006be2f0(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006be2f0.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); callee semantics inferred from target name only"
+ },
+ {
+  "address": "0x006be380",
+  "name": "FUN_006be380",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006be380(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006be380.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); callee semantics inferred from target name only"
+ },
+ {
+  "address": "0x006bec20",
+  "name": "FUN_006bec20",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006bec20(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bec20.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); callee semantics inferred from target name only"
+ },
+ {
+  "address": "0x006bed60",
+  "name": "FUN_006bed60",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006bed60(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bed60.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); callee semantics inferred from target name only"
+ },
+ {
+  "address": "0x006bef00",
+  "name": "FUN_006bef00",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006bef00(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bef00.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); callee semantics inferred from target name only"
+ },
+ {
+  "address": "0x006bef10",
+  "name": "FUN_006bef10",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006bef10(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bef10.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); callee semantics inferred from target name only"
+ },
+ {
+  "address": "0x006bef80",
+  "name": "FUN_006bef80",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006bef80(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bef80.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); callee semantics inferred from target name only"
+ },
+ {
+  "address": "0x006bf3c0",
+  "name": "FUN_006bf3c0",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006bf3c0(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bf3c0.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); callee semantics inferred from target name only"
+ },
+ {
+  "address": "0x006bf9d7",
+  "name": "FUN_006bf9d7",
+  "source": "src/band8_rt.cpp",
+  "signature": "void FUN_006bf9d7(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bf9d7.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006bfa00",
+  "name": "FUN_006bfa00",
+  "source": "src/band8_critsect.cpp",
+  "signature": "void FUN_006bfa00(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bfa00.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006bfa10",
+  "name": "FUN_006bfa10",
+  "source": "src/band8_critsect.cpp",
+  "signature": "void FUN_006bfa10(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bfa10.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006bfb00",
+  "name": "FUN_006bfb00",
+  "source": "src/band8_critsect.cpp",
+  "signature": "void FUN_006bfb00(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x006bfb00.c; analysis/team/band8/triage.json; REA decompile",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ }
+]

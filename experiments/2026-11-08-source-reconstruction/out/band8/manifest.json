@@ -1,0 +1,321 @@
+{
+ "band": "band8",
+ "image_sha256": "6e88b90e4e2e30248d9e4de747b521cc03822b7ffeb214fd272b8ad1817447c9",
+ "address_start": "0x00672ecd",
+ "address_end": "0x006bfc80",
+ "compiler": "cl 13.10.3077 (UNAVAILABLE - no PASS claimed)",
+ "status": "UNVERIFIED",
+ "count": 31,
+ "functions": [
+  {
+   "address": "0x00673e38",
+   "name": "FUN_00673e38",
+   "source": "src/band8_leaves.cpp",
+   "signature": "int __stdcall FUN_00673e38(const int* a, const int* b)",
+   "confidence": "high",
+   "evidence": "analysis/team/band8/deep/0x00673e38.md; analysis/pseudocode/functions/0x673e38.c; REA asm/pseudo/callers",
+   "status": "UNVERIFIED",
+   "unknowns": "Wildcard 4-int pattern match; SUB offset vs dual pointers; original symbol unknown (PDB not loaded)"
+  },
+  {
+   "address": "0x0067dee3",
+   "name": "FUN_0067dee3",
+   "source": "src/band8_dtor.cpp",
+   "signature": "void* __thiscall FUN_0067dee3(void* self, unsigned char flags)",
+   "confidence": "medium",
+   "evidence": "deep/0x0067dee3.md; pseudocode 0x67dee3.c; REA asm-ev_a11b...",
+   "status": "UNVERIFIED",
+   "unknowns": "Deleting-dtor shape; class name unknown; base dtor 0x67ca57 identity; operator_delete 0x5f08d6"
+  },
+  {
+   "address": "0x006830bf",
+   "name": "FUN_006830bf",
+   "source": "src/band8_dtor.cpp",
+   "signature": "void* __thiscall FUN_006830bf(void* self, unsigned char flags)",
+   "confidence": "medium",
+   "evidence": "deep/0x006830bf.md; pseudocode 0x6830bf.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Vtable store *this=0x6f07e0 then base 0x6a0238; class layout unknown"
+  },
+  {
+   "address": "0x006923b0",
+   "name": "FUN_006923b0",
+   "source": "src/band8_png.cpp",
+   "signature": "int __stdcall FUN_006923b0(int a, int b)",
+   "confidence": "high",
+   "evidence": "deep/0x006923b0.md; pseudocode 0x6923b0.c",
+   "status": "UNVERIFIED",
+   "unknowns": "(a+b-1)/b signed IDIV; div-by-zero guard absent; signedness inferred"
+  },
+  {
+   "address": "0x006924d9",
+   "name": "FUN_006924d9",
+   "source": "src/band8_png.cpp",
+   "signature": "void __stdcall FUN_006924d9(void* p)",
+   "confidence": "high",
+   "evidence": "deep/0x006924d9.md; pseudocode 0x6924d9.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Safe-free wrapper; free target 0x5f0918 identity from Ghidra name"
+  },
+  {
+   "address": "0x006935c8",
+   "name": "FUN_006935c8",
+   "source": "src/band8_png.cpp",
+   "signature": "unsigned __stdcall FUN_006935c8(const unsigned char* p)",
+   "confidence": "high",
+   "evidence": "deep/0x006935c8.md; pseudocode 0x6935c8.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Big-endian u16 load; no bounds check; substring attribution is neighbourhood inference"
+  },
+  {
+   "address": "0x0069499f",
+   "name": "FUN_0069499f",
+   "source": "src/band8_png.cpp",
+   "signature": "unsigned __thiscall FUN_0069499f(void* self, unsigned mask)",
+   "confidence": "high",
+   "evidence": "deep/0x0069499f.md; pseudocode 0x69499f.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Returns *(this+0xe4)&mask; flag semantics/offset owner unknown; zero resolved callers"
+  },
+  {
+   "address": "0x0069edd0",
+   "name": "FUN_0069edd0",
+   "source": "src/band8_leaves.cpp",
+   "signature": "int __stdcall FUN_0069edd0(int x)",
+   "confidence": "high",
+   "evidence": "deep/0x0069edd0.md; pseudocode 0x69edd0.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Identity return x; zero resolved callers; may be vtable getter"
+  },
+  {
+   "address": "0x006ae2d0",
+   "name": "FUN_006ae2d0",
+   "source": "src/band8_leaves.cpp",
+   "signature": "int __stdcall FUN_006ae2d0(int* obj, int, int, int sub)",
+   "confidence": "medium",
+   "evidence": "deep/0x006ae2d0.md; pseudocode 0x6ae2d0.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Returns **(obj+1)+0x2c minus sub; 4 args required by RET 0x10; middle args unused"
+  },
+  {
+   "address": "0x006ae430",
+   "name": "FUN_006ae430",
+   "source": "src/band8_leaves.cpp",
+   "signature": "int __stdcall FUN_006ae430(int ignored)",
+   "confidence": "high",
+   "evidence": "deep/0x006ae430.md; pseudocode 0x6ae430.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Returns 1000000; single arg ignored; caller 0x692220 only evidence"
+  },
+  {
+   "address": "0x006b2a1a",
+   "name": "FUN_006b2a1a",
+   "source": "src/band8_zlib.cpp",
+   "signature": "void __stdcall FUN_006b2a1a(int value, void* stream)",
+   "confidence": "medium",
+   "evidence": "deep/0x006b2a1a.md; pseudocode 0x6b2a1a.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Tail callback via [stream+0x24] with ctx [stream+0x28]; stdcall vs cdecl ambiguous"
+  },
+  {
+   "address": "0x006b3da0",
+   "name": "FUN_006b3da0",
+   "source": "src/band8_zlib.cpp",
+   "signature": "void __thiscall FUN_006b3da0(void* self, int value)",
+   "confidence": "high",
+   "evidence": "deep/0x006b3da0.md; pseudocode 0x6b3da0.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Stores *(this+0x10)=value; class identity unknown"
+  },
+  {
+   "address": "0x006b9250",
+   "name": "__aullshr",
+   "source": "src/band8_crt.cpp",
+   "signature": "unsigned __int64 __aullshr(unsigned __int64 value, unsigned count)",
+   "confidence": "high",
+   "evidence": "deep/0x006b9250.md; pseudocode 0x6b9250.c; triage crt",
+   "status": "UNVERIFIED",
+   "unknowns": "CRT 64-bit shr helper; link, do not match as TU"
+  },
+  {
+   "address": "0x006b92b0",
+   "name": "__allmul",
+   "source": "src/band8_crt.cpp",
+   "signature": "__int64 __allmul(unsigned lo1,int hi1,unsigned lo2,int hi2)",
+   "confidence": "high",
+   "evidence": "deep/0x006b92b0.md; pseudocode 0x6b92b0.c; triage crt",
+   "status": "UNVERIFIED",
+   "unknowns": "CRT 64-bit mul helper; link, do not match as TU"
+  },
+  {
+   "address": "0x006b92f0",
+   "name": "__allshl",
+   "source": "src/band8_crt.cpp",
+   "signature": "__int64 __allshl(__int64 value, unsigned count)",
+   "confidence": "high",
+   "evidence": "deep/0x006b92f0.md; pseudocode 0x6b92f0.c; triage crt",
+   "status": "UNVERIFIED",
+   "unknowns": "CRT 64-bit shl helper; link, do not match as TU"
+  },
+  {
+   "address": "0x006bfc50",
+   "name": "FUN_006bfc50",
+   "source": "src/band8_init.cpp",
+   "signature": "void FUN_006bfc50(void)",
+   "confidence": "medium",
+   "evidence": "deep/0x006bfc50.md; pseudocode 0x6bfc50.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Stores 0x6c4eb4 to 0x728ad4; static-init fragment, match enclosing TU only"
+  },
+  {
+   "address": "0x006bfc60",
+   "name": "FUN_006bfc60",
+   "source": "src/band8_init.cpp",
+   "signature": "void FUN_006bfc60(void)",
+   "confidence": "medium",
+   "evidence": "deep/0x006bfc60.md; pseudocode 0x6bfc60.c; REA asm/pseudo",
+   "status": "UNVERIFIED",
+   "unknowns": "Bracket call 0x5edba0 with vtable stores; callee signature inferred"
+  },
+  {
+   "address": "0x006bfc80",
+   "name": "FUN_006bfc80",
+   "source": "src/band8_init.cpp",
+   "signature": "void FUN_006bfc80(void)",
+   "confidence": "low",
+   "evidence": "deep/0x006bfc80.md; pseudocode 0x6bfc80.c",
+   "status": "UNVERIFIED",
+   "unknowns": "Tail stub MOV ECX,0x729a08; JMP 0x5f0810; span 896 is end-of-text artifact, body 10 bytes"
+  },
+  {
+   "address": "0x00693659",
+   "name": "FUN_00693659",
+   "source": "src/band8_png.cpp",
+   "signature": "void FUN_00693659(void* dec, const unsigned char* chunk)",
+   "confidence": "medium",
+   "evidence": "analysis/pseudocode/functions/0x693659.c; triage gamebryo PNG string invalid chunk type",
+   "status": "UNVERIFIED",
+   "unknowns": "Validates 4 chunk-type bytes A-Z; error via 0x656619; param/badge shapes inferred"
+  },
+  {
+   "address": "0x00694242",
+   "name": "FUN_00694242",
+   "source": "src/band8_png.cpp",
+   "signature": "void FUN_00694242(void* dec, void* data, int len)",
+   "confidence": "medium",
+   "evidence": "pseudocode 0x694242.c; triage No image/IEND strings",
+   "status": "UNVERIFIED",
+   "unknowns": "IEND handler: flag 0x58 & 1/4 check, sets 0x18, CRC via 0x693ebc; struct layout inferred"
+  },
+  {
+   "address": "0x00694605",
+   "name": "FUN_00694605",
+   "source": "src/band8_png.cpp",
+   "signature": "void FUN_00694605(void* dec, int param, int crc)",
+   "confidence": "medium",
+   "evidence": "pseudocode 0x694605.c; triage unknown critical chunk",
+   "status": "UNVERIFIED",
+   "unknowns": "Unknown-chunk dispatcher; checks 0x10c flag 0x20; CRC tail"
+  },
+  {
+   "address": "0x00693ebc",
+   "name": "FUN_00693ebc",
+   "source": "src/band8_png.cpp",
+   "signature": "int FUN_00693ebc(void* dec, unsigned remaining)",
+   "confidence": "medium",
+   "evidence": "pseudocode 0x693ebc.c; triage CRC error strings",
+   "status": "UNVERIFIED",
+   "unknowns": "Loops 0x6935e2 then CRC verify at 0x6935fb; returns 0/1"
+  },
+  {
+   "address": "0x006924f1",
+   "name": "FUN_006924f1",
+   "source": "src/band8_png.cpp",
+   "signature": "void* FUN_006924f1(void* dec)",
+   "confidence": "low",
+   "evidence": "pseudocode 0x6924f1.c; triage Out of Memory",
+   "status": "UNVERIFIED",
+   "unknowns": "Out-of-Memory terminator path via 0x6565dd; exact body reconstructed from pseudocode header only"
+  },
+  {
+   "address": "0x0067e9a7",
+   "name": "FUN_0067e9a7",
+   "source": "src/band8_shader.cpp",
+   "signature": "void __thiscall FUN_0067e9a7(void* self, int v)",
+   "confidence": "medium",
+   "evidence": "pseudocode 0x67e9a7.c; REA deep for ctor pattern",
+   "status": "UNVERIFIED",
+   "unknowns": "Inits shader object: fields 0x8a/0x56, vtable 0x6f0668, Position/Color strings; base call 0x6a0152"
+  },
+  {
+   "address": "0x006b2daa",
+   "name": "FUN_006b2daa",
+   "source": "src/band8_zlib.cpp",
+   "signature": "int FUN_006b2daa(void* st, int* out, void* a, void* b, void* strm)",
+   "confidence": "medium",
+   "evidence": "pseudocode 0x6b2daa.c; triage dynamic bit lengths strings",
+   "status": "UNVERIFIED",
+   "unknowns": "Allocates via strm+0x20, builds tree via 0x6b2a2b, oversubscribed/incomplete handling"
+  },
+  {
+   "address": "0x006b2e23",
+   "name": "FUN_006b2e23",
+   "source": "src/band8_zlib.cpp",
+   "signature": "int FUN_006b2e23(unsigned n,void* a,int b,int* c,int* d,void* e,void* f,void* g,void* strm)",
+   "confidence": "medium",
+   "evidence": "pseudocode 0x6b2e23.c; triage distance-tree strings",
+   "status": "UNVERIFIED",
+   "unknowns": "Literal+distance tree builder; exhaustive error strings; signature is full REA form"
+  },
+  {
+   "address": "0x00675ec3",
+   "name": "FUN_00675ec3",
+   "source": "src/band8_shader.cpp",
+   "signature": "int FUN_00675ec3(void* self,int a,unsigned b,unsigned c,unsigned d,int e)",
+   "confidence": "low",
+   "evidence": "pseudocode 0x675ec3.c; triage InputRemap string",
+   "status": "UNVERIFIED",
+   "unknowns": "InputRemap matcher; uses 0x672e90, ECX-register noise; low confidence reconstruction"
+  },
+  {
+   "address": "0x0067c8e9",
+   "name": "FUN_0067c8e9",
+   "source": "src/band8_shader.cpp",
+   "signature": "int FUN_0067c8e9(void* self,unsigned a,unsigned b,unsigned* c)",
+   "confidence": "low",
+   "evidence": "pseudocode 0x67c8e9.c; triage cannot map swizzle",
+   "status": "UNVERIFIED",
+   "unknowns": "Swizzle mapper; calls 0x673e38 wildcard match; ECX=this confirmed"
+  },
+  {
+   "address": "0x0067327b",
+   "name": "FUN_0067327b",
+   "source": "src/band8_shader.cpp",
+   "signature": "int __thiscall FUN_0067327b(void* self)",
+   "confidence": "low",
+   "evidence": "pseudocode 0x67327b.c; triage Clip must be from a 3 vector",
+   "status": "UNVERIFIED",
+   "unknowns": "Clip-vector validator; exact diagnostic + register use inferred; body 648B approximated"
+  },
+  {
+   "address": "0x006752d1",
+   "name": "FUN_006752d1",
+   "source": "src/band8_shader.cpp",
+   "signature": "int __thiscall FUN_006752d1(void* self)",
+   "confidence": "low",
+   "evidence": "pseudocode 0x6752d1.c; triage w-component/texcoord strings",
+   "status": "UNVERIFIED",
+   "unknowns": "ps_1.x w-component check; complex loop approximated, not byte-perfect"
+  },
+  {
+   "address": "0x00693ba4",
+   "name": "FUN_00693ba4",
+   "source": "src/band8_png.cpp",
+   "signature": "void FUN_00693ba4(void* dec)",
+   "confidence": "low",
+   "evidence": "pseudocode 0x693ba4.c; triage Ignoring bad adaptive filter",
+   "status": "UNVERIFIED",
+   "unknowns": "Adaptive-filter warning path; exact 377B body approximated from header+pseudocode prefix"
+  }
+ ]
+}

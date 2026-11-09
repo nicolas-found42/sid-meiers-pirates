@@ -1,0 +1,202 @@
+[
+ {
+  "address": "0x0060d3ea",
+  "name": "HLSl_StoreMacro",
+  "source": "src/band6_wave2_hlsl.cpp",
+  "signature": "int __thiscall Band6Wave2_StoreMacro(void* self, void* entry)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x60d3ea.c; triage: D3DX HLSL preprocessor/parser strings (linked shader compiler)",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x0060e4ea",
+  "name": "HLSl_SeedDefines",
+  "source": "src/band6_wave2_hlsl.cpp",
+  "signature": "int __thiscall Band6Wave2_SeedDefines(void* self, int* params)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x60e4ea.c; triage: D3DX HLSL preprocessor/parser strings (linked shader compiler)",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x0060e723",
+  "name": "HLSl_EvalOp",
+  "source": "src/band6_wave2_hlsl.cpp",
+  "signature": "void __thiscall Band6Wave2_EvalOp(void* self, unsigned int op, int n)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x60e723.c; triage: D3DX HLSL preprocessor/parser strings (linked shader compiler)",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x0060eb43",
+  "name": "HLSl_YaccParse",
+  "source": "src/band6_wave2_hlsl.cpp",
+  "signature": "int __thiscall Band6Wave2_YaccParse(void* self)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x60eb43.c; triage: D3DX HLSL preprocessor/parser strings (linked shader compiler)",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x0060f155",
+  "name": "HLSl_NextToken",
+  "source": "src/band6_wave2_hlsl.cpp",
+  "signature": "unsigned int __thiscall Band6Wave2_NextToken(void* self, int* token)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x60f155.c; triage: D3DX HLSL preprocessor/parser strings (linked shader compiler)",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005db0a0",
+  "name": "Band6Wave2_StateInit",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void __thiscall Band6Wave2_StateInit(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5db0a0.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005db500",
+  "name": "Band6Wave2_Release",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void __thiscall Band6Wave2_Release(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5db500.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005db620",
+  "name": "Band6Wave2_CopyDesc",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "unsigned int __thiscall Band6Wave2_CopyDesc(void* self, unsigned char* desc)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5db620.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005db6c0",
+  "name": "Band6Wave2_MarkDirty",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void __thiscall Band6Wave2_MarkDirty(void* self, int* ctx)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5db6c0.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005db710",
+  "name": "Band6Wave2_DtorBody",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void __thiscall Band6Wave2_DtorBody(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5db710.c; triage: 0x5db deleting-dtor wrapper of NiD3D shader class (operator_delete tail, not standalone CRT)",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005db750",
+  "name": "Band6Wave2_EnsureDesc",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void __thiscall Band6Wave2_EnsureDesc(void* self, int kind)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5db750.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005db7b0",
+  "name": "Band6Wave2_DeletingDtor",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void* __thiscall Band6Wave2_DeletingDtor(void* self, unsigned char f)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5db7b0.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005db830",
+  "name": "Band6Wave2_BufferInit",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void __thiscall Band6Wave2_BufferInit(void* self, unsigned int a, int* b)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5db830.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005dbaf0",
+  "name": "Band6Wave2_Create",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void* Band6Wave2_Create(unsigned int a, int* b)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbaf0.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005dbb20",
+  "name": "Band6Wave2_Flush",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void __thiscall Band6Wave2_Flush(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbb20.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005dbc50",
+  "name": "Band6Wave2_DeletingDtor2",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void* __thiscall Band6Wave2_DeletingDtor2(void* self, unsigned char f)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbc50.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005dbd00",
+  "name": "Band6Wave2_Fetch",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "int __thiscall Band6Wave2_Fetch(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbd00.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005dbd70",
+  "name": "Band6Wave2_GetFieldC",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void* __thiscall Band6Wave2_GetFieldC(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbd70.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005dbd80",
+  "name": "Band6Wave2_SetName",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void __thiscall Band6Wave2_SetName(void* self, char* s)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbd80.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ },
+ {
+  "address": "0x005dbe20",
+  "name": "Band6Wave2_GetField10",
+  "source": "src/band6_wave2_wrappers.cpp",
+  "signature": "void* __thiscall Band6Wave2_GetField10(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbe20.c; triage: 0x5db-0x5de NiD3D shader-wrapper cluster: vtable init / getter / shader helper, no game strings",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field offsets observed in pseudocode only."
+ }
+]

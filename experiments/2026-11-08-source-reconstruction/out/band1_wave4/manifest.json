@@ -1,0 +1,172 @@
+[
+  {
+    "address": "0x00473b70",
+    "name": "grid_registry_9slot",
+    "source": "src/priority.cpp",
+    "signature": "void FUN_00473b70_recon(uint param_1, int param_2, uint param_3)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x473b70.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: 3 ranges non-contiguous; 9-slot loops; 0x427a0000; slots 0xd2/0xd4; strings @NAVKEYHELP..@LBATTLESKEYHELP; DAT_0085a11c=0x32"
+    ]
+  },
+  {
+    "address": "0x004b40b0",
+    "name": "param_poller_eax",
+    "source": "src/priority.cpp",
+    "signature": "void FUN_004b40b0_recon(int param_1, int param_2, int eax_idx)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4b40b0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: 2 ranges non-contiguous; EAX register index; +0x88/+0xa4/+0xc/+0x81/+0xf2; 10s strings; pauseMenuBG.dds; 0xbf800000"
+    ]
+  },
+  {
+    "address": "0x00450cf0",
+    "name": "scene_setup_once",
+    "source": "src/priority.cpp",
+    "signature": "void FUN_00450cf0_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x450cf0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: DAT_008ca998 guard; 0xfffffff0|0x80000020; 0xc0 blocks PTR_FUN_006fd14c; jailed_pc.kfm; Camera All; shadow_01; 0x3dcccccd/0x47c35000"
+    ]
+  },
+  {
+    "address": "0x00483ca0",
+    "name": "scene_teardown_fx",
+    "source": "src/priority.cpp",
+    "signature": "void FUN_00483ca0_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x483ca0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: 2 ranges non-contiguous; 0x15 mask loop stride 0x40; fx_lantern/fx_candle/fx_fireplace; +0xb4 toggles"
+    ]
+  },
+  {
+    "address": "0x00470b90",
+    "name": "name_entry_loop",
+    "source": "src/priority.cpp",
+    "signature": "void FUN_00470b90_recon(void)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x470b90.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: 260-byte buffer; Name: ; guard 0x12d; 0xffc00000; keys 0x210/0x1b/8/0x20; %s_%03X lookup"
+    ]
+  },
+  {
+    "address": "0x00412c90",
+    "name": "guarded_delete_store",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_00412c90_recon(int* esi_ptr)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x412c90.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: -8 byte offset; guard DAT_008cacc8; store DAT_008cacd0; ESI register-only"
+    ]
+  },
+  {
+    "address": "0x00419dc0",
+    "name": "oneshot_vtable_call",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_00419dc0_recon(void* ecx_this)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x419dc0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: DAT_008ca928 clear-then-call arg 1; ECX register-only"
+    ]
+  },
+  {
+    "address": "0x00431910",
+    "name": "pair_table_search",
+    "source": "src/small_leaves.cpp",
+    "signature": "int FUN_00431910_recon(int ecx_val, int edx_val)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x431910.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: DAT_007252f0/750 pair search bound 8 returns -1; ECX/EDX register-only"
+    ]
+  },
+  {
+    "address": "0x004842d0",
+    "name": "nul_copy_store",
+    "source": "src/small_leaves.cpp",
+    "signature": "void FUN_004842d0_recon(void* eax_src, uint32_t param_1)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4842d0.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: EAX to DAT_008bea80 NUL copy then DAT_008be9f4 store; EAX register-only"
+    ]
+  },
+  {
+    "address": "0x004bf420",
+    "name": "first_gt_scan",
+    "source": "src/small_leaves.cpp",
+    "signature": "uint32_t FUN_004bf420_recon(int ecx_val)",
+    "confidence": "medium",
+    "evidence": [
+      "analysis/pseudocode/functions/0x4bf420.c",
+      "analysis/team/band1/triage.json"
+    ],
+    "status": "unverified",
+    "unknowns": [
+      "original source name not invented; corpus FUN_* label retained",
+      "global types/layouts and callee arities inferred from pseudocode call sites",
+      "observed: DAT_007271d0 scan bound 0x35 first > ECX; ECX register-only"
+    ]
+  }
+]

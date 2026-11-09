@@ -7,16 +7,17 @@
 - Derived image: `experiments/2026-11-08-target-identification/output/extracted/app/Pirates!.exe`, 3,323,288 bytes, SHA-256 `6e88b90e4e2e30248d9e4de747b521cc03822b7ffeb214fd272b8ad1817447c9`.
 - Engine: statically linked Gamebryo 10.1.0.0 (NiMain, NiAnimation, NiCollision, NiDX9), Miles sound, Bink video, dynamic VC7.1 CRT.
 - Implementation: `tools/pe.py` (PE facts), `tools/build_inventory.py` (Ghidra inventory), `tools/match.py` (compile-and-compare harness), `tests/run_fixture.py` (harness validation).
-- Status: observed and reproduced on 2026-11-08. Inventory and harness are complete and tested. No game function has been matched yet: the original compiler is not installed.
-- Current blocker: `cl` 13.10.3077 / `link` 7.10.3077 (Visual C++ .NET 2003, available as the free Visual C++ Toolkit 2003) is not installed. The host is Apple Silicon, where 32-bit x86 execution is not assumed; verify a capable Wine/VM host before installing.
-- Next action: verify the exact compiler on a 32-bit-capable host, then create `src/` for the first candidate unit and run `tools/match.py compare`.
+- Status: observed and reproduced on 2026-11-08. **Decompilation is complete**: all 8,181 analyzed internal functions have a Ghidra 12.2 listing, and 341 external imports are indexed; `tools/build_decompile_index.py` verifies 0 missing and 0 bad hashes. The readable reconstruction tree at `reconstruction/` holds an unverified C++ candidate for all 7,862 matchable functions (360 batch sources under `experiments/2026-11-08-source-reconstruction/out/`; 7,166 full-body, 696 manifest-partial, 340 `NEEDS_MANUAL` sites), 562 class/vtable records, and 57 headers with explicit 32-bit padding; 1,188 field offsets check clean. 3 PASS: the recovered VC7.1 compiler (`cl` 13.10.3077 under Mach9 Wine) has produced byte-identical code for `FUN_00547610`, `FUN_0054a9f0`, `FUN_005366b0` via `tools/match.py`; the remaining candidates are unverified.
+- Current blocker: none for reconstruction coverage. Toolchain is installed and proven (see [findings/2026-11-08-compiler-availability.md](findings/2026-11-08-compiler-availability.md)); bulk candidate fidelity is the open question.
+- Next action: turn mass candidates into compilable `build/units.json` entries (fix the 340 `NEEDS_MANUAL` sites first), then run `tools/match.py compare` at scale toward byte-identical matches. Load or acquire the matching `Pirates!.pdb` if it surfaces. `tools/recon_status.py`, `tools/check_class_layout.py`, and `tools/merge_reconstruction.py` validate the tree.
 
 ## Layout
 
 - `build/functions.json`: 8,181 internal functions with addresses and spans, generated from a Ghidra 12.2 inventory.
 - `build/units.json`: image identity, compiler recipe, and the list of claimed translation units. Empty until the toolchain is verified.
 - `src/`: C++ translation units, organized by subsystem, added only with a unit declaration.
-- `tools/`: PE reader, inventory generator, matching harness.
+- `reconstruction/`: complete decompilation index (`DECOMPILATION.md`, `decompilation-index.json`), decompiler-derived unverified candidates, class headers, merged manifest, and remaining queue; regenerate with `tools/build_decompile_index.py` and `tools/merge_reconstruction.py`.
+- `tools/`: PE reader, inventory generator, matching harness, reconstruction validators.
 - `tests/`: end-to-end harness fixture (pass and negative control).
 - `findings/`: conclusions with exact evidence.
 - `references/`: source citations.
@@ -30,4 +31,4 @@
 - `python3 tools/match.py check …` validates image hash, inventory hash, claimed addresses and duplicate claims. With no units it reports 0 of 8,181 claimed.
 - `python3 tests/run_fixture.py` compiles a two-function C file, links it at a fixed image base, relocates a COFF object, compares both functions, and verifies that one flipped image byte makes the comparison fail.
 
-See [findings/2026-11-08-target-identification.md](findings/2026-11-08-target-identification.md) and [docs/METHOD.md](docs/METHOD.md).
+See [findings/2026-11-08-target-identification.md](findings/2026-11-08-target-identification.md), [findings/2026-11-08-team-decompilation.md](findings/2026-11-08-team-decompilation.md) and [docs/METHOD.md](docs/METHOD.md).

@@ -1,0 +1,261 @@
+[
+ {
+  "address": "0x0054b030",
+  "name": "FUN_0054b030",
+  "source": "src/sync_list_54b030_54b490.cpp",
+  "signature": "void __thiscall FUN_0054b030(Node* self)",
+  "confidence": 0.7,
+  "evidence": "pseudocode 0x54b030.c: GetCurrentThreadId/Enter/LeaveCriticalSection, +0x1c/+0x20 links, 0x727930/0x727934 head/tail, 0x727958/0x72795c/0x727940 guard",
+  "status": "unverified",
+  "unknowns": [
+   "struct Node exact field names",
+   "critical-section size",
+   "DWORD/LPCRITICAL_SECTION ABI widths"
+  ]
+ },
+ {
+  "address": "0x0054b490",
+  "name": "FUN_0054b490",
+  "source": "src/sync_list_54b030_54b490.cpp",
+  "signature": "void __thiscall FUN_0054b490(Node* self)",
+  "confidence": 0.7,
+  "evidence": "pseudocode 0x54b490.c: unlink counterpart to 0x54b030, same guard globals, +0x1c/+0x20 splice",
+  "status": "unverified",
+  "unknowns": [
+   "same as 0x0054b030"
+  ]
+ },
+ {
+  "address": "0x0054ae80",
+  "name": "FUN_0054ae80",
+  "source": "src/deleting_dtors_54ae80_54b440.cpp",
+  "signature": "void __thiscall FUN_0054ae80(Obj54ae80* self, uint8_t flag)",
+  "confidence": 0.65,
+  "evidence": "pseudocode 0x54ae80.c: vtable 0x6c1fb4 then 0x6fd148, free 0x727928, 0x727444 decrement, flag&1 operator_delete",
+  "status": "unverified",
+  "unknowns": [
+   "vtable identities",
+   "0x727928/0x727444 types",
+   "FUN_0055ad50 side effects"
+  ]
+ },
+ {
+  "address": "0x0054b440",
+  "name": "FUN_0054b440",
+  "source": "src/deleting_dtors_54ae80_54b440.cpp",
+  "signature": "void __thiscall FUN_0054b440(Obj54b440* self)",
+  "confidence": 0.6,
+  "evidence": "pseudocode 0x54b440.c: vtable 0x6c1fc8, delete +0x0c/+0x10, indirect +0x18 call, FUN_0054b490, peer +0x14 release, FUN_00538400",
+  "status": "unverified",
+  "unknowns": [
+   "destructor call orders",
+   "FUN_00538400 role",
+   "peer refcount offset"
+  ]
+ },
+ {
+  "address": "0x0054b1a0",
+  "name": "FUN_0054b1a0",
+  "source": "src/factory_54b1a0.cpp",
+  "signature": "Obj54b1a0* __cdecl FUN_0054b1a0(void* peer)",
+  "confidence": 0.6,
+  "evidence": "pseudocode 0x54b1a0.c: FUN_00533c78(0x24), zero indices 3..8, push 0x54b030, peer +0x14 swap, validate vcall +0x114 via 0x727c30",
+  "status": "unverified",
+  "unknowns": [
+   "creator/validator class",
+   "FUN_005383d0 init",
+   "failure cleanup exactness"
+  ]
+ },
+ {
+  "address": "0x0054b380",
+  "name": "FUN_0054b380",
+  "source": "src/write_54b380.cpp",
+  "signature": "void __thiscall FUN_0054b380(Obj54b380* self, uint8_t flag)",
+  "confidence": 0.4,
+  "evidence": "pseudocode 0x54b380.c: sink +0x158 vcall +0x0c, +0x0c/+0x14 branch, 128-byte stack buffer, CONCAT31/shift path, FUN_00538430/00545950",
+  "status": "unverified",
+  "unknowns": [
+   "sink interface",
+   "CONCAT31 byte order",
+   "second sink call buffer offset"
+  ]
+ },
+ {
+  "address": "0x0054b530",
+  "name": "FUN_0054b530",
+  "source": "src/append_54b530.cpp",
+  "signature": "void __thiscall FUN_0054b530(Arr54b530* self)",
+  "confidence": 0.65,
+  "evidence": "pseudocode 0x54b530.c: +0x08/+0x0c/+0x14, FUN_00557b10(0x727938), grow 0x6b34a0, append FUN_005606f0",
+  "status": "unverified",
+  "unknowns": [
+   "element size for grow math",
+   "FUN_005386f0 role"
+  ]
+ },
+ {
+  "address": "0x0054b580",
+  "name": "FUN_0054b580",
+  "source": "src/find_54b580.cpp",
+  "signature": "uint32_t __thiscall FUN_0054b580(Map54b580* self)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54b580.c: buckets +0x38/+0x3c, index +0x58, chain +0x08/+0x0c, freelist +0x44",
+  "status": "unverified",
+  "unknowns": [
+   "Entry layout",
+   "exact splice order when aux!=0"
+  ]
+ },
+ {
+  "address": "0x0054b730",
+  "name": "FUN_0054b730",
+  "source": "src/bucket_insert_54b730.cpp",
+  "signature": "void __thiscall FUN_0054b730(Map54b730* self, void* param_1)",
+  "confidence": 0.45,
+  "evidence": "pseudocode 0x54b730.c: peer +0xb4, key *(peer[10]+0x2c)+4, bucket %(+0x3c), pool alloc <<4, freelist +0x44",
+  "status": "unverified",
+  "unknowns": [
+   "refcount release ordering",
+   "token-list linkage",
+   "key derivation offsets"
+  ]
+ },
+ {
+  "address": "0x0054b840",
+  "name": "FUN_0054b840",
+  "source": "src/queue_add_54b840.cpp",
+  "signature": "int __thiscall FUN_0054b840(Q54b840* self, void* param_1)",
+  "confidence": 0.55,
+  "evidence": "pseudocode 0x54b840.c: addref/release +0xb4, flag +0x34 and +0x20 bit0/bit13 routing, FUN_0054b730 else FUN_00524a60",
+  "status": "unverified",
+  "unknowns": [
+   "alloc vcall details",
+   "flag semantics"
+  ]
+ },
+ {
+  "address": "0x0054b8c0",
+  "name": "FUN_0054b8c0",
+  "source": "src/ctors_54b8c0_54b970.cpp",
+  "signature": "void __thiscall FUN_0054b8c0(Obj54b8c0* self)",
+  "confidence": 0.6,
+  "evidence": "pseudocode 0x54b8c0.c: base 0x54b970, vtable 0x6c2020/0x6c2064, 0xd4 alloc, 0x80/0x35 fields",
+  "status": "unverified",
+  "unknowns": [
+   "field names",
+   "zero-loop second bound"
+  ]
+ },
+ {
+  "address": "0x0054b970",
+  "name": "FUN_0054b970",
+  "source": "src/ctors_54b8c0_54b970.cpp",
+  "signature": "void __thiscall FUN_0054b970(Obj54b8c0* self)",
+  "confidence": 0.65,
+  "evidence": "pseudocode 0x54b970.c: FUN_005565b0, vtable 0x6c2088, byte +0x0d=1, +0x35=0",
+  "status": "unverified",
+  "unknowns": [
+   "FUN_005565b0 role",
+   "flag meaninigs"
+  ]
+ },
+ {
+  "address": "0x0054b650",
+  "name": "FUN_0054b650",
+  "source": "src/dtors_54b650_54b6c0.cpp",
+  "signature": "void __thiscall FUN_0054b650(Obj54b650* self)",
+  "confidence": 0.55,
+  "evidence": "pseudocode 0x54b650.c: vtable 0x6c2020, list +0x4c free *(+8), +0x38 free, 0x6c2064/FUN_005edba0, 0x6c2010/FUN_0054b990",
+  "status": "unverified",
+  "unknowns": [
+   "list node layout",
+   "vtable2 index"
+  ]
+ },
+ {
+  "address": "0x0054b6c0",
+  "name": "FUN_0054b6c0",
+  "source": "src/dtors_54b650_54b6c0.cpp",
+  "signature": "void __thiscall FUN_0054b6c0(Obj54b650* self, uint8_t flag)",
+  "confidence": 0.65,
+  "evidence": "pseudocode 0x54b6c0.c: vtable 0x6c2064, FUN_005edba0, 0x6c2010, flag&1 delete",
+  "status": "unverified",
+  "unknowns": [
+   "base hierarchy"
+  ]
+ },
+ {
+  "address": "0x0054b6f0",
+  "name": "FUN_0054b6f0",
+  "source": "src/iter_cb_54b6f0.cpp",
+  "signature": "void __thiscall FUN_0054b6f0(Obj54b6f0* self)",
+  "confidence": 0.55,
+  "evidence": "pseudocode 0x54b6f0.c: guard +0x0c, aux +0x188, iterate FUN_0054b580, vcall +0x70, FUN_00556430",
+  "status": "unverified",
+  "unknowns": [
+   "callback signature",
+   "FUN_0054b580 element type"
+  ]
+ },
+ {
+  "address": "0x0054b9a0",
+  "name": "FUN_0054b9a0",
+  "source": "src/misc_54b9a0_54ba20_54ba50.cpp",
+  "signature": "void __thiscall FUN_0054b9a0(Obj54b9a0* src, Obj54b9a0* dst)",
+  "confidence": 0.6,
+  "evidence": "pseudocode 0x54b9a0.c: thunk_FUN_00538410, copy +0x34/+0x35",
+  "status": "unverified",
+  "unknowns": [
+   "copy operand order"
+  ]
+ },
+ {
+  "address": "0x0054ba20",
+  "name": "FUN_0054ba20",
+  "source": "src/misc_54b9a0_54ba20_54ba50.cpp",
+  "signature": "bool __cdecl FUN_0054ba20(void* p)",
+  "confidence": 0.65,
+  "evidence": "pseudocode 0x54ba20.c: bool wrapper over FUN_00556280",
+  "status": "unverified",
+  "unknowns": [
+   "FUN_00556280 semantics"
+  ]
+ },
+ {
+  "address": "0x0054ba50",
+  "name": "FUN_0054ba50",
+  "source": "src/misc_54b9a0_54ba20_54ba50.cpp",
+  "signature": "void __thiscall FUN_0054ba50(Obj54b9a0* self, uint8_t flag)",
+  "confidence": 0.65,
+  "evidence": "pseudocode 0x54ba50.c: vtable 0x6c2088, FUN_005562a0, flag&1 delete",
+  "status": "unverified",
+  "unknowns": []
+ },
+ {
+  "address": "0x0054ba80",
+  "name": "FUN_0054ba80",
+  "source": "src/transform_54ba80.cpp",
+  "signature": "void __thiscall FUN_0054ba80(Obj54ba80* self)",
+  "confidence": 0.5,
+  "evidence": "pseudocode 0x54ba80.c: +0x28/+0x2c grow, floats +0x104/108/10c, dot product, flag +0x35 subtract, FUN_00556330",
+  "status": "unverified",
+  "unknowns": [
+   "non-contiguous second range",
+   "sort key role"
+  ]
+ },
+ {
+  "address": "0x0054bc20",
+  "name": "FUN_0054bc20",
+  "source": "src/route_54bc20.cpp",
+  "signature": "int __thiscall FUN_0054bc20(Q54bc20* self, void* param_1)",
+  "confidence": 0.55,
+  "evidence": "pseudocode 0x54bc20.c: addref +0xb4, FUN_005e4780, flag +0x34 route, FUN_00524a60, return 1 else 0",
+  "status": "unverified",
+  "unknowns": [
+   "alloc vcall",
+   "route condition direction"
+  ]
+ }
+]

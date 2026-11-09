@@ -1,0 +1,293 @@
+[
+ {
+  "address": "0x0061288b",
+  "name": "FUN_0061288B",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x61288b.c (span 11)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x006294f9",
+  "name": "FUN_006294F9",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6294f9.c (span 11)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00656706",
+  "name": "FUN_00656706",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x656706.c (span 11)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00670ea1",
+  "name": "FUN_00670EA1",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x670ea1.c (span 11)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0063271d",
+  "name": "FUN_0063271D",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x63271d.c (span 12)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0065c2b3",
+  "name": "FUN_0065C2B3",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65c2b3.c (span 12)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x006293f7",
+  "name": "FUN_006293F7",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6293f7.c (span 15)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00629406",
+  "name": "FUN_00629406",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x629406.c (span 15)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00629384",
+  "name": "FUN_00629384",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x629384.c (span 16)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00654820",
+  "name": "FUN_00654820",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x654820.c (span 16)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00657361",
+  "name": "FUN_00657361",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x657361.c (span 16)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0065754e",
+  "name": "FUN_0065754E",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x65754e.c (span 16)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x006293c0",
+  "name": "FUN_006293C0",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6293c0.c (span 18)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0062ac89",
+  "name": "FUN_0062AC89",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x62ac89.c (span 18)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0063e524",
+  "name": "FUN_0063E524",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x63e524.c (span 18)",
+   "analysis/team/band7/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00610ba0",
+  "name": "FUN_00610BA0",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x610ba0.c (span 54)",
+   "analysis/team/band7/triage.json",
+   "analysis/team/band7/deep/0x00610ba0.md"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00647b28",
+  "name": "FUN_00647B28",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x647b28.c (span 43)",
+   "analysis/team/band7/triage.json",
+   "analysis/team/band7/deep/0x00647b28.md"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00672e90",
+  "name": "FUN_00672E90",
+  "source": "src/functions_1.cpp",
+  "signature": "UNVERIFIED helper; see source (thiscall/cdecl per body)",
+  "confidence": "low",
+  "evidence": [
+   "analysis/pseudocode/functions/0x672e90.c (span 61)",
+   "analysis/team/band7/triage.json",
+   "analysis/team/band7/deep/0x00672e90.md"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "declares/uses helpers outside slice (types/symbols unknown)",
+   "cl 13.10.3077 absent"
+  ]
+ }
+]

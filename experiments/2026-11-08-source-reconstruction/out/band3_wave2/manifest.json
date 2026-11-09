@@ -1,0 +1,342 @@
+[
+ {
+  "address": "0x00533b9d",
+  "name": "FUN_00533b9d",
+  "source": "src/small_array.cpp",
+  "signature": "void FUN_00533b9d(void*)",
+  "confidence": 0.55,
+  "evidence": [
+   "analysis/pseudocode/functions/0x533b9d.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x00533b80",
+  "name": "FUN_00533b80",
+  "source": "src/small_array.cpp",
+  "signature": "void __thiscall FUN_00533b80(void*)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x533b80.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x005185c0",
+  "name": "FUN_005185c0",
+  "source": "src/small_array.cpp",
+  "signature": "void FUN_005185c0(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x5185c0.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x00518730",
+  "name": "FUN_00518730",
+  "source": "src/small_array.cpp",
+  "signature": "void FUN_00518730(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x518730.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x005187b0",
+  "name": "FUN_005187b0",
+  "source": "src/small_array.cpp",
+  "signature": "void FUN_005187b0(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x5187b0.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x00518860",
+  "name": "FUN_00518860",
+  "source": "src/small_array.cpp",
+  "signature": "void FUN_00518860(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x518860.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x00518940",
+  "name": "FUN_00518940",
+  "source": "src/small_array.cpp",
+  "signature": "void FUN_00518940(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x518940.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x0051a6e0",
+  "name": "FUN_0051a6e0",
+  "source": "src/small_array.cpp",
+  "signature": "void FUN_0051a6e0(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x51a6e0.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x0051c1e0",
+  "name": "FUN_0051c1e0",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_0051c1e0(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x51c1e0.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x0051e4d0",
+  "name": "FUN_0051e4d0",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_0051e4d0(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x51e4d0.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x0051f040",
+  "name": "FUN_0051f040",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_0051f040(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x51f040.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x0051f140",
+  "name": "FUN_0051f140",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_0051f140(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x51f140.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x00520390",
+  "name": "FUN_00520390",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_00520390(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x520390.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x00520e70",
+  "name": "FUN_00520e70",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_00520e70(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x520e70.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x005235a0",
+  "name": "FUN_005235a0",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_005235a0(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x5235a0.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x005271b0",
+  "name": "FUN_005271b0",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_005271b0(uint8_t,void*)",
+  "confidence": 0.8,
+  "evidence": [
+   "analysis/pseudocode/functions/0x5271b0.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x005289f0",
+  "name": "FUN_005289f0",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_005289f0(void*)",
+  "confidence": 0.5,
+  "evidence": [
+   "analysis/pseudocode/functions/0x5289f0.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x00529420",
+  "name": "FUN_00529420",
+  "source": "src/small_dtors.cpp",
+  "signature": "uint32_t FUN_00529420(uint32_t*)",
+  "confidence": 0.5,
+  "evidence": [
+   "analysis/pseudocode/functions/0x529420.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x0052a800",
+  "name": "FUN_0052a800",
+  "source": "src/small_dtors.cpp",
+  "signature": "uint32_t* FUN_0052a800(uint32_t*,const uint32_t*,uint32_t)",
+  "confidence": 0.5,
+  "evidence": [
+   "analysis/pseudocode/functions/0x52a800.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ },
+ {
+  "address": "0x0052a870",
+  "name": "FUN_0052a870",
+  "source": "src/small_dtors.cpp",
+  "signature": "void FUN_0052a870(uint32_t,uint32_t,uint32_t)",
+  "confidence": 0.5,
+  "evidence": [
+   "analysis/pseudocode/functions/0x52a870.c",
+   "analysis/team/band3/triage.json"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original symbol/type names not invented; corpus label retained",
+   "global/data/vtable identities unverified",
+   "no cl 13.10.3077 on this host; no byte-match claim"
+  ]
+ }
+]

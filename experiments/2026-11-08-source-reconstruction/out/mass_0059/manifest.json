@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x004e2970",
+  "name": "FUN_004e2970",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e2970(void* self, uint32_t* param_1, uint32_t* param_2, uint32_t* param_3,\n                  uint32_t* param_4 /* in EDI */)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e2970.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e2c10",
+  "name": "FUN_004e2c10",
+  "source": "src/mass_0059.cpp",
+  "signature": "// Destructor body: unlocks the two scene graph bindings (vtable slot 0x74), drops\n// the nine mesh slots at self+0xa8, then the remaining refcounted members and the\n// heap buffer at self+0xd4 (offset 0x35 dwords). Receivers: ESI = self, EDI = an\n// extra refcounted handle released early.\nvoid FUN_004e2c10(void* self, uint32_t* param_4 /* in EDI */)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e2c10.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e2df0",
+  "name": "FUN_004e2df0",
+  "source": "src/mass_0059.cpp",
+  "signature": "// Enables the water pass once: binds the two scene objects (slot 0x70) and flushes\n// the pipeline twice. Idempotent through the byte flag at self+0xf0.\nvoid FUN_004e2df0(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e2df0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e2e40",
+  "name": "FUN_004e2e40",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e2e40(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e2e40.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e2ec0",
+  "name": "FUN_004e2ec0",
+  "source": "src/mass_0059.cpp",
+  "signature": "// and matrix of the active water object (self[0] / self[5]) plus its reflection\n// twin and the wave matrix when self[0x3d] selects the open-water path.\nvoid FUN_004e2ec0(int32_t* param_1, uint32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e2ec0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e3330",
+  "name": "FUN_004e3330",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e3330(int32_t param_1, bool shortMode)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e3330.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e3490",
+  "name": "FUN_004e3490",
+  "source": "src/mass_0059.cpp",
+  "signature": "// reflection camera object (self+0xd0) from the scene camera (self+0xcc), measures\n// the sun-to-camera angle, applies the platform-dependent far-plane scale, renders\n// the reflection map and restores the saved tuning block.\nvoid FUN_004e3490(int32_t param_1, uint32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e3490.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e3800",
+  "name": "FUN_004e3800",
+  "source": "src/mass_0059.cpp",
+  "signature": "// Lazily creates (and caches at self+0xe0) the 0x200x0x200 scratch surface.\n// A second creation attempt follows a device-method call when the first fails.\nuint32_t FUN_004e3800(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e3800.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e38f0",
+  "name": "FUN_004e38f0",
+  "source": "src/mass_0059.cpp",
+  "signature": "// Rebuilds the reflection render target (self+0xd0) on first use, shares the\n// global renderer into target+0x188, copies the scene camera transform and\n// re-applies the reflection camera parameters.\nvoid FUN_004e38f0(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e38f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e39f0",
+  "name": "FUN_004e39f0",
+  "source": "src/mass_0059.cpp",
+  "signature": "// height (local_44 at camera+100): offset = -50 / height. Receiver in ESI.\nvoid FUN_004e39f0(void* self)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e39f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e3a60",
+  "name": "FUN_004e3a60",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e3a60(void* self, void* out)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e3a60.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e3c70",
+  "name": "FUN_004e3c70",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e3c70(int32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e3c70.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e3e70",
+  "name": "FUN_004e3e70",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e3e70(void* self, const char* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e3e70.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e3ee0",
+  "name": "FUN_004e3ee0",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e3ee0(void* self, uint32_t* param_EDI /* in EDI */)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e3ee0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e4100",
+  "name": "FUN_004e4100",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e4100(void* self, int32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e4100.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e4190",
+  "name": "FUN_004e4190",
+  "source": "src/mass_0059.cpp",
+  "signature": "void FUN_004e4190(void* self, uint32_t* param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e4190.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e4370",
+  "name": "FUN_004e4370",
+  "source": "src/mass_0059.cpp",
+  "signature": "// +0x64, selects the visibility scalar (1.0 or DAT_007264b8) and updates the\n// render bit of each patch. Receiver in ECX, flag in DL.\nvoid FUN_004e4370(void* self, uint8_t flag)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e4370.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e43c0",
+  "name": "FUN_004e43c0",
+  "source": "src/mass_0059.cpp",
+  "signature": "// Selects the water rendering mode (0..3, or 11 disables it), swapping the two\n// scene objects at self[0] / self[5] through vtable slot 0x74 when crossing the\n// off/on boundary and re-applying the EMBM textures. Receiver in EBX.\nvoid FUN_004e43c0(void* self, uint32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e43c0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e4550",
+  "name": "FUN_004e4550",
+  "source": "src/mass_0059.cpp",
+  "signature": "long double FUN_004e4550(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e4550.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004e4580",
+  "name": "FUN_004e4580",
+  "source": "src/mass_0059.cpp",
+  "signature": "// Sets the water level (self+0x2c) and pushes it into the Y position of the scene\n// object at self+0x8, then flushes. Receiver in ECX.\nvoid FUN_004e4580(void* self, int32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4e4580.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

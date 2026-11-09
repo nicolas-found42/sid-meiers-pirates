@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x0041a1e0",
+  "name": "FUN_0041a1e0",
+  "source": "src/mass_0006.cpp",
+  "signature": "undefined4 FUN_0041a1e0(int in_EAX, char in_CL)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x41a1e0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0041a280",
+  "name": "FUN_0041a280",
+  "source": "src/mass_0006.cpp",
+  "signature": "// Global switch on DAT_0072ccdc (0x1a/0x19, 6/8/2, 0x12/0x15, 0x14) adjusting\n// DAT_0072ccf0 by +/-1 or +/-2 using DAT_0072cd28, then clamp to [-7,7].\nint FUN_0041a280(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x41a280.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0041a9f0",
+  "name": "FUN_0041a9f0",
+  "source": "src/mass_0006.cpp",
+  "signature": "// (pc_duel, pc_leather_duel, pc_armor_duel), then switch(DAT_0072cb4c) to\n// append a suffix (\"deck02.kfm\"..\"deck03.kfm\", fountain, tavern, ramparts,\n// top10) and load camera/prop files via FUN_004baa30. Ends FUN_004c24e0.\nvoid FUN_0041a9f0(int param_1, int* param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x41a9f0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0041b1d0",
+  "name": "FUN_0041b1d0",
+  "source": "src/mass_0006.cpp",
+  "signature": "// input tail (duel HUD, crew counters, hit flags) is condensed to observed\n// call order and constants rather than fully transposed.\nvoid FUN_0041b1d0(int param_1, undefined4 param_2, undefined4 param_3, undefined4 param_4, int param_5, undefined1** param_6, int in_ECX)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x41b1d0.c"
+  ],
+  "confidence": "low",
+  "status": "unverified",
+  "partial": true,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00424f10",
+  "name": "FUN_00424f10",
+  "source": "src/mass_0006.cpp",
+  "signature": "// FUN_00412840(1.0f, ...), loops over 16 key bits (FUN_004bc0d0), handles\n// key codes 0x131/0x12f remapping via DAT_00869b21, audio-manager branch\n// (DAT_008c7384), FUN_004bbc80 frames, FUN_004bbe10/FUN_004bbf50 tail.\nuint32_t FUN_00424f10(int param_1, undefined4 param_2, int param_3, char* param_4)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x424f10.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004259f0",
+  "name": "FUN_004259f0",
+  "source": "src/mass_0006.cpp",
+  "signature": "// Counts zero DAT_008620* flags (9 entries) into uVar1, indexes a pair of\n// int tables [0..8]=0,0,0,1,0,0,0,0,2 and [9..17]=0,0,0,1,1,1,2,2,2,\n// rand()-picks within the range, returns +1 when nonzero.\nint FUN_004259f0(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4259f0.c"
+  ],
+  "confidence": "low",
+  "status": "unverified",
+  "partial": true,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00425ad0",
+  "name": "FUN_00425ad0",
+  "source": "src/mass_0006.cpp",
+  "signature": "// Movie playback: copies DAT_007179b0 (9 dwords) into DAT_0072cd74+0x1c and\n// +0x14/+8, camera setup (FUN_00412840), uStack_264/uVar28 start/end frames\n// per DAT_0072cb4c (400..0x518..), FUN_004259f0 branch when DAT_0072ccc4==300,\n// frame loop with FUN_004bbc80 / FUN_004ab290 damage, cleanup refcounts.\n// NEEDS_MANUAL: full frame-timing loops condensed to observed order/constants.\nvoid FUN_00425ad0(int param_1, int param_2, int param_3, undefined4 param_4, int param_5)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x425ad0.c"
+  ],
+  "confidence": "low",
+  "status": "unverified",
+  "partial": true,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00426f50",
+  "name": "FUN_00426f50",
+  "source": "src/mass_0006.cpp",
+  "signature": "// frame range per DAT_0072cb4c (0x1f4..0x51a, tavern 0x47e), main input\n// loop with FUN_0042e1d0, Bip01 Pelvis damage table DAT_00723ab0, cleanup.\nvoid FUN_00426f50(int* param_1, int param_2, int param_3, undefined4 param_4, int param_5)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x426f50.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00427db0",
+  "name": "FUN_00427db0",
+  "source": "src/mass_0006.cpp",
+  "signature": "// Spin-waits on FUN_005007e0() with Sleep(10) while DAT_008ca4c8!=0.\nvoid FUN_00427db0(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x427db0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00427de0",
+  "name": "FUN_00427de0",
+  "source": "src/mass_0006.cpp",
+  "signature": "void FUN_00427de0(int param_1, uint32_t param_2)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x427de0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00427e70",
+  "name": "FUN_00427e70",
+  "source": "src/mass_0006.cpp",
+  "signature": "void FUN_00427e70(int param_1, int* unaff_EDI, int in_EAX)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x427e70.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00427ee0",
+  "name": "FUN_00427ee0",
+  "source": "src/mass_0006.cpp",
+  "signature": "// Resolves DAT_0072cd78+0x88, calls FUN_00517050 / FUN_004ee310(0) /\n// FUN_00515cb0, clears byte at +0x78, calls FUN_004af990.\nvoid FUN_00427ee0(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x427ee0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00427f40",
+  "name": "FUN_00427f40",
+  "source": "src/mass_0006.cpp",
+  "signature": "// FUN_004a68d0(DAT_0072cb4c).\nvoid FUN_00427f40(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x427f40.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00427f80",
+  "name": "FUN_00427f80",
+  "source": "src/mass_0006.cpp",
+  "signature": "// Early: FUN_004baaa0(\"standing_water\") visuals when DAT_0072cb4c in\n// {0,1,2,6}; iterates a linked list at *piVar4+4 depthwise removing",
+  "evidence": [
+   "analysis/pseudocode/functions/0x427f80.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00428140",
+  "name": "FUN_00428140",
+  "source": "src/mass_0006.cpp",
+  "signature": "void FUN_00428140(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x428140.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00428200",
+  "name": "FUN_00428200",
+  "source": "src/mass_0006.cpp",
+  "signature": "// Receiver in_ECX (int* self). Pops head node at self[1] (piVar1=*piVar1),\n// clears self[1]/[2] or *(iVar2+4), AddRefs self-pair[2], calls (*self+8),\n// self[3]--, stores into *unaff_retaddr with Release dance.\nint* FUN_00428200(int* self, int* unaff_retaddr)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x428200.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00428270",
+  "name": "FUN_00428270",
+  "source": "src/mass_0006.cpp",
+  "signature": "int* FUN_00428270(int* self, int* unaff_retaddr)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x428270.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004282e0",
+  "name": "FUN_004282e0",
+  "source": "src/mass_0006.cpp",
+  "signature": "// AddRefs in_EAX, calls FUN_00428330(&param_1,&local_4), then Release\n// param_1 and local_4 (decrement [1], call (*obj)(1) at zero).\nvoid FUN_004282e0(undefined4* param_1, undefined4* in_EAX)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4282e0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00428330",
+  "name": "FUN_00428330",
+  "source": "src/mass_0006.cpp",
+  "signature": "int* FUN_00428330(int* param_1, int* param_2, int in_ECX)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x428330.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x004283d0",
+  "name": "FUN_004283d0",
+  "source": "src/mass_0006.cpp",
+  "signature": "// calls FUN_00428270, else unlinks middle node (fixing neighbors), AddRefs\n// its [2], (*self+8), self[3]--, return via *unaff_retaddr.\nint* FUN_004283d0(int* param_1, int* param_2, int* self, int* unaff_retaddr)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x4283d0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

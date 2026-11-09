@@ -338,23 +338,65 @@ def compare_unit(unit: dict, functions_by_address: dict[str, dict], pe: PE,
     return passed, failed, problems
 
 
-def compile_unit(unit: dict, config: dict, workdir: str) -> str:
+def compiler_path_style(unit: dict, compiler: dict, argv_template: list) -> str:
+    style = unit.get("path_style") or compiler.get("path_style")
+    if style is None:
+        first = os.path.basename(str(argv_template[0])).lower()
+        style = "wine" if first in {"wine", "wine32", "wine64"} else "native"
+    style = str(style).lower()
+    if style not in {"native", "wine", "windows"}:
+        raise HarnessError(f"unknown path_style {style!r}; use native, wine, or windows")
+    return style
+
+
+def compiler_path(path: str, style: str) -> str:
+    path = os.path.abspath(path)
+    if style == "native":
+        return path
+    if style == "windows":
+        return path.replace("/", "\\")
+    winepath = shutil.which("winepath")
+    if winepath:
+        result = subprocess.run([winepath, "-w", path], capture_output=True, text=True)
+        if result.returncode == 0 and result.stdout.strip():
+            return result.stdout.strip()
+    # Default Wine prefix maps the host root to Z:.
+    return "Z:" + path.replace("/", "\\")
+
+
+def build_compile_argv(unit: dict, config: dict, workdir: str) -> tuple[list[str], str]:
     compiler = config.get("compiler") or {}
     argv_template = unit.get("compile_argv") or compiler.get("compile_argv")
     if not argv_template:
         raise HarnessError("no compile_argv in unit or config")
+    if isinstance(argv_template, str):
+        raise HarnessError("compile_argv must be a list, not a string")
     source = unit.get("source")
     if not source:
         raise HarnessError(f"unit {unit.get('id')!r} has no source path")
     if not os.path.exists(source):
         raise HarnessError(f"source not found: {source}")
     object_path = os.path.join(workdir, f"{unit['id']}.obj")
-    argv = [
-        part.replace("{src}", os.path.abspath(source))
-            .replace("{obj}", object_path)
-            .replace("{flags}", " ".join(unit.get("flags") or []))
-        for part in argv_template
-    ]
+    style = compiler_path_style(unit, compiler, argv_template)
+    source_arg = compiler_path(source, style)
+    object_arg = compiler_path(object_path, style)
+    flags = [str(flag) for flag in (unit.get("flags") or [])]
+    argv: list[str] = []
+    for part in argv_template:
+        part = str(part)
+        if part == "{flags}":
+            argv.extend(flags)
+            continue
+        argv.append(
+            part.replace("{src}", source_arg)
+                .replace("{obj}", object_arg)
+                .replace("{flags}", " ".join(flags))
+        )
+    return argv, object_path
+
+
+def compile_unit(unit: dict, config: dict, workdir: str) -> str:
+    argv, object_path = build_compile_argv(unit, config, workdir)
     env = os.environ.copy()
     env.update({str(key): str(value) for key, value in (unit.get("env") or {}).items()})
     print(f"  compile: {' '.join(argv)}")
@@ -433,9 +475,20 @@ def main(argv: list[str]) -> int:
         errors = check_config(config, inventory, pe)
         claimed = sum(len(unit.get("functions") or []) for unit in config.get("units") or [])
         total = inventory["counts"]["functions"]
+        categories = {row["address"]: row.get("category", "function") for row in inventory["functions"]}
+        claimed_addresses = [
+            entry["address"] if isinstance(entry["address"], str) else f"0x{entry['address']:08x}"
+            for unit in config.get("units") or []
+            for entry in unit.get("functions") or []
+        ]
+        claimed_matchable = sum(1 for address in claimed_addresses if categories.get(address, "function") == "function")
+        matchable = inventory["counts"].get("matchable", total)
+        matchable_coverage = claimed_matchable / matchable * 100 if matchable else 0.0
         print(f"image            {pe.sha256}")
         print(f"functions        {claimed} claimed / {total} inventoried")
-        print(f"coverage         {claimed / total * 100:.2f}%")
+        print(f"matchable        {claimed_matchable} claimed / {matchable} matchable")
+        print(f"coverage         {claimed / total * 100:.2f}% of all entries")
+        print(f"matchable cov.   {matchable_coverage:.2f}% of matchable entries")
         if errors:
             for error in errors:
                 print(f"ERROR {error}", file=sys.stderr)

@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x00433cf0",
+  "name": "FUN_00433cf0",
+  "source": "src/mass0011.cpp",
+  "signature": "// coordinates, allocates the 0xc0-byte battle actors (0x86c390..0x86c454\n// block, the 0x871368 tree/model array, the 0x86c370..0x86c388 guards) and\n// the land_battle_pc.kfm effect, releases the 0x8dc620/0x871368 pools, emits\n// the lb_tree_NN.nif names through FUN_004c2200, primes the 16x16 grid tables\n// (0x86e1e0/0x86d9e0/0x86c9e0/0x86c5e0, per-cell heights at 0x871778), then\n// runs the spawn loop that fills the unit table at 0x86e9ec using the\n// 0x871a18 occupancy grid until the troop budget or 999 slots are exhausted.\n// param_1 is the battle-scene index (0x2c selects the \"on deck\" variant).\nvoid FUN_00433cf0(int param_1) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x433cf0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00435140",
+  "name": "FUN_00435140",
+  "source": "src/mass0011.cpp",
+  "signature": "// Resets the pending-frame flag, rebinds the shared state object (refcounted\n// handoff from FUN_00500600), marks the scene dirty, reconfigures the render\n// object at DAT_0072cd78 (+0x5c = 10, +0x80 = 1), then drains +0x58 entries\n// through FUN_004e9740 and leaves DAT_008cac38 = 10.\nvoid FUN_00435140(void) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x435140.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00435260",
+  "name": "FUN_00435260",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_00435260(uint32_t extraout_EDX) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x435260.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00436ac0",
+  "name": "FUN_00436ac0",
+  "source": "src/mass0011.cpp",
+  "signature": "// Manhattan-like (min + 2*max) / 2 against param_1 (x at -0xc..) and param_2\n// (y at 0..), keeping the smallest in local_4 (init -1, threshold 0xffffff).\nint FUN_00436ac0(int in_EAX, int param_1, int param_2) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x436ac0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00436c30",
+  "name": "FUN_00436c30",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_00436c30(int32_t param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x436c30.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00438e30",
+  "name": "FUN_00438e30",
+  "source": "src/mass0011.cpp",
+  "signature": "// retreat/auto-retreat gates on DAT_008ca974 (-1000..1000), remaps the\n// \"Fight\" keycode block 0x2c8..0x2d0 to command ids, latches Alt\n// (GetAsyncKeyState(0x10)) into the 0x8000000 range, then dispatches the\n// command through the nested switches (rotate/select/move/attack/pause/speed/\n// end-turn). Per-frame pacing spins on timeGetTime until 30 ms elapse and\n// stores the delta in DAT_00725530. On DAT_008cac27 it releases every staged\n// object/vtable, calls FUN_00435140 and returns (resultFlag, strength, slot2).\nuint32_t *FUN_00438e30(uint32_t *param_1, uint32_t in_EAX) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x438e30.c"
+  ],
+  "confidence": "low",
+  "status": "unverified",
+  "partial": true,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x00439fe0",
+  "name": "FUN_00439fe0",
+  "source": "src/mass0011.cpp",
+  "signature": "// Captures the pressed key pair (in_EAX / unaff_EBX) against param_1 /\n// param_2. On a mismatch installs the 0x10 callback set, converts the key\n// through FUN_00502e10 and, when a live chain head exists at 0x20, walks it to\n// the tail by +0x20 links before returning FUN_00431910's value. Every exit\n// runs FUN_00502c80 (callback teardown).\nuint32_t FUN_00439fe0(int in_EAX, int unaff_EBX, int param_1, int param_2) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x439fe0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043a240",
+  "name": "FUN_0043a240",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_0043a240(void) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43a240.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043a350",
+  "name": "FUN_0043a350",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_0043a350(void) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43a350.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043a420",
+  "name": "FUN_0043a420",
+  "source": "src/mass0011.cpp",
+  "signature": "// 4-column unrolled inner scan (columns -1/0/+1/+2 around local_38), scoring\n// only cells equal to 2. Each candidate is evaluated as\n// (rowTerm/2 + colTerm/2) with the Manhattan min+2*max fold, and the smallest\n// score wins, writing the cell offset into *param_3 / *param_4. Returns true\n// iff a cell scored below the 0x7fffffff sentinel.\nbool FUN_0043a420(int param_1, int param_2, int *param_3, int *param_4) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43a420.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043a800",
+  "name": "FUN_0043a800",
+  "source": "src/mass0011.cpp",
+  "signature": "// stamps the chosen cell with the low bit of rand()'s result. Returns the\n// held bit.\nchar FUN_0043a800(char param_1) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43a800.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043a940",
+  "name": "FUN_0043a940",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_0043a940(uint32_t param_1, uint32_t param_2, uint32_t param_3,\n                  uint32_t param_4) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43a940.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043a970",
+  "name": "FUN_0043a970",
+  "source": "src/mass0011.cpp",
+  "signature": "// DAT_00862d10: clears the seven dwords, stores (param_1..param_4) plus\n// DAT_0085a150 / DAT_00814304 / DAT_00814308, then either bumps the count\n// (under 999) or memmoves the whole 0x1b51-dword region down by one record\n// from DAT_00862d2c and returns the old index.\nint FUN_0043a970(uint8_t param_1, uint32_t param_2, uint32_t param_3,\n                 uint32_t param_4) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43a970.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043aa10",
+  "name": "FUN_0043aa10",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_0043aa10(int in_ECX) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43aa10.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043b8e0",
+  "name": "FUN_0043b8e0",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_0043b8e0(int in_ECX, char *in_EAX, char *param_1, uint32_t param_2,\n                  uint32_t *param_3) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43b8e0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043ca20",
+  "name": "FUN_0043ca20",
+  "source": "src/mass0011.cpp",
+  "signature": "// inserting each hit into a sorted triple array (FUN_004879f0 sizing). It\n// then renders the menu through FUN_004b24a0 / FUN_004cddf0+FUN_004af080 and\n// dispatches entries with FUN_004b06c0 until a 1/0x1b/0x20 key or\n// DAT_008cac27, releasing each triple's string and object as it goes.\nvoid FUN_0043ca20(int param_1, uint32_t param_2, uint32_t param_3,\n                  uint32_t param_4, int param_5) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43ca20.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043cde0",
+  "name": "FUN_0043cde0",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_0043cde0(int param_1, uint32_t param_2, uint32_t param_3,\n                  uint32_t param_4, uint32_t param_5)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43cde0.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043e550",
+  "name": "FUN_0043e550",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_0043e550(char param_1)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43e550.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043fd70",
+  "name": "FUN_0043fd70",
+  "source": "src/mass0011.cpp",
+  "signature": "// keeping the best (count + low-2-bits), folds in the 0x869b1c/1e pair, and\n// finally adds per-ship-type flags for the 0x85a3b8/0x85a500/0x85a648 groups\n// plus 10 when _DAT_0085a164 bit 0x80000 is set.\nint FUN_0043fd70(void) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43fd70.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x0043ffc0",
+  "name": "FUN_0043ffc0",
+  "source": "src/mass0011.cpp",
+  "signature": "void FUN_0043ffc0(void)\n{",
+  "evidence": [
+   "analysis/pseudocode/functions/0x43ffc0.c"
+  ],
+  "confidence": "low",
+  "status": "unverified",
+  "partial": true,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

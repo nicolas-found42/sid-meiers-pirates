@@ -56,7 +56,8 @@ Only after that should `src/` grow beyond one file.
 ## Known failure modes
 
 - **Wine cannot run 32-bit `cl`.** Use a WoW64-capable Wine build or a 32-bit prefix under Rosetta/on x86_64.
-- **Missing headers or libs.** Toolkit 2003 is a command-line toolset; it does not include MFC/ATL. The game imports `msvcr71.dll`/`msvcp71.dll`, so start with `/MT` or `/MD` and the plain C/C++ runtime, and add only the headers a unit needs.
+- **Missing headers or libs.** Toolkit 2003 is a command-line toolset; it does not include MFC/ATL. The game imports `msvcr71.dll`/`msvcp71.dll`, so start with `/MD` (dynamic CRT) and the plain C/C++ runtime, and add only the headers a unit needs. `/MT` is a variant to test, not the default.
+- **Wine paths.** `cl` cannot open `/Users/...` or temp paths inside the prefix. Set `path_style: "wine"` in the unit or compiler config; the harness converts `{src}`/`{obj}` with `winepath -w` (falling back to `Z:\...`). A `wine` wrapper as the first argv element enables this automatically.
 - **Different code generation.** A wrong build or Service Pack changes instruction selection. Fix the toolchain before debugging source.
 - **Path/timestamp inputs.** The harness compares bytes, not object metadata; absolute source paths do not affect code unless a unit embeds `__FILE__`. Avoid `__FILE__`, `__DATE__`, and `__TIME__` in matched code.
 - **Host architecture.** The compiler must target x86 (`/arch:IA32` or the default for the 32-bit toolset), not x64.

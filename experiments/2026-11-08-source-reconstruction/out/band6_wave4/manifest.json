@@ -1,0 +1,202 @@
+[
+ {
+  "address": "0x005dbe40",
+  "name": "Band6Wave4_Set_5dbe40",
+  "source": "src/band6_wave4_setters.cpp",
+  "signature": "void __thiscall Band6Wave4_Set_5dbe40(void* self, int param_1, int param_2)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbe40.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field names at self+0x10/self+0x14 unknown."
+ },
+ {
+  "address": "0x005dbe90",
+  "name": "Band6Wave4_Set_5dbe90",
+  "source": "src/band6_wave4_setters.cpp",
+  "signature": "void __thiscall Band6Wave4_Set_5dbe90(void* self, int param_1)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbe90.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x24 unknown."
+ },
+ {
+  "address": "0x005dbec0",
+  "name": "Band6Wave4_Set_5dbec0",
+  "source": "src/band6_wave4_setters.cpp",
+  "signature": "void __thiscall Band6Wave4_Set_5dbec0(void* self, int param_1)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbec0.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x28 unknown."
+ },
+ {
+  "address": "0x005dbed0",
+  "name": "Band6Wave4_Set_5dbed0",
+  "source": "src/band6_wave4_setters.cpp",
+  "signature": "void __thiscall Band6Wave4_Set_5dbed0(void* self, int param_1)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbed0.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x2c unknown."
+ },
+ {
+  "address": "0x005dbee0",
+  "name": "Band6Wave4_Set_5dbee0",
+  "source": "src/band6_wave4_setters.cpp",
+  "signature": "void __thiscall Band6Wave4_Set_5dbee0(void* self, int param_1)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbee0.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x30 unknown."
+},
+ {
+  "address": "0x005dbf00",
+  "name": "Band6Wave4_SetByte_5dbf00",
+  "source": "src/band6_wave4_byte_get.cpp",
+  "signature": "void __thiscall Band6Wave4_SetByte_5dbf00(void* self, unsigned char value)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbf00.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; byte field name at self+0x24 unknown."
+ },
+ {
+  "address": "0x005dbfa0",
+  "name": "Band6Wave4_Get_5dbfa0",
+  "source": "src/band6_wave4_byte_get.cpp",
+  "signature": "int __thiscall Band6Wave4_Get_5dbfa0(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbfa0.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x2c unknown."
+ },
+ {
+  "address": "0x005dc010",
+  "name": "Band6Wave4_Get_5dc010",
+  "source": "src/band6_wave4_byte_get.cpp",
+  "signature": "int __thiscall Band6Wave4_Get_5dc010(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dc010.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x30 unknown."
+ },
+ {
+  "address": "0x005dc070",
+  "name": "Band6Wave4_Get_5dc070",
+  "source": "src/band6_wave4_byte_get.cpp",
+  "signature": "int __thiscall Band6Wave4_Get_5dc070(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dc070.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x34 unknown."
+ },
+ {
+  "address": "0x005dc0e0",
+  "name": "Band6Wave4_Get_5dc0e0",
+  "source": "src/band6_wave4_byte_get.cpp",
+  "signature": "int __thiscall Band6Wave4_Get_5dc0e0(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dc0e0.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x38 unknown."
+},
+ {
+  "address": "0x005dbf40",
+  "name": "Band6Wave4_SetString_5dbf40",
+  "source": "src/band6_wave4_owned.cpp",
+  "signature": "void __thiscall Band6Wave4_SetString_5dbf40(void* self, const char* src)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbf40.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; owned char* field at self+0x28 unknown; FUN_00533c78 is allocator stub."
+ },
+ {
+  "address": "0x005dc150",
+  "name": "Band6Wave4_Get_5dc150",
+  "source": "src/band6_wave4_owned.cpp",
+  "signature": "int __thiscall Band6Wave4_Get_5dc150(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dc150.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; field name at self+0x3c unknown."
+ },
+ {
+  "address": "0x005dce00",
+  "name": "Band6Wave4_Query_5dce00",
+  "source": "src/band6_wave4_owned.cpp",
+  "signature": "int __thiscall Band6Wave4_Query_5dce00(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dce00.c",
+  "status": "unverified",
+  "unknowns": "Vtable slot semantics at +0x18/+0x34 unverified; FUN_005de050 target unverified."
+},
+ {
+  "address": "0x005dc020",
+  "name": "Band6Wave4_SetIface_5dc020",
+  "source": "src/band6_wave4_ref.cpp",
+  "signature": "void __thiscall Band6Wave4_SetIface_5dc020(void* self, void* next)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dc020.c",
+  "status": "unverified",
+  "unknowns": "AddRef/Release vtable offsets (+4/+8) inferred from call order; interface type unknown."
+ },
+ {
+  "address": "0x005dc160",
+  "name": "Band6Wave4_SetIface_5dc160",
+  "source": "src/band6_wave4_ref.cpp",
+  "signature": "void __thiscall Band6Wave4_SetIface_5dc160(void* self, void* next)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dc160.c",
+  "status": "unverified",
+  "unknowns": "AddRef/Release vtable offsets (+4/+8) inferred from call order; interface type unknown."
+ },
+ {
+  "address": "0x005dd4e0",
+  "name": "Band6Wave4_DtorCore_5dd4e0",
+  "source": "src/band6_wave4_ref.cpp",
+  "signature": "void __thiscall Band6Wave4_DtorCore_5dd4e0(void* self)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dd4e0.c",
+  "status": "unverified",
+  "unknowns": "Vtable 0x006c9270 and FUN_005ce760 target unverified; refcount layout at +0x44 inferred."
+ },
+ {
+  "address": "0x005dd520",
+  "name": "Band6Wave4_DeletingDtor_5dd520",
+  "source": "src/band6_wave4_ref.cpp",
+  "signature": "void __thiscall Band6Wave4_DeletingDtor_5dd520(void* self, unsigned char flag)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dd520.c",
+  "status": "unverified",
+  "unknowns": "Deleting-dtor flag bit0 semantics and FUN_005ce790 target unverified; operator_delete declared only."
+},
+ {
+  "address": "0x005dbfb0",
+  "name": "Band6Wave4_SetString_5dbfb0",
+  "source": "src/band6_wave4_owned.cpp",
+  "signature": "void __thiscall Band6Wave4_SetString_5dbfb0(void* self, const char* src)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dbfb0.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; owned char* field at self+0x2c unknown; null-store branch not observed."
+ },
+ {
+  "address": "0x005dc080",
+  "name": "Band6Wave4_SetString_5dc080",
+  "source": "src/band6_wave4_owned.cpp",
+  "signature": "void __thiscall Band6Wave4_SetString_5dc080(void* self, const char* src)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dc080.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; owned char* field at self+0x34 unknown."
+ },
+ {
+  "address": "0x005dc0f0",
+  "name": "Band6Wave4_SetString_5dc0f0",
+  "source": "src/band6_wave4_owned.cpp",
+  "signature": "void __thiscall Band6Wave4_SetString_5dc0f0(void* self, const char* src)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x5dc0f0.c",
+  "status": "unverified",
+  "unknowns": "Owner-class layout unverified; owned char* field at self+0x38 unknown; null-store branch not observed."
+ }
+]

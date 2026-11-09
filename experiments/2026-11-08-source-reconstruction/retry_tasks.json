@@ -1,0 +1,627 @@
+[
+ {
+  "name": "mass0005",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0005/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0008",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0008/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0011",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0011/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0031",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0031/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0036",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0036/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0037",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0037/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0038",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0038/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0044",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0044/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0047",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0047/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0051",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0051/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0057",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0057/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0058",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0058/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0059",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0059/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0061",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0061/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0063",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0063/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0064",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0064/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0070",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0070/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0071",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0071/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0072",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0072/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0074",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0074/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0075",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0075/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0076",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0076/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0077",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0077/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0078",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0078/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0079",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0079/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0083",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0083/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0085",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0085/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0086",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0086/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0087",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0087/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0090",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0090/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0091",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0091/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0093",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0093/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0094",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0094/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0099",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0099/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0100",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0100/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0102",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0102/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0103",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0103/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0107",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0107/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0108",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0108/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0109",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0109/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0111",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0111/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0115",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0115/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0116",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0116/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0118",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0118/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0123",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0123/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0126",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0126/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0127",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0127/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0129",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0129/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0131",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0131/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0132",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0132/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0133",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0133/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0135",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0135/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0136",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0136/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0137",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0137/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0139",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0139/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0140",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0140/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0141",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0141/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0142",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0142/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0144",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0144/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0146",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0146/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0147",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0147/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0150",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0150/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0151",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0151/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0153",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0153/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0156",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0156/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0157",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0157/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0163",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0163/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0164",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0164/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0168",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0168/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0169",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0169/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0170",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0170/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0173",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0173/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0178",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0178/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0179",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0179/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0182",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0182/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0183",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0183/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0186",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0186/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0187",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0187/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0188",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0188/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0190",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0190/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0191",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0191/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0192",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0192/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0194",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0194/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0196",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0196/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0198",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0198/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0199",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0199/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0200",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0200/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0201",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0201/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0203",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0203/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0204",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0204/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0208",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0208/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0213",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0213/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0214",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0214/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0217",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0217/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0220",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0220/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0221",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0221/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0223",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0223/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0224",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0224/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0229",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0229/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0230",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0230/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0231",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0231/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0236",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0236/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0238",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0238/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0240",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0240/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0242",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0242/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0246",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0246/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0248",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0248/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0251",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0251/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0253",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0253/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0258",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0258/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0259",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0259/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0262",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0262/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0265",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0265/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0266",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0266/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0277",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0277/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0282",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0282/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0284",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0284/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0289",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0289/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0322",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0322/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0327",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0327/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0343",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0343/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0345",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0345/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0346",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0346/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0347",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0347/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ },
+ {
+  "name": "mass0351",
+  "task": "Complete the retry task in `experiments/2026-11-08-source-reconstruction/out/mass_0351/TASK_RETRY.md`. Read that file first and follow it exactly.",
+  "solutionSpace": "One fix: append the listed missing function bodies from the intact local pseudocode corpus; addresses and target file given."
+ }
+]

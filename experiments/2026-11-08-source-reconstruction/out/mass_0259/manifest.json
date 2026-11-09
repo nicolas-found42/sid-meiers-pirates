@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x005f5859",
+  "name": "FUN_005f5859",
+  "source": "src/mass_0259.cpp",
+  "signature": "undefined4 FUN_005f5859(undefined4 param_1, undefined4 param_2, undefined4 param_3,\n                        undefined4 param_4) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f5859.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f5894",
+  "name": "FUN_005f5894",
+  "source": "src/mass_0259.cpp",
+  "signature": "// Forms a 4x4 outer-product-like matrix from a quaternion (param_3) and a\n// 4-vector param_2. fVar1 is the dot term folded into four diagonal entries.\n// ===========================================================================\nvoid FUN_005f5894(float* param_1, float* param_2, undefined4 param_3) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f5894.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f5992",
+  "name": "FUN_005f5992",
+  "source": "src/mass_0259.cpp",
+  "signature": "// Builds a symmetric 4x4 rotation-style matrix from a quaternion (param_2):\n// each diagonal is 1 - 2*q_i*q_i and off-diagonals are the paired products.\n// ===========================================================================\nvoid FUN_005f5992(float* param_1, undefined4 param_2) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f5992.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f5a53",
+  "name": "FUN_005f5a53",
+  "source": "src/mass_0259.cpp",
+  "signature": "// two interpolated quaternions (param_1, param_2) and returns param_3 as the\n// resulting delta quaternion. Uses the 005f3xxx quaternion thunks.\n// ===========================================================================\nvoid FUN_005f5a53(float* param_1, float* param_2, float* param_3, float* param_4,\n                  float* param_5, float* param_6, float* param_7) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f5a53.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f5e54",
+  "name": "FUN_005f5e54",
+  "source": "src/mass_0259.cpp",
+  "signature": "int* FUN_005f5e54(int param_1) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f5e54.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f5e7f",
+  "name": "FUN_005f5e7f",
+  "source": "src/mass_0259.cpp",
+  "signature": "// arguments (ECX = reference record, EDX = candidate record). Gates on the\n// byte-compatibility matrix DAT_006dced0[ref[1]*5 + cand[1]] and accumulates\n// per-field penalty bits. Returns 0xffffffff when the matrix entry is zero or\n// the nonzero-field count does not match the high score byte.\n// ===========================================================================\nuint32_t FUN_005f5e7f(int* self_ecx, int* self_edx) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f5e7f.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f5ef6",
+  "name": "FUN_005f5ef6",
+  "source": "src/mass_0259.cpp",
+  "signature": "// score (ties broken by the record's third word).\n// ===========================================================================\nint FUN_005f5ef6(int* param_1, uint32_t param_2, undefined4 param_3, int* param_4) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f5ef6.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f5ff4",
+  "name": "FUN_005f5ff4",
+  "source": "src/mass_0259.cpp",
+  "signature": "int FUN_005f5ff4(int param_1) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f5ff4.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f6018",
+  "name": "FUN_005f6018",
+  "source": "src/mass_0259.cpp",
+  "signature": "int FUN_005f6018(int* param_1, undefined4 param_2, undefined4 param_3, int* param_4,\n                 undefined4 param_5, undefined4 param_6, undefined4 param_7, int* param_8,\n                 int param_9, undefined4 param_10) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f6018.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f6100",
+  "name": "FUN_005f6100",
+  "source": "src/mass_0259.cpp",
+  "signature": "int FUN_005f6100(int* param_1, undefined4 param_2, undefined4 param_3, int* param_4,\n                 undefined4 param_5, undefined4 param_6, undefined4 param_7, int* param_8,\n                 undefined4* param_9, int param_10, undefined4 param_11) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f6100.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f61dc",
+  "name": "FUN_005f61dc",
+  "source": "src/mass_0259.cpp",
+  "signature": "// The receiver is passed in EDX in the original (modelled as `self`).\n// ===========================================================================\nuint32_t FUN_005f61dc(int* self, uint32_t* param_1, uint32_t* param_2, uint32_t* param_3,\n                      uint32_t* param_4, uint32_t param_5, int* param_6, int param_7,\n                      uint32_t param_8) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f61dc.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f6591",
+  "name": "FUN_005f6591",
+  "source": "src/mass_0259.cpp",
+  "signature": "// the destination foreign-description fast path (vtable +0x30 twice), falls\n// back to 005f6018 on mismatch, and uses vtable +0x78/+0x88 for same-adapter\n// copies. Wrapped by FUN_005ff6ce / thunk_FUN_005ff7c0.\n// ===========================================================================\nint FUN_005f6591(int* param_1, int* param_2, int* param_3, int* param_4, int* param_5,\n                 int* param_6, uint32_t param_7, int param_8) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f6591.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f67a5",
+  "name": "FUN_005f67a5",
+  "source": "src/mass_0259.cpp",
+  "signature": "int FUN_005f67a5(int* param_1, undefined4 param_2, undefined4 param_3, int* param_4,\n                 undefined4 param_5, undefined4 param_6, undefined4 param_7, undefined4 param_8) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f67a5.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f682d",
+  "name": "FUN_005f682d",
+  "source": "src/mass_0259.cpp",
+  "signature": "uint32_t FUN_005f682d(int* param_1, undefined4 param_2, uint32_t param_3, uint32_t param_4) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f682d.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f6b1f",
+  "name": "FUN_005f6b1f",
+  "source": "src/mass_0259.cpp",
+  "signature": "// Full surface/level chain creator. Resolves the target format (005fba91),\n// validates the format word (param_16 3/4/5) against the level chain length,\n// expands usage masks, builds the 256-entry color-key table, chooses the format\n// via 005f5ff4, resolves dimensions via 005f61dc, then walks every level/mip of\n// the chain calling 005f6018/005f6100 and finally 005f682d's sibling logic\n// through vtable +0x7c. Returns 0 on success or a D3D-style HRESULT.\n// ===========================================================================\nint FUN_005f6b1f(int* param_1, uint32_t param_2, uint32_t param_3, uint32_t param_4,\n                 int* param_5, uint32_t param_6, uint32_t param_7, uint32_t param_8,\n                 uint32_t param_9, int param_10, uint32_t param_11, uint32_t param_12,\n                 uint32_t param_13, int* param_14, undefined4* param_15, int param_16,\n                 undefined4* param_17) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f6b1f.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f7394",
+  "name": "FUN_005f7394",
+  "source": "src/mass_0259.cpp",
+  "signature": "void FUN_005f7394(undefined4 param_1, undefined4 param_2, undefined4 param_3,\n                  undefined4 param_4, undefined4 param_5, undefined4 param_6,\n                  undefined4 param_7, undefined4 param_8, undefined4 param_9,\n                  undefined4 param_10, undefined4 param_11, undefined4 param_12,\n                  undefined4 param_13, undefined4 param_14, undefined4 param_15) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f7394.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f73d3",
+  "name": "FUN_005f73d3",
+  "source": "src/mass_0259.cpp",
+  "signature": "// both the width argument and the level-chain argument (param_5 slot).\n// ===========================================================================\nvoid FUN_005f73d3(undefined4 param_1, undefined4 param_2, undefined4 param_3,\n                  undefined4 param_4, undefined4 param_5, undefined4 param_6,\n                  undefined4 param_7, undefined4 param_8, undefined4 param_9,\n                  undefined4 param_10, undefined4 param_11, undefined4 param_12,\n                  undefined4 param_13, undefined4 param_14) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f73d3.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f7412",
+  "name": "FUN_005f7412",
+  "source": "src/mass_0259.cpp",
+  "signature": "void FUN_005f7412(undefined4 param_1, undefined4 param_2, undefined4 param_3,\n                  undefined4 param_4, undefined4 param_5, undefined4 param_6,\n                  undefined4 param_7, undefined4 param_8, undefined4 param_9,\n                  undefined4 param_10, undefined4 param_11, undefined4 param_12,\n                  undefined4 param_13, undefined4 param_14, undefined4 param_15,\n                  undefined4 param_16) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f7412.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f7452",
+  "name": "FUN_005f7452",
+  "source": "src/mass_0259.cpp",
+  "signature": "// Type-3 entry point: brackets FUN_0060b98d(param_2,0) with the 0060b97b/\n// 0060bb0e pair and forwards the 0x48-byte descriptor fields (local_c/local_8)\n// plus the remaining arguments to FUN_005f7394.\n// ===========================================================================\nint FUN_005f7452(undefined4 param_1, undefined4 param_2, undefined4 param_3,\n                 undefined4 param_4, undefined4 param_5, undefined4 param_6,\n                 undefined4 param_7, undefined4 param_8, undefined4 param_9,\n                 undefined4 param_10, undefined4 param_11, undefined4 param_12,\n                 undefined4 param_13, undefined4 param_14) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f7452.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ },
+ {
+  "address": "0x005f74b7",
+  "name": "FUN_005f74b7",
+  "source": "src/mass_0259.cpp",
+  "signature": "int FUN_005f74b7(undefined4 param_1, undefined4 param_2, undefined4 param_3,\n                 undefined4 param_4, undefined4 param_5, undefined4 param_6,\n                 undefined4 param_7, undefined4 param_8, undefined4 param_9,\n                 undefined4 param_10, undefined4 param_11, undefined4 param_12,\n                 undefined4 param_13) {",
+  "evidence": [
+   "analysis/pseudocode/functions/0x5f74b7.c"
+  ],
+  "confidence": "medium",
+  "status": "unverified",
+  "partial": false,
+  "unknowns": [
+   "batch reconstruction from a Ghidra listing; no compiler and no byte match",
+   "receiver and signature inferred from register use in the listing"
+  ]
+ }
+]

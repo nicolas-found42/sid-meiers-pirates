@@ -1,0 +1,549 @@
+[
+ {
+  "address": "0x00405d50",
+  "name": "FUN_00405d50",
+  "source": "src/core_engine.cpp",
+  "signature": "int FUN_00405d50(int indexA, int indexB)",
+  "confidence": 0.85,
+  "evidence": [
+   "analysis/pseudocode/functions/0x405d50.c",
+   "analysis/team/band1/deep/0x00405d50.md"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004c31a0",
+  "name": "FUN_004c31a0",
+  "source": "src/quest_lifetime_settings.cpp",
+  "signature": "void FUN_004c31a0_recon(void* self, uint8_t flag)",
+  "confidence": 0.85,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4c31a0.c",
+   "analysis/team/band1/deep/0x004c31a0.md"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004aac10",
+  "name": "FUN_004aac10",
+  "source": "src/quest_lifetime_settings.cpp",
+  "signature": "void FUN_004aac10_recon(RefObj* p)",
+  "confidence": 0.85,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4aac10.c",
+   "analysis/team/band1/deep/0x004aac10.md"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x00401c10",
+  "name": "FUN_00401c10",
+  "source": "src/save_load.cpp",
+  "signature": "void FUN_00401c10_recon(void)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x401c10.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x00401d10",
+  "name": "FUN_00401d10",
+  "source": "src/save_load.cpp",
+  "signature": "char FUN_00401d10_recon(char showMsg)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x401d10.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x00401ee0",
+  "name": "FUN_00401ee0",
+  "source": "src/save_load.cpp",
+  "signature": "unsigned char FUN_00401ee0_recon(int overwrite, char showMsg)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x401ee0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004022e0",
+  "name": "FUN_004022e0",
+  "source": "src/save_load.cpp",
+  "signature": "unsigned char FUN_004022e0_recon(int unused, char showMsg)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4022e0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004879f0",
+  "name": "FUN_004879f0",
+  "source": "src/menu_character.cpp",
+  "signature": "int FUN_004879f0(int, int) (message wrap; decls in menu_character.cpp)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4879f0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0042e1d0",
+  "name": "FUN_0042e1d0",
+  "source": "src/core_engine.cpp",
+  "signature": "int FUN_0042e1d0(void)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x42e1d0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0042dd40",
+  "name": "FUN_0042dd40",
+  "source": "src/core_engine.cpp",
+  "signature": "void FUN_0042dd40(void) (KeyMap loader; helper-semantic notes in core_engine.cpp)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x42dd40.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004b2f10",
+  "name": "FUN_004b2f10",
+  "source": "src/quest_lifetime_settings.cpp",
+  "signature": "void FUN_004b2f10_recon(int index, char inGame)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b2f10.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0044ce60",
+  "name": "FUN_0044ce60",
+  "source": "src/narrative_debug.cpp",
+  "signature": "void FUN_0044ce60_recon(int index)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x44ce60.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004920a0",
+  "name": "FUN_004920a0",
+  "source": "src/narrative_debug.cpp",
+  "signature": "int FUN_004920a0_recon(int mode)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4920a0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x00456dd0",
+  "name": "FUN_00456dd0",
+  "source": "src/epilogue_city.cpp",
+  "signature": "void FUN_00456dd0_recon(void)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x456dd0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004b5a40",
+  "name": "FUN_004b5a40",
+  "source": "src/menu_character.cpp",
+  "signature": "void FUN_004b5a40_recon(void)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b5a40.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0043a0c0",
+  "name": "FUN_0043a0c0",
+  "source": "src/epilogue_city.cpp",
+  "signature": "void FUN_0043a0c0_recon(int unit, char force)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x43a0c0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0042e4f0",
+  "name": "FUN_0042e4f0",
+  "source": "src/narrative_debug.cpp",
+  "signature": "void FUN_0042e4f0_recon(void)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x42e4f0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0044a3b0",
+  "name": "FUN_0044a3b0",
+  "source": "src/narrative_debug.cpp",
+  "signature": "void FUN_0044a3b0_recon(int index)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x44a3b0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004a13c0",
+  "name": "FUN_004a13c0",
+  "source": "src/narrative_debug.cpp",
+  "signature": "void FUN_004a13c0_recon(void* stats)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4a13c0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004108a0",
+  "name": "FUN_004108a0",
+  "source": "src/epilogue_city.cpp",
+  "signature": "void FUN_004108a0_recon(int city)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4108a0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x00444830",
+  "name": "FUN_00444830",
+  "source": "src/epilogue_city.cpp",
+  "signature": "void FUN_00444830_recon(int city)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x444830.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0044c4a0",
+  "name": "FUN_0044c4a0",
+  "source": "src/quest_lifetime_settings.cpp",
+  "signature": "int FUN_0044c4a0_recon(int possessive)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x44c4a0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0044c280",
+  "name": "FUN_0044c280",
+  "source": "src/quest_lifetime_settings.cpp",
+  "signature": "int FUN_0044c280_recon(void)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x44c280.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0044bfe0",
+  "name": "FUN_0044bfe0",
+  "source": "src/quest_lifetime_settings.cpp",
+  "signature": "int FUN_0044bfe0_recon(int city)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x44bfe0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x00482ca0",
+  "name": "FUN_00482ca0",
+  "source": "src/menu_character.cpp",
+  "signature": "void* FUN_00482ca0_recon(int kind, int a, int b, int c)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x482ca0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004823f0",
+  "name": "FUN_004823f0",
+  "source": "src/loaders_appearance.cpp",
+  "signature": "void* FUN_004823f0_recon(int kind, int variant)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4823f0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x00482830",
+  "name": "FUN_00482830",
+  "source": "src/loaders_appearance.cpp",
+  "signature": "void* FUN_00482830_recon(int seed, int kind)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x482830.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x00482560",
+  "name": "FUN_00482560",
+  "source": "src/loaders_appearance.cpp",
+  "signature": "void* FUN_00482560_recon(int flag, int kind)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x482560.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004af760",
+  "name": "FUN_004af760",
+  "source": "src/loaders_appearance.cpp",
+  "signature": "void FUN_004af760_recon(void)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4af760.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004813f0",
+  "name": "FUN_004813f0",
+  "source": "src/loaders_appearance.cpp",
+  "signature": "void FUN_004813f0_recon(void* out, int kind)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4813f0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x0042d320",
+  "name": "FUN_0042d320",
+  "source": "src/core_engine.cpp",
+  "signature": "int FUN_0042d320(const char* name)",
+  "confidence": 0.6,
+  "evidence": [
+   "analysis/pseudocode/functions/0x42d320.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004b3270",
+  "name": "FUN_004b3270",
+  "source": "src/quest_lifetime_settings.cpp",
+  "signature": "void FUN_004b3270_recon(int mode, int x, int y)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4b3270.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004bd520",
+  "name": "FUN_004bd520",
+  "source": "src/menu_character.cpp",
+  "signature": "void FUN_004bd520_recon(void* obj)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4bd520.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ },
+ {
+  "address": "0x004bc7e0",
+  "name": "FUN_004bc7e0",
+  "source": "src/menu_character.cpp",
+  "signature": "void FUN_004bc7e0_recon(void* obj, const char* lang, char a, char b)",
+  "confidence": 0.7,
+  "evidence": [
+   "analysis/pseudocode/functions/0x4bc7e0.c"
+  ],
+  "status": "unverified",
+  "unknowns": [
+   "original source name not invented; corpus FUN_* label retained",
+   "global types/layouts inferred from pseudocode",
+   "callee arities/signatures inferred from call sites"
+  ]
+ }
+]

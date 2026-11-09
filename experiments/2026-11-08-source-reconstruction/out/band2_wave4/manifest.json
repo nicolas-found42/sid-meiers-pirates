@@ -1,0 +1,242 @@
+[
+  {
+    "address": "0x0050c6b0",
+    "name": "band2_wave4::FUN_0050c6b0",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "void FUN_0050c6b0(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x50c6b0.c",
+    "status": "unverified",
+    "unknowns": [
+      "calling convention unknown; no stack entry"
+    ]
+  },
+  {
+    "address": "0x004f17f0",
+    "name": "band2_wave4::FUN_004f17f0",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "void FUN_004f17f0(void*, unsigned int, unsigned char)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4f17f0.c",
+    "status": "unverified",
+    "unknowns": [
+      "ESI register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x00500920",
+    "name": "band2_wave4::FUN_00500920",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "void FUN_00500920(unsigned int, unsigned int, unsigned int)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x500920.c",
+    "status": "unverified",
+    "unknowns": [
+      "DAT_008ea08c object semantics unknown"
+    ]
+  },
+  {
+    "address": "0x0050c6d0",
+    "name": "band2_wave4::FUN_0050c6d0",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "void FUN_0050c6d0(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x50c6d0.c",
+    "status": "unverified",
+    "unknowns": [
+      "FUN_0050c550 semantics unknown"
+    ]
+  },
+  {
+    "address": "0x0050c740",
+    "name": "band2_wave4::FUN_0050c740",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "void FUN_0050c740(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x50c740.c",
+    "status": "unverified",
+    "unknowns": [
+      "FUN_0050c5d0 semantics unknown"
+    ]
+  },
+  {
+    "address": "0x004dccd0",
+    "name": "band2_wave4::FUN_004dccd0",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "void FUN_004dccd0(int)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4dccd0.c",
+    "status": "unverified",
+    "unknowns": [
+      "caller of FUN_005002f0 unknown"
+    ]
+  },
+  {
+    "address": "0x004ea8b0",
+    "name": "band2_wave4::FUN_004ea8b0",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "void FUN_004ea8b0(void*, int)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4ea8b0.c",
+    "status": "unverified",
+    "unknowns": [
+      "ECX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x004f1370",
+    "name": "band2_wave4::FUN_004f1370",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "bool FUN_004f1370(void*, unsigned char, LPCSTR)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4f1370.c",
+    "status": "unverified",
+    "unknowns": [
+      "ECX/DL register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x004f4e60",
+    "name": "band2_wave4::FUN_004f4e60",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "unsigned int FUN_004f4e60(void*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4f4e60.c",
+    "status": "unverified",
+    "unknowns": [
+      "ECX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x004ff5f0",
+    "name": "band2_wave4::FUN_004ff5f0",
+    "source": "src/band2_wave4_a.cpp",
+    "signature": "void FUN_004ff5f0(void*, float)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4ff5f0.c",
+    "status": "unverified",
+    "unknowns": [
+      "EAX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x00500bc0",
+    "name": "band2_wave4::FUN_00500bc0",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "void FUN_00500bc0(void*, unsigned int)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x500bc0.c",
+    "status": "unverified",
+    "unknowns": [
+      "ECX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x00507250",
+    "name": "band2_wave4::FUN_00507250",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "void FUN_00507250(void*, unsigned int, float, unsigned int)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x507250.c",
+    "status": "unverified",
+    "unknowns": [
+      "ECX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x0050c4a0",
+    "name": "band2_wave4::FUN_0050c4a0",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "void FUN_0050c4a0(int)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x50c4a0.c",
+    "status": "unverified",
+    "unknowns": [
+      "vtable at +0x15c semantics unknown"
+    ]
+  },
+  {
+    "address": "0x00513cf0",
+    "name": "band2_wave4::FUN_00513cf0",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "float FUN_00513cf0(float, float*)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x513cf0.c",
+    "status": "unverified",
+    "unknowns": [
+      "float10 return width unknown"
+    ]
+  },
+  {
+    "address": "0x004cca70",
+    "name": "band2_wave4::FUN_004cca70",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "int FUN_004cca70(unsigned int, int)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4cca70.c",
+    "status": "unverified",
+    "unknowns": [
+      "FUN_005f0ddc semantics unknown"
+    ]
+  },
+  {
+    "address": "0x004ccc30",
+    "name": "band2_wave4::FUN_004ccc30",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "void FUN_004ccc30(void*, unsigned char)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4ccc30.c",
+    "status": "unverified",
+    "unknowns": [
+      "ECX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x004d05f0",
+    "name": "band2_wave4::FUN_004d05f0",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "void FUN_004d05f0(char)",
+    "confidence": "medium",
+    "evidence": "analysis/pseudocode/functions/0x4d05f0.c",
+    "status": "unverified",
+    "unknowns": [
+      "BL register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x004d3ef0",
+    "name": "band2_wave4::FUN_004d3ef0",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "void FUN_004d3ef0(void)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4d3ef0.c",
+    "status": "unverified",
+    "unknowns": [
+      "DAT_0085a164 semantics unknown"
+    ]
+  },
+  {
+    "address": "0x004d45c0",
+    "name": "band2_wave4::FUN_004d45c0",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "void FUN_004d45c0(void*, unsigned char)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4d45c0.c",
+    "status": "unverified",
+    "unknowns": [
+      "ECX register param convention unknown"
+    ]
+  },
+  {
+    "address": "0x004d4d80",
+    "name": "band2_wave4::FUN_004d4d80",
+    "source": "src/band2_wave4_b.cpp",
+    "signature": "void FUN_004d4d80(void*, unsigned char)",
+    "confidence": "high",
+    "evidence": "analysis/pseudocode/functions/0x4d4d80.c",
+    "status": "unverified",
+    "unknowns": [
+      "ECX register param convention unknown"
+    ]
+  }
+]

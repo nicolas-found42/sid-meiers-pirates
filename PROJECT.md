@@ -1,10 +1,11 @@
 # Project navigation
 
 - Entry point: [README.md](README.md)
-- Current question: can the v1.0.2.0 image be rebuilt as byte-identical functions with the original VC7.1 toolchain, and what is the first reproducible unit?
-- Resume state: inventory and harness verified; toolchain missing. See [findings/2026-11-08-target-identification.md](findings/2026-11-08-target-identification.md) and [docs/TOOLCHAIN.md](docs/TOOLCHAIN.md).
+- Current question: can the remaining matchable functions be rebuilt as byte-identical code with the recovered VC7.1 toolchain?
+- Resume state: mass source-reconstruction phase complete — all 7,862 matchable functions have a C++ candidate under `experiments/2026-11-08-source-reconstruction/out/mass_*/src/` (360 batch files; final `tools/ingest_mass_reconstruction.py`: 0 duplicates, 0 unclaimed; `tools/merge_reconstruction.py`: 7,166 full-body, 696 manifest-partial, `reconstruction/QUEUE.json` empty; 340 `NEEDS_MANUAL` sites for x87 control-word stores, extraout_EDX receivers and other provider blind spots). Candidate correctness is NOT verified: only 3 shipped functions (`FUN_00547610`, `FUN_0054a9f0`, `FUN_005366b0`) have byte-identical matches via `tools/match.py` under Mach9 Wine with recovered `cl 13.10.3077`. Next: batch-compile mass sources into units, run `match.py compare` at scale, resolve NEEDS_MANUAL blocks first. See [findings/2026-11-08-reconstruction.md](findings/2026-11-08-reconstruction.md), [findings/2026-11-08-first-match.md](findings/2026-11-08-first-match.md).
 - Method: [docs/METHOD.md](docs/METHOD.md)
 - Research: [findings/2026-11-08-decompilation-landscape.md](findings/2026-11-08-decompilation-landscape.md)
+- Team pass: [findings/2026-11-08-team-decompilation.md](findings/2026-11-08-team-decompilation.md)
 - Harness evidence: [findings/2026-11-08-matching-harness.md](findings/2026-11-08-matching-harness.md)
 - Sources: [references/README.md](references/README.md)
 
@@ -38,7 +39,8 @@ python3 tests/run_fixture.py
 
 ## State
 
-- `build/functions.json`: 8,181 functions, 2,879,488 bytes, 7,932 placeholders, 140 thunks.
-- `build/units.json`: 0 claimed units.
+- `build/functions.json`: 8,181 functions, 2,879,488 bytes, 8,099 placeholders, 140 thunks, 179 EH funclets; 7,862 matchable source functions.
+- `build/units.json`: 0 claimed units (candidates exist but none are compiled-as-unit yet).
 - `analysis/rea-pirates-bundle.json`: ignored REA bundle (12 records) used to generate the inventory.
+- `analysis/team/`: ignored team outputs (triage, 85 dossiers, 23 candidate packages, import/thunk map, corpus audit, 319 evidence IDs).
 - Experiment output: `experiments/2026-11-08-target-identification/output/` (4,883,196 bytes, extracted app files only).

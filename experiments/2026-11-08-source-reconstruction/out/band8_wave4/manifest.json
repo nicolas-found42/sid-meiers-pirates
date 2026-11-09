@@ -1,0 +1,202 @@
+[
+ {
+  "address": "0x006bfb10",
+  "name": "FUN_006bfb10",
+  "source": "src/band8_critsect.cpp",
+  "signature": "void FUN_006bfb10(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bfb10.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); DeleteCriticalSection import signature inferred once"
+ },
+ {
+  "address": "0x006bfb40",
+  "name": "FUN_006bfb40",
+  "source": "src/band8_critsect.cpp",
+  "signature": "void FUN_006bfb40(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bfb40.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006bfb70",
+  "name": "FUN_006bfb70",
+  "source": "src/band8_critsect.cpp",
+  "signature": "void FUN_006bfb70(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bfb70.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded)"
+ },
+ {
+  "address": "0x006bf9f0",
+  "name": "FUN_006bf9f0",
+  "source": "src/band8_critsect.cpp",
+  "signature": "void FUN_006bf9f0(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf9f0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); operator_delete import signature inferred once"
+ },
+ {
+  "address": "0x006bed50",
+  "name": "FUN_006bed50",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006bed50(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bed50.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); FUN_00497f10 body opaque in this wave"
+ },
+ {
+  "address": "0x006befd0",
+  "name": "FUN_006befd0",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006befd0(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6befd0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); FUN_004c3410 body opaque in this wave"
+ },
+ {
+  "address": "0x006bf060",
+  "name": "FUN_006bf060",
+  "source": "src/band8_thunks.cpp",
+  "signature": "void FUN_006bf060(void)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6bf060.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); FUN_004ce670 body opaque in this wave"
+ },
+ {
+  "address": "0x00693225",
+  "name": "FUN_00693225",
+  "source": "src/band8_helpers.cpp",
+  "signature": "void FUN_00693225(int param_1, int param_2, int param_3)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x693225.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); FUN_00693146 arity 4 with const 0xf in position 2"
+ },
+ {
+  "address": "0x006a49e3",
+  "name": "FUN_006a49e3",
+  "source": "src/band8_helpers.cpp",
+  "signature": "int FUN_006a49e3(int param_1)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6a49e3.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); FUN_006a2b66 return semantics opaque"
+ },
+ {
+  "address": "0x006935e2",
+  "name": "FUN_006935e2",
+  "source": "src/band8_helpers.cpp",
+  "signature": "void FUN_006935e2(int param_1, int param_2, int param_3)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6935e2.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); FUN_0065672d/FUN_00658adc bodies opaque"
+ },
+ {
+  "address": "0x0069252a",
+  "name": "FUN_0069252a",
+  "source": "src/band8_helpers.cpp",
+  "signature": "void FUN_0069252a(int param_1, void* param_2)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x69252a.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); free import from CRT"
+ },
+ {
+  "address": "0x006a0134",
+  "name": "FUN_006a0134",
+  "source": "src/band8_helpers.cpp",
+  "signature": "void FUN_006a0134(int param_1, int param_2)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x6a0134.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); 0x24 stride chain node layout inferred from offsets only"
+ },
+ {
+  "address": "0x006b91f0",
+  "name": "FUN_006b91f0",
+  "source": "src/band8_ctor.cpp",
+  "signature": "void FUN_006b91f0(void* thisptr, int param_1)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x6b91f0.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "in_ECX this-pointer convention; class layout unknown"
+ },
+ {
+  "address": "0x006949b1",
+  "name": "FUN_006949b1",
+  "source": "src/band8_ctor.cpp",
+  "signature": "unsigned int FUN_006949b1(const unsigned char* in_ecx_base, unsigned int param_1)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x6949b1.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "in_ECX base; +0xe8/+0xec bitfield layout unnamed"
+ },
+ {
+  "address": "0x006840fd",
+  "name": "FUN_006840fd",
+  "source": "src/band8_ctor.cpp",
+  "signature": "void FUN_006840fd(void* thisptr)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x6840fd.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "in_ECX this-pointer convention; +0x1f8 word layout unknown"
+ },
+ {
+  "address": "0x0068f346",
+  "name": "FUN_0068f346",
+  "source": "src/band8_ctor.cpp",
+  "signature": "int FUN_0068f346(int param_1, int param_2, int param_3)",
+  "confidence": "high",
+  "evidence": "analysis/pseudocode/functions/0x68f346.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "Original symbol unknown (PDB not loaded); FastExitMediaState import signature"
+ },
+ {
+  "address": "0x006a67af",
+  "name": "FUN_006a67af",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a67af(const unsigned char* in_ecx_base)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x6a67af.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "in_ECX base; shader record field names unknown; FUN_006a6375 body opaque"
+ },
+ {
+  "address": "0x006a67d7",
+  "name": "FUN_006a67d7",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a67d7(const unsigned char* in_ecx_base)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x6a67d7.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "in_ECX base; shader record field names unknown"
+ },
+ {
+  "address": "0x006a67f5",
+  "name": "FUN_006a67f5",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a67f5(const unsigned char* in_ecx_base)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x6a67f5.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "in_ECX base; shader record field names unknown"
+ },
+ {
+  "address": "0x006a6813",
+  "name": "FUN_006a6813",
+  "source": "src/band8_shader_leaves.cpp",
+  "signature": "void FUN_006a6813(const unsigned char* in_ecx_base)",
+  "confidence": "medium",
+  "evidence": "analysis/pseudocode/functions/0x6a6813.c; analysis/team/band8/triage.json",
+  "status": "unverified",
+  "unknowns": "in_ECX base; shader record field names unknown"
+ }
+]

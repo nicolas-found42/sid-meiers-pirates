@@ -1,0 +1,322 @@
+[
+ {
+  "address": "0x0063ef52",
+  "name": "FUN_0063ef52",
+  "source": "src/band7_wave3.cpp",
+  "signature": "uint FUN_0063ef52(int param_1)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x63ef52.c (span 18)"
+  ],
+  "span": 18,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00629ca0",
+  "name": "FUN_00629ca0",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_00629ca0(undefined1 param_1,undefined1 param_2,undefined1 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x629ca0.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00629dca",
+  "name": "FUN_00629dca",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_00629dca(undefined1 param_1,undefined1 param_2,undefined1 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x629dca.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0062e228",
+  "name": "FUN_0062e228",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_0062e228(undefined1 param_1,undefined1 param_2,undefined1 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x62e228.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0062e401",
+  "name": "FUN_0062e401",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_0062e401(undefined1 param_1,undefined1 param_2,undefined1 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x62e401.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00641286",
+  "name": "FUN_00641286",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_00641286(int param_1,undefined4 param_2,undefined4 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x641286.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x006412b9",
+  "name": "FUN_006412b9",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_006412b9(int param_1,undefined4 param_2,undefined4 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6412b9.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x006412d4",
+  "name": "FUN_006412d4",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_006412d4(int param_1,undefined4 param_2,undefined4 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6412d4.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x006412ef",
+  "name": "FUN_006412ef",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_006412ef(int param_1,undefined4 param_2,undefined4 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6412ef.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0064130a",
+  "name": "FUN_0064130a",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_0064130a(int param_1,undefined4 param_2,undefined4 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x64130a.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00641325",
+  "name": "FUN_00641325",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_00641325(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x641325.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00641343",
+  "name": "FUN_00641343",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_00641343(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x641343.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00641361",
+  "name": "FUN_00641361",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_00641361(int param_1,undefined4 param_2)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x641361.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x006413c5",
+  "name": "FUN_006413c5",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_006413c5(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6413c5.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x006413e3",
+  "name": "FUN_006413e3",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_006413e3(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x6413e3.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0064144c",
+  "name": "FUN_0064144c",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_0064144c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x64144c.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0064146a",
+  "name": "FUN_0064146a",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_0064146a(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x64146a.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x00641488",
+  "name": "FUN_00641488",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_00641488(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x641488.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0064487e",
+  "name": "FUN_0064487e",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_0064487e(undefined4 param_1,undefined4 param_2,undefined4 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x64487e.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ },
+ {
+  "address": "0x0064ea67",
+  "name": "FUN_0064ea67",
+  "source": "src/band7_wave3.cpp",
+  "signature": "void FUN_0064ea67(undefined4 param_1,undefined4 param_2,undefined4 param_3)",
+  "confidence": "high",
+  "evidence": [
+   "analysis/pseudocode/functions/0x64ea67.c (span 19)"
+  ],
+  "span": 19,
+  "status": "unverified",
+  "unknowns": [
+   "calling convention / struct layout beyond observed offsets; callee symbols unverified",
+   "cl 13.10.3077 absent"
+  ]
+ }
+]
