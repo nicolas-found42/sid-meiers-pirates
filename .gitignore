@@ -1,11 +1,32 @@
+# Target inputs: never commit the installer, extracted image, or toolchain.
 pirates.exe
 analysis/
 experiments/*/output/
+
+# Generated compile inputs (deterministic; recreate with tools/gen_units.py
+# and tools/gen_win32_shim.py). build/units.json and build/functions.json
+# are addresses/names only and stay tracked.
+build/shim/
+build/units-src/
 build/tmp/
 build/*.obj
+build/*.exp
+build/*.lib
+build/*.map
+build/*.ilk
+build/*.pdb
+
+# Compiler and harness artifacts
 *.obj
+*.o
 *.pdb
 *.ilk
+
+# Python
 __pycache__/
 *.pyc
+.venv/
+.pytest_cache/
+
+# Editor / OS
 .DS_Store
