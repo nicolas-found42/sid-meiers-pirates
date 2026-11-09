@@ -18,3 +18,17 @@ Read [README.md](README.md) and [PROJECT.md](PROJECT.md), then the latest releva
 ## Workflow
 
 Use `experiments/<id>/README.md` for every investigation. Record the exact image hash, command, observation, evidence location, retention state, and next action. Promote supported conclusions to `findings/`. Update `PROJECT.md` before finishing.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live as GitHub issues in `nicolas-found42/sid-meiers-pirates`, driven by the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.

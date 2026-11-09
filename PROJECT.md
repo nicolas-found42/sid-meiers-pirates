@@ -44,3 +44,4 @@ python3 tests/run_fixture.py
 - `analysis/rea-pirates-bundle.json`: ignored REA bundle (12 records) used to generate the inventory.
 - `analysis/team/`: ignored team outputs (triage, 85 dossiers, 23 candidate packages, import/thunk map, corpus audit, 319 evidence IDs).
 - Experiment output: `experiments/2026-11-08-target-identification/output/` (4,883,196 bytes, extracted app files only).
+- Agent skills config: `AGENTS.md` `## Agent skills` block plus `docs/agents/{issue-tracker,triage-labels,domain}.md` (GitHub tracker `nicolas-found42/sid-meiers-pirates`, default triage labels created, single-context domain docs); `python3 tools/check.py` from the hub: PASS.
