@@ -40,5 +40,5 @@ python3 tests/run_fixture.py
 
 - `build/functions.json`: 8,181 functions, 2,879,488 bytes, 7,932 placeholders, 140 thunks.
 - `build/units.json`: 0 claimed units.
-- `analysis/rea-pirates-bundle.json`: ignored REA bundle (8 records) used to generate the inventory.
+- `analysis/rea-pirates-bundle.json`: ignored REA bundle (12 records) used to generate the inventory.
 - Experiment output: `experiments/2026-11-08-target-identification/output/` (4,883,196 bytes, extracted app files only).

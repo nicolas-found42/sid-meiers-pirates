@@ -51,7 +51,7 @@ Evidence paths:
 
 - `output/extracted/app/Pirates!.exe` (and the five runtime files)
 - `build/functions.json` (committed inventory)
-- `analysis/rea-pirates-bundle.json` (ignored, 8 records)
+- `analysis/rea-pirates-bundle.json` (ignored, 12 records)
 - [findings/2026-11-08-target-identification.md](../../findings/2026-11-08-target-identification.md)
 
 ## Conclusion and limits
