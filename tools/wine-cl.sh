@@ -10,7 +10,9 @@ set -eu
 
 ROOT="$(cd "$(dirname "$0")/../analysis/toolchain" && pwd)"
 
-export WINEPREFIX="$ROOT/prefix2"
+# Parallel census workers isolate prefixes; tools/compare_census.py sets
+# PIRATES_WINEPREFIX per unit. The default stays the proven prefix2.
+export WINEPREFIX="${PIRATES_WINEPREFIX:-$ROOT/prefix2}"
 export WINEDEBUG="-all"
 
 exec "$ROOT/wine/mach9/wine/bin/wine" "$ROOT/vc71/bin/cl.exe" "$@"
