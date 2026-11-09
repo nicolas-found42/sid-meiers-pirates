@@ -91,6 +91,7 @@ class COFF:
             })
 
         self.symbols = []
+        self.symbol_by_physical: dict[int, dict] = {}
         off = self.pointer_to_symbol_table
         index = 0
         while index < self.number_of_symbols:
@@ -107,7 +108,7 @@ class COFF:
                 name = self.data[start:end if end >= 0 else len(self.data)].decode("ascii", "replace")
             else:
                 name = raw_name.rstrip(b"\0").decode("ascii", "replace")
-            self.symbols.append({
+            symbol = {
                 "index": index,
                 "name": name,
                 "value": value,
@@ -115,7 +116,9 @@ class COFF:
                 "type": symbol_type,
                 "storage_class": storage_class,
                 "aux": aux_count,
-            })
+            }
+            self.symbols.append(symbol)
+            self.symbol_by_physical[index] = symbol
             off += 18 * (1 + aux_count)
             index += 1 + aux_count
 
@@ -131,8 +134,17 @@ class COFF:
 
     def relocations(self, section: dict) -> list[dict]:
         rows = []
-        for i in range(section["reloc_count"]):
-            off = section["reloc_pointer"] + i * 10
+        count = section["reloc_count"]
+        offset = section["reloc_pointer"]
+        if section["characteristics"] & 0x01000000 and count == 0xFFFF and offset + 14 <= len(self.data):
+            # IMAGE_SCN_LNK_NRELOC_OVFL: the first relocation's symbol-index
+            # field holds the real count; it is not itself a relocation.
+            count = self.u32(offset + 4)
+            offset += 10
+        for i in range(count):
+            off = offset + i * 10
+            if off + 10 > len(self.data):
+                break
             rows.append({
                 "address": self.u32(off),
                 "symbol_index": self.u32(off + 4),
@@ -189,16 +201,27 @@ def resolve_va(symbol: dict, section_bases: dict[int, int], fn_map: dict[str, in
     raise HarnessError(f"unsupported symbol {name!r} with section number {symbol['section']}")
 
 
-def apply_relocations(section: dict, raw: bytearray, relocations: list[dict], symbols: list[dict],
-                      section_bases: dict[int, int], fn_map: dict[str, int], data_map: dict[str, int],
+def apply_relocations(section: dict, raw: bytearray, relocations: list[dict], symbols, section_bases: dict[int, int],
+                      fn_map: dict[str, int], data_map: dict[str, int],
                       externals: dict[str, int], image_base: int) -> list[str]:
+    # `symbols` is the COFF object itself when it exposes symbol_by_physical
+    # (relocation symbol indices are physical record indices, aux included);
+    # a plain list falls back to logical indexing for hand-built objects.
+    lookup = symbols.symbol_by_physical if hasattr(symbols, "symbol_by_physical") else symbols
     problems: list[str] = []
     for reloc in relocations:
         offset = reloc["address"]
         if offset + 4 > len(raw):
             problems.append(f"relocation at {offset:#x} lies outside section {section['name']}")
             continue
-        symbol = symbols[reloc["symbol_index"]]
+        try:
+            symbol = lookup[reloc["symbol_index"]]
+        except (KeyError, IndexError):
+            problems.append(
+                f"relocation at {offset:#x} in {section['name']} references symbol index "
+                f"{reloc['symbol_index']} outside the symbol table"
+            )
+            continue
         reloc_type = reloc["type"]
         if reloc_type == IMAGE_REL_I386_ABSOLUTE:
             continue
@@ -308,7 +331,7 @@ def compare_unit(unit: dict, functions_by_address: dict[str, dict], pe: PE,
         if section["index"] not in relocated:
             raw = bytearray(coff.section_bytes(section))
             problems.extend(apply_relocations(
-                section, raw, coff.relocations(section), symbols, section_bases,
+                section, raw, coff.relocations(section), coff, section_bases,
                 fn_map, data_map, externals, pe.image_base,
             ))
             relocated[section["index"]] = raw

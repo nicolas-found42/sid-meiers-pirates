@@ -1,0 +1,2354 @@
+[
+ {
+  "file": "src/crt/mass_0325/mass_0325.cpp",
+  "line": 109,
+  "address": "0x677223",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: `extraout_ECX`, `extraout_ECX_00` and `extraout_ECX_01` are"
+ },
+ {
+  "file": "src/crt/mass_0325/mass_0325.cpp",
+  "line": 213,
+  "address": "0x677223",
+  "class": "register_modeling",
+  "reason": "idx = ((int32_t*)container[2])[0]; // NEEDS_MANUAL: extraout_ECX_00"
+ },
+ {
+  "file": "src/crt/mass_0325/mass_0325.cpp",
+  "line": 267,
+  "address": "0x677223",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_ECX_01 is the unrecovered EDX half of the call."
+ },
+ {
+  "file": "src/crt/mass_0325/mass_0325.cpp",
+  "line": 752,
+  "address": "0x677f73",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: FUN_00672e90's EDX half is used as an object pointer at several"
+ },
+ {
+  "file": "src/crt/mass_0325/mass_0325.cpp",
+  "line": 1181,
+  "address": "0x230",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: FUN_00672e90's EDX half is dereferenced as an object pointer."
+ },
+ {
+  "file": "src/crt/mass_0325/mass_0325.cpp",
+  "line": 1218,
+  "address": "0x230",
+  "class": "other",
+  "reason": "total = *(uint32_t*)(hi + 4); // NEEDS_MANUAL: EDX half as pointer"
+ },
+ {
+  "file": "src/crt/mass_0325/mass_0325.cpp",
+  "line": 2026,
+  "address": "0x6796fd",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: several corpus locals use the EDX half of FUN_00672e90 and raw"
+ },
+ {
+  "file": "src/crt/mass_0326/mass_0326.cpp",
+  "line": 2248,
+  "address": "0x67cbd8",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: FUN_00672e90 additionally leaves a value in ECX (Ghidra names it"
+ },
+ {
+  "file": "src/crt/mass_0326/mass_0326.cpp",
+  "line": 2269,
+  "address": "0x67d4e6",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: FUN_00672e90 leaves a second value in ECX; each site keeps its observed use."
+ },
+ {
+  "file": "src/crt/mass_0330/mass_0330.cpp",
+  "line": 168,
+  "address": "0x685ca7",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the corpus reads the two dots through partially undefined XMM6"
+ },
+ {
+  "file": "src/crt/mass_0330/mass_0330.cpp",
+  "line": 333,
+  "address": "0x687619",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the 8-element-per-iteration head is a hand-vectorised loop whose"
+ },
+ {
+  "file": "src/crt/mass_0330/mass_0330.cpp",
+  "line": 365,
+  "address": "0x687743",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the body consumes eight 16-bit lanes that arrive only in XMM0"
+ },
+ {
+  "file": "src/crt/mass_0330/mass_0330.cpp",
+  "line": 396,
+  "address": "0x688391",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the head's XMM3/XMM0 result registers are not recoverable; the"
+ },
+ {
+  "file": "src/crt/mass_0337/mass_0337.cpp",
+  "line": 1323,
+  "address": "0x69d37b",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: 0x69d3c8 masks with a decompiler register artifact (extraout_EDX) whose"
+ },
+ {
+  "file": "src/crt/mass_0341/mass_0341.cpp",
+  "line": 366,
+  "address": "0x6a60ea",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: on the default path the listing reads the never-written"
+ },
+ {
+  "file": "src/crt/mass_0344/mass_0344.cpp",
+  "line": 188,
+  "address": "0x6ab8b0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: listing declares void(void); the only observed operation targets the 4th"
+ },
+ {
+  "file": "src/crt/mass_0344/mass_0344.cpp",
+  "line": 329,
+  "address": "0x6abb60",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: Ghidra emits packed 16-bit CONCAT/carry chains per lane; the per-byte blends"
+ },
+ {
+  "file": "src/crt/mass_0344/mass_0344.cpp",
+  "line": 429,
+  "address": "0x6abf20",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the provider expands the filter as packed 16-bit CONCAT chains; the loop,"
+ },
+ {
+  "file": "src/crt/mass_0345/mass_0345.cpp",
+  "line": 1035,
+  "address": "0x6ae1a0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the two conversion routines are entered with further arguments"
+ },
+ {
+  "file": "src/crt/mass_0346/mass_0346.cpp",
+  "line": 219,
+  "address": "0x6ae663",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the three-field blob tbl is a by-value tree_desc image; field"
+ },
+ {
+  "file": "src/crt/mass_0346/mass_0346.cpp",
+  "line": 1118,
+  "address": "0x6af6de",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the provider shows no argument list for the scan_tree and"
+ },
+ {
+  "file": "src/crt/mass_0346/mass_0346.cpp",
+  "line": 1170,
+  "address": "0x6af7c4",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the corpus assigns the result of FUN_006af6de (declared void)"
+ },
+ {
+  "file": "src/crt/mass_0347/mass_0347.cpp",
+  "line": 557,
+  "address": "0x6b0210",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: the x87 ftol() arguments were dropped by the decompiler."
+ },
+ {
+  "file": "src/crt/mass_0347/mass_0347.cpp",
+  "line": 958,
+  "address": "0x6b13e0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing is SSE2 code (pmaddwd / psllw / packssdw) whose"
+ },
+ {
+  "file": "src/crt/mass_0347/mass_0347.cpp",
+  "line": 1222,
+  "address": "0x6b2350",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: SSE2 packed-byte colour conversion (psubsw/pmaddwd/packssdw,"
+ },
+ {
+  "file": "src/crt/mass_0348/mass_0348.cpp",
+  "line": 335,
+  "address": "0x6b3790",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the provider renders the FUN_006b34a0 call with one stack"
+ },
+ {
+  "file": "src/crt/mass_0351/mass_0351.cpp",
+  "line": 116,
+  "address": "0x6b5020",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the payload length arrives in EDI and the destination pointer"
+ },
+ {
+  "file": "src/crt/mass_0351/mass_0351.cpp",
+  "line": 189,
+  "address": "0x6b5170",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the length forwarded to FUN_006b5020 arrives in EDI and is"
+ },
+ {
+  "file": "src/crt/mass_0351/mass_0351.cpp",
+  "line": 414,
+  "address": "0x6b55c0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the provider splits the 16-float workspace over several"
+ },
+ {
+  "file": "src/crt/mass_0351/mass_0351.cpp",
+  "line": 703,
+  "address": "0x6b5fa0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the provider splits the 16-float workspaces into overlapping"
+ },
+ {
+  "file": "src/crt/mass_0351/mass_0351.cpp",
+  "line": 1042,
+  "address": "0x6b6a00",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing passes two extra stack words that its own"
+ },
+ {
+  "file": "src/crt/mass_0351/mass_0351.cpp",
+  "line": 1362,
+  "address": "0x6b7220",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: `uStack_c` selects the binary operator but is never assigned"
+ },
+ {
+  "file": "src/crt/mass_0352/mass_0352.cpp",
+  "line": 313,
+  "address": "0x6b7790",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: local_8 (int*) and local_4 are the 15th/16th elements of the"
+ },
+ {
+  "file": "src/crt/mass_0352/mass_0352.cpp",
+  "line": 1124,
+  "address": "0x6b8f00",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: uStack_c and the unaff_* values are stack/register remnants"
+ },
+ {
+  "file": "src/engine/mass_0095/mass_0095.cpp",
+  "line": 535,
+  "address": "0x515680",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large non-contiguous global-state destructor; observed shape preserved via grouped mutex waits and list teardowns."
+ },
+ {
+  "file": "src/engine/mass_0095/mass_0095.cpp",
+  "line": 624,
+  "address": "0x515cb0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large background streamer loop with many mutex branches; observed shape preserved."
+ },
+ {
+  "file": "src/engine/mass_0095/mass_0095.cpp",
+  "line": 662,
+  "address": "0x5163c0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: mutex queue management with multiple branches; observed shape preserved."
+ },
+ {
+  "file": "src/engine/mass_0095/mass_0095.cpp",
+  "line": 683,
+  "address": "0x516880",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: cell context creation loop with nested queue operations; observed shape preserved."
+ },
+ {
+  "file": "src/engine/mass_0102/mass_0102.cpp",
+  "line": 50,
+  "address": "0x51e870",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: body truncated in corpus listing (lines 69-233 elided); preserved endpoints and outer iteration here"
+ },
+ {
+  "file": "src/engine/mass_0105/mass_0105.cpp",
+  "line": 274,
+  "address": "0x522f40",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: linked-list walk + 4-wide unrolled min/max over pvStack_10 records; sentinel objects DAT_00727558/60/98 observed, constants preserved"
+ },
+ {
+  "file": "src/engine/mass_0105/mass_0105.cpp",
+  "line": 312,
+  "address": "0x5233d0",
+  "class": "other",
+  "reason": "FUN_00523b80((uint32_t*)pi, 0, u1, (uint32_t*)u2, u3); // best-effort arity; NEEDS_MANUAL: callee takes 5 params incl param_4 pointer"
+ },
+ {
+  "file": "src/engine/mass_0112/mass_0112.cpp",
+  "line": 284,
+  "address": "0x52c690",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: SEH/exception-list wrapper with elided branches; preserves observed vector-grow arithmetic and call order"
+ },
+ {
+  "file": "src/engine/mass_0112/mass_0112.cpp",
+  "line": 635,
+  "address": "0x52cf90",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: large non-contiguous body with elided setup, thunk allocation, and SEH locals; preserves observed iteration, suffix-copy shape, and post-loop copy"
+ },
+ {
+  "file": "src/engine/mass_0112/mass_0112.cpp",
+  "line": 864,
+  "address": "0x52d4b0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: nested byte-compare loops with truncated adjacency logic; preserves observed provider enumeration and string-match retry shape"
+ },
+ {
+  "file": "src/engine/mass_0115/mass_0115.cpp",
+  "line": 628,
+  "address": "0x531070",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the provider reports extraout_ST1 as the unbound second x87"
+ },
+ {
+  "file": "src/engine/mass_0117/mass_0117.cpp",
+  "line": 226,
+  "address": "0x5337b0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: stack-passing via Ghidra CONCAT/uStack slots; preserved comparison/count structure."
+ },
+ {
+  "file": "src/engine/mass_0122/mass_0122.cpp",
+  "line": 172,
+  "address": "0x538460",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_EAX fallback when param_1 null is register-defined; preserve compare shape with zero return."
+ },
+ {
+  "file": "src/engine/mass_0126/mass_0126.cpp",
+  "line": 609,
+  "address": "0x53c630",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the allocator size argument was not recovered by the decompiler;"
+ },
+ {
+  "file": "src/engine/mass_0126/mass_0126.cpp",
+  "line": 626,
+  "address": "0x53c6b0",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: _CIacos reads its operand from the x87 stack; the listing shows"
+ },
+ {
+  "file": "src/engine/mass_0128/mass_0128.cpp",
+  "line": 221,
+  "address": "0x53e570",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_AL check depends on unlisted call residue."
+ },
+ {
+  "file": "src/engine/mass_0128/mass_0128.cpp",
+  "line": 525,
+  "address": "0x53ec00",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_BL is uninitialized register residue in listing; if-condition on its value is preserved as opaque."
+ },
+ {
+  "file": "src/engine/mass_0132/mass_0132.cpp",
+  "line": 867,
+  "address": "0x542d70",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing reports stack-slot aliasing for the read targets"
+ },
+ {
+  "file": "src/engine/mass_0141/mass_0141.cpp",
+  "line": 738,
+  "address": "0x54e050",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: original virtual receiver for the 0x2c comparison."
+ },
+ {
+  "file": "src/engine/mass_0144/mass_0144.cpp",
+  "line": 313,
+  "address": "0x551f00",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing calls FUN_00551ce0 with no explicit"
+ },
+ {
+  "file": "src/engine/mass_0151/mass_0151.cpp",
+  "line": 122,
+  "address": "0x5593c0",
+  "class": "other",
+  "reason": "// 0x5593c0 \u2014 NEEDS_MANUAL: comparison routine with CONCAT22 float-flag encoding and NAN handling; return value built from flag bits, structure preserved below as observed"
+ },
+ {
+  "file": "src/engine/mass_0151/mass_0151.cpp",
+  "line": 177,
+  "address": "0x559510",
+  "class": "other",
+  "reason": "// 0x559510 \u2014 NEEDS_MANUAL: serialization/restore with version checks, virtual calls at *(param+0x15c)+8, three array allocations at +0x40/+0x48/+0x4c; global default DAT_00717a68 used for +0x4c fill"
+ },
+ {
+  "file": "src/engine/mass_0151/mass_0151.cpp",
+  "line": 325,
+  "address": "0x559e60",
+  "class": "other",
+  "reason": "// 0x559e60 \u2014 NEEDS_MANUAL: property display with qsort of bone names; per-bone property add with capacity grow and refcount adjust at +0x10"
+ },
+ {
+  "file": "src/engine/mass_0151/mass_0151.cpp",
+  "line": 453,
+  "address": "0x5597c0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the gate below is the provider's `cStack_4 = (char)in_ECX`; the"
+ },
+ {
+  "file": "src/engine/mass_0151/mass_0151.cpp",
+  "line": 466,
+  "address": "0x5597c0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the provider derives this predicate as"
+ },
+ {
+  "file": "src/engine/mass_0151/mass_0151.cpp",
+  "line": 475,
+  "address": "0x5597c0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the provider passes `auStack_16 + -3` (one byte outside its declared"
+ },
+ {
+  "file": "src/engine/mass_0153/mass_0153.cpp",
+  "line": 39,
+  "address": null,
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: value is produced by the argument-elided stream call in"
+ },
+ {
+  "file": "src/engine/mass_0154/mass_0154.cpp",
+  "line": 69,
+  "address": "0x55ca20",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: receiver passed in ECX and unaff_ESI/EDI locals; stack bitmap fields abbreviated."
+ },
+ {
+  "file": "src/engine/mass_0154/mass_0154.cpp",
+  "line": 115,
+  "address": "0x55d450",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: stack colors / EBP condition abbreviated; reorder loop preserved below"
+ },
+ {
+  "file": "src/engine/mass_0154/mass_0154.cpp",
+  "line": 133,
+  "address": "0x55d4f0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: bitfield repack loop complex; entry/exit and branch structure preserved."
+ },
+ {
+  "file": "src/engine/mass_0154/mass_0154.cpp",
+  "line": 154,
+  "address": "0x55d9b0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: full bitfield loop abbreviated; chunking + branch predicates preserved."
+ },
+ {
+  "file": "src/engine/mass_0154/mass_0154.cpp",
+  "line": 171,
+  "address": "0x55de50",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: ECX receiver and stack bitmap abbreviated; dispatch predicates + CS release preserved."
+ },
+ {
+  "file": "src/engine/mass_0154/mass_0154.cpp",
+  "line": 261,
+  "address": "0x55e140",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: stack header fields abbreviated; CS + palette select + 9-dword copy preserved."
+ },
+ {
+  "file": "src/engine/mass_0154/mass_0154.cpp",
+  "line": 291,
+  "address": "0x55e860",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: triple loop abbreviated; normal accumulation + flag set preserved."
+ },
+ {
+  "file": "src/engine/mass_0154/mass_0154.cpp",
+  "line": 340,
+  "address": "0x55ebf0",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: sqrt/cos/sin via x87 abbreviated."
+ },
+ {
+  "file": "src/engine/mass_0155/mass_0155.cpp",
+  "line": 83,
+  "address": "0x55f2c0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: recursive call receiver is reported bare in the listing;"
+ },
+ {
+  "file": "src/engine/mass_0155/mass_0155.cpp",
+  "line": 226,
+  "address": "0x55f5a0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: loop bound (ESI), high word (EDI) and inner count (EBP) are"
+ },
+ {
+  "file": "src/engine/mass_0155/mass_0155.cpp",
+  "line": 294,
+  "address": "0x55f750",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: the elided middle (lines 45-98) was reconstructed from a"
+ },
+ {
+  "file": "src/engine/mass_0155/mass_0155.cpp",
+  "line": 381,
+  "address": "0x14",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the 0xC allocation result feeds local_4 through"
+ },
+ {
+  "file": "src/engine/mass_0155/mass_0155.cpp",
+  "line": 440,
+  "address": "0x55fab0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: loop bound at +0x68 evolves in the body; the grow-check at"
+ },
+ {
+  "file": "src/engine/mass_0155/mass_0155.cpp",
+  "line": 482,
+  "address": "0x55fb30",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: several writer reads pass register-borne values (BX/SI)"
+ },
+ {
+  "file": "src/engine/mass_0162/mass_0162.cpp",
+  "line": 240,
+  "address": "0x567880",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: 0x567a60 \u2014 indirect jump through table from FUN_00568140() result (Ghidra could not recover jumptable at 0x567ac2)"
+ },
+ {
+  "file": "src/engine/mass_0174/mass_0174.cpp",
+  "line": 466,
+  "address": "0x574970",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: non_contiguous body; elided Ghidra ranges preserved at high level, receiver and compare loops translated from visible ranges"
+ },
+ {
+  "file": "src/engine/mass_0174/mass_0174.cpp",
+  "line": 642,
+  "address": "0x574d50",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: very large non_contiguous body (344 lines); vector-grow/ensure and lookup loops for three vectors preserved structurally from visible ranges; exact growth helper FUN_0055f300 and lookup vtables kept"
+ },
+ {
+  "file": "src/engine/mass_0174/mass_0174.cpp",
+  "line": 907,
+  "address": "0x575520",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: large deserialization-style body with indirect vtable reads at param_1+0x15c; stack locals auStack_1e offsets preserved structurally; vector-grow inline code translated"
+ },
+ {
+  "file": "src/engine/mass_0180/mass_0180.cpp",
+  "line": 232,
+  "address": "0x57c1f0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: sub-operations FUN_00569600/FUN_004916d0/FUN_00431450/FUN_00497ca0/FUN_00497cf0/FUN_0053c800/FUN_0053c8d0 are complex interpolation paths; matrix locals preserved structurally, not semantically verified."
+ },
+ {
+  "file": "src/engine/mass_0180/mass_0180.cpp",
+  "line": 411,
+  "address": "0x57ca60",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EBP (loop bound stack slot) and iStack_4 (other-object cache slot) come from caller stack frame; equality bit-packing preserved from listing."
+ },
+ {
+  "file": "src/engine/mass_0180/mass_0180.cpp",
+  "line": 555,
+  "address": "0x57cc80",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: _CIfmod() fractional-modulus operands unrecovered from listing; call preserved as observed."
+ },
+ {
+  "file": "src/engine/mass_0181/mass_0181.cpp",
+  "line": 476,
+  "address": "0x57ee90",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: receiver in_ECX unread for 0x57ee90; kept as explicit self parameter"
+ },
+ {
+  "file": "src/engine/mass_0238/mass_0238.cpp",
+  "line": 194,
+  "address": "0x5e19a0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the corpus passes the single slot (out_value) to the"
+ },
+ {
+  "file": "src/engine/mass_0238/mass_0238.cpp",
+  "line": 490,
+  "address": "0x5e1da0",
+  "class": "other",
+  "reason": "lookup(owner); // NEEDS_MANUAL: corpus leaves this call's register arguments unmodelled"
+ },
+ {
+  "file": "src/engine/mass_0238/mass_0238.cpp",
+  "line": 568,
+  "address": "0x5e1ee0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: corpus passes stack-register slots to FUN_005e1a10 here."
+ },
+ {
+  "file": "src/engine/mass_0238/mass_0238.cpp",
+  "line": 680,
+  "address": "0x25",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: corpus leaves several register-only call arguments here."
+ },
+ {
+  "file": "src/engine/mass_0240/mass_0240.cpp",
+  "line": 556,
+  "address": "0x5e4a40",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the listing stores through unaff_retaddr, a caller-supplied"
+ },
+ {
+  "file": "src/engine/mass_0240/mass_0240.cpp",
+  "line": 573,
+  "address": "0x5e4a80",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing initializes piVar4 to null and then dispatches"
+ },
+ {
+  "file": "src/engine/mass_0246/mass_0246.cpp",
+  "line": 98,
+  "address": "0x5e90f0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large SEH-managed vector resize with refcounted element releases; structure preserved but exception scopes simplified."
+ },
+ {
+  "file": "src/engine/mass_0246/mass_0246.cpp",
+  "line": 246,
+  "address": "0x5e9330",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: non-contiguous SEH destructor with goto-merged loops over shader tables; structure preserved."
+ },
+ {
+  "file": "src/engine/mass_0246/mass_0246.cpp",
+  "line": 366,
+  "address": "0x5e9570",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: non-contiguous SEH initialization with many virtual calls and enumeration loops."
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 43,
+  "address": "0x5f2e51",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x7188a4, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 56,
+  "address": "0x5f2f7e",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x7188a8, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 139,
+  "address": "0x5f39bc",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x718878, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 151,
+  "address": "0x5f3a2d",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x71886c, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 183,
+  "address": "0x5f3d0e",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x718858, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 196,
+  "address": "0x5f3dbf",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x71885c, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 203,
+  "address": "0x5f3dd2",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x7188bc, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 210,
+  "address": "0x5f3e9e",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x7188e8, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0257/mass_0257.cpp",
+  "line": 217,
+  "address": "0x5f3f34",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x7188ec, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 51,
+  "address": "0x5f417d",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x7188c0, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 81,
+  "address": "0x5f424b",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x718860, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 88,
+  "address": "0x5f4307",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x718864, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 95,
+  "address": "0x5f43d0",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x71883c, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 102,
+  "address": "0x5f441e",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x718840, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 109,
+  "address": "0x5f44d5",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x718894, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 116,
+  "address": "0x5f4589",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x71891c, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 123,
+  "address": "0x5f465d",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing exposes no typed parameters; three coordinates arrive on"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 196,
+  "address": "0x5f48c8",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: indirect jump through table at 0x718920, jumptable not recovered"
+ },
+ {
+  "file": "src/engine/mass_0258/mass_0258.cpp",
+  "line": 284,
+  "address": "0x5f4aeb",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the provider left the pointer advance as the high dword of the"
+ },
+ {
+  "file": "src/engine/mass_0259/mass_0259.cpp",
+  "line": 717,
+  "address": "0x005f61dc",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: the provider printed this vtable call with no argument list,"
+ },
+ {
+  "file": "src/engine/mass_0260/mass_0260.cpp",
+  "line": 1282,
+  "address": "0x5f8bc5",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: observed return packs EDX (register input, not a formal parameter) into the high"
+ },
+ {
+  "file": "src/engine/mass_0260/mass_0260.cpp",
+  "line": 1296,
+  "address": "0x5f8bed",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: local_18 aliases the WORD just past wProcessorArchitecture inside the"
+ },
+ {
+  "file": "src/engine/mass_0260/mass_0260.cpp",
+  "line": 1333,
+  "address": "0x5f8c9f",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: Ghidra exposes the frame through unaff_EBP; the EBP-relative slot writes are kept"
+ },
+ {
+  "file": "src/engine/mass_0260/mass_0260.cpp",
+  "line": 1368,
+  "address": "0x5f8ce5",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: non-contiguous body (0x5f8ce5-0x5f8cea, 0x5f8cf0-0x5f8d3f) and unaff_EBP frame;"
+ },
+ {
+  "file": "src/engine/mass_0261/mass_0261.cpp",
+  "line": 161,
+  "address": "0x5f90ec",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large BMP/DIB decoder; full branch structure preserved in reconstructed form below with observed offsets and constants where source elides in reads."
+ },
+ {
+  "file": "src/engine/mass_0261/mass_0261.cpp",
+  "line": 389,
+  "address": "0x5f9c95",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: complex setjmp/image-load path; preserved core shape with observed constants."
+ },
+ {
+  "file": "src/engine/mass_0261/mass_0261.cpp",
+  "line": 422,
+  "address": "0x5f9f0f",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large JPEG/DIB header parser; header validation and format-id selection preserved."
+ },
+ {
+  "file": "src/engine/mass_0261/mass_0261.cpp",
+  "line": 507,
+  "address": "0x5fa439",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: P3/P6 PPM parser loop elided in reads; header checks preserved."
+ },
+ {
+  "file": "src/engine/mass_0261/mass_0261.cpp",
+  "line": 562,
+  "address": "0x5fa714",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large zlib/PNG inflation driver with setjmp; entry and cleanup shape preserved."
+ },
+ {
+  "file": "src/engine/mass_0261/mass_0261.cpp",
+  "line": 602,
+  "address": "0x5fac67",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: DSD/RIFF chunk table walk elided in reads; header validation and dispatch shape preserved."
+ },
+ {
+  "file": "src/engine/mass_0263/mass_0263.cpp",
+  "line": 960,
+  "address": "0x5fddac",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the provider exposes two incoming register operands (`unaff_ESI`,"
+ },
+ {
+  "file": "src/engine/mass_0264/mass_0264.cpp",
+  "line": 394,
+  "address": "0x5ff6ce",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the two data pointers used as copy source/dest (Ghidra local_10/local_18)"
+ },
+ {
+  "file": "src/engine/mass_0264/mass_0264.cpp",
+  "line": 629,
+  "address": "0x5ff879",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the meaning of the descriptor fields at +0x44/+0x48 is not named by the"
+ },
+ {
+  "file": "src/engine/mass_0264/mass_0264.cpp",
+  "line": 1384,
+  "address": "0x60064e",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the object at +0x2c is the surface whose packed reader the listing calls"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 82,
+  "address": "0x604918",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 219,
+  "address": "0x604ccd",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 354,
+  "address": "0x605084",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 486,
+  "address": "0x605393",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 570,
+  "address": "0x60557c",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 670,
+  "address": "0x60580a",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: the listing forms CONCAT22(local_c._2_2_, in_FPUControlWord)"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 775,
+  "address": "0x605aab",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 859,
+  "address": "0x605c9c",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0266/mass_0266.cpp",
+  "line": 957,
+  "address": "0x605f66",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0269/mass_0269.cpp",
+  "line": 81,
+  "address": "0x607c36",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: the listing stores the x87 FPU control word into +0x7c"
+ },
+ {
+  "file": "src/engine/mass_0269/mass_0269.cpp",
+  "line": 123,
+  "address": "0x607c82",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: *(uint32_t*)((char*)self + 0x7c) = in_FPUControlWord"
+ },
+ {
+  "file": "src/engine/mass_0269/mass_0269.cpp",
+  "line": 230,
+  "address": "0x607f2a",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: the listing forms CONCAT22(param_2._2_2_, in_FPUControlWord)"
+ },
+ {
+  "file": "src/engine/mass_0269/mass_0269.cpp",
+  "line": 634,
+  "address": "0x6089bf",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the third channel of 0x608aa1 is produced by an"
+ },
+ {
+  "file": "src/engine/mass_0271/mass_0271.cpp",
+  "line": 1022,
+  "address": "0x60b067",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing truncates these two sites"
+ },
+ {
+  "file": "src/engine/mass_0271/mass_0271.cpp",
+  "line": 1265,
+  "address": "0x60b067",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the second bank base (local_418) is a caller"
+ },
+ {
+  "file": "src/engine/mass_0272/mass_0272.cpp",
+  "line": 19,
+  "address": "0x60b98d",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: preserves error strings as analyzed; helper names inferred from corpus"
+ },
+ {
+  "file": "src/engine/mass_0272/mass_0272.cpp",
+  "line": 267,
+  "address": "0x60bcf9",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: string path arithmetic preserved; exact wide-char length derivation subtle"
+ },
+ {
+  "file": "src/engine/mass_0276/mass_0276.cpp",
+  "line": 145,
+  "address": "0x610d84",
+  "class": "other",
+  "reason": "// 0x610d84 \u2014 NEEDS_MANUAL: 0x8e1-byte semantic token parser. Token loop, 0x54-entry"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 382,
+  "address": "0x618334",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: in the negative path Ghidra reads columns 0/1 (locals"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1135,
+  "address": "0x20300001",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: listing continues past LAB_00619e73 with two merge halves."
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1218,
+  "address": "0x61a196",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the 9-column grid build and the post-loop epilogue continue"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1290,
+  "address": "0x61afd4",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the sweep, merge and 0x20500001/0x20500001 emission tail is"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1311,
+  "address": "0x61b66c",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: the arithmetic core beyond the prologue is not structurally"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1401,
+  "address": "0x6215eb",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: post-comparison allocation and emission tail not supplied."
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1486,
+  "address": "0xc",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: case 0xc and the tail after LAB_006228ac are not in the"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1577,
+  "address": "0xc",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the remainder of case 0xc and LAB_006228ac follow the"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1686,
+  "address": "0x7fffbffb",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the tail after the second walk is beyond the supplied"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1750,
+  "address": "0x16",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: cases 2..0x22 and the LAB_00624b26 epilogue are past the"
+ },
+ {
+  "file": "src/engine/mass_0279/mass_0279.cpp",
+  "line": 1819,
+  "address": "0x16",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: remaining cases of the param_1+0x1c switch and the"
+ },
+ {
+  "file": "src/engine/mass_0280/mass_0280.cpp",
+  "line": 774,
+  "address": "0x625749",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: provider emits the recursive call as FUN_006257ba() with the parent's ECX;"
+ },
+ {
+  "file": "src/engine/mass_0282/mass_0282.cpp",
+  "line": 2392,
+  "address": "0x628205",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the listing does not expose the ECX receiver of"
+ },
+ {
+  "file": "src/engine/mass_0295/mass_0295.cpp",
+  "line": 204,
+  "address": "0x63dd50",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: the provider elided the source operand of both ftol() conversions in the"
+ },
+ {
+  "file": "src/engine/mass_0299/mass_0299.cpp",
+  "line": 1372,
+  "address": "0x6453ee",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: the listing's ftol() calls convert an implicit x87 operand;"
+ },
+ {
+  "file": "src/engine/mass_0299/mass_0299.cpp",
+  "line": 1655,
+  "address": "0x6457f4",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: the listing's ftol() calls convert an implicit x87 operand;"
+ },
+ {
+  "file": "src/engine/mass_0301/mass_0301.cpp",
+  "line": 52,
+  "address": "0x647cf7",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the provider models the post-call base pointer as extraout_EDX,"
+ },
+ {
+  "file": "src/engine/mass_0301/mass_0301.cpp",
+  "line": 620,
+  "address": "0x64866e",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: pcVar11 carries both a char* and the (len+1) count in the"
+ },
+ {
+  "file": "src/engine/mass_0302/mass_0302.cpp",
+  "line": 2130,
+  "address": "0x7000000",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: one x87 `ftol()` conversion (case 0xf/0x10 range) has no"
+ },
+ {
+  "file": "src/engine/mass_0303/mass_0303.cpp",
+  "line": 917,
+  "address": "0x64e079",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing reads `local_c` before assigning it. Its value"
+ },
+ {
+  "file": "src/engine/mass_0303/mass_0303.cpp",
+  "line": 1935,
+  "address": "0x64efba",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the listing does not expose the ECX receiver of"
+ },
+ {
+  "file": "src/engine/mass_0303/mass_0303.cpp",
+  "line": 2264,
+  "address": "0x64f54e",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the listing does not surface the ECX receiver that"
+ },
+ {
+  "file": "src/engine/mass_0305/mass_0305.cpp",
+  "line": 448,
+  "address": "0x650b55",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: x87 long-double register spills (extraout_ST0/ST1) elided by provider."
+ },
+ {
+  "file": "src/engine/mass_0305/mass_0305.cpp",
+  "line": 1347,
+  "address": "0x651847",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: the integer->float ftol() source operands are elided from the listing"
+ },
+ {
+  "file": "src/engine/mass_0305/mass_0305.cpp",
+  "line": 1561,
+  "address": "0x651b11",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: the int<->float ftol() source operands in the type-2 paths are elided"
+ },
+ {
+  "file": "src/engine/mass_0305/mass_0305.cpp",
+  "line": 2118,
+  "address": "0x6522f5",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 0x8007000e / 0x80004005 label targets folded into the shared epilogue;"
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 32,
+  "address": "0x65b1db",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the receiver reaches the body only as extraout_EDX (a register"
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 51,
+  "address": "0x65b202",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: same extraout_EDX receiver situation as 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 69,
+  "address": "0x65b23a",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the high half of FUN_0065abb5's result is a leftover EDX that"
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 90,
+  "address": "0x65b27f",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 150,
+  "address": "0x65b377",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 224,
+  "address": "0x65b469",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 265,
+  "address": "0x65b4f3",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 292,
+  "address": "0x65b52c",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 325,
+  "address": "0x65b57b",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: FUN_0065ad6e is called with no visible arguments because the"
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 350,
+  "address": "0x65b5fa",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 408,
+  "address": "0x65b679",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 432,
+  "address": "0x65b6ae",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 456,
+  "address": "0x65b6e3",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 481,
+  "address": "0x65b71e",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the receiver itself is absent from the listing; the high half"
+ },
+ {
+  "file": "src/engine/mass_0313/mass_0313.cpp",
+  "line": 524,
+  "address": "0x65b78c",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_EDX receiver, as in 0x65b1db."
+ },
+ {
+  "file": "src/engine/mass_0314/mass_0314.cpp",
+  "line": 664,
+  "address": "0x65c580",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: this listing materialises no in_ECX, yet the inner FUN_0065c17a"
+ },
+ {
+  "file": "src/engine/mass_0314/mass_0314.cpp",
+  "line": 734,
+  "address": "0x65c643",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: no in_ECX in this listing; the inner FUN_0065c17a receiver is"
+ },
+ {
+  "file": "src/engine/mass_0316/mass_0316.cpp",
+  "line": 50,
+  "address": null,
+  "class": "other",
+  "reason": "// call as `FUN_0065d612()`); see the NEEDS_MANUAL note on the definition."
+ },
+ {
+  "file": "src/engine/mass_0316/mass_0316.cpp",
+  "line": 242,
+  "address": "0x65d5bd",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing types this function as returning void and drops the"
+ },
+ {
+  "file": "src/engine/mass_0316/mass_0316.cpp",
+  "line": 359,
+  "address": "0x65d6a4",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the two x87 comparisons Ghidra prints against `extraout_ST0`"
+ },
+ {
+  "file": "src/engine/mass_0317/mass_0317.cpp",
+  "line": 625,
+  "address": "0x65e3ad",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: provider models a void return, but the trailing loop walks the"
+ },
+ {
+  "file": "src/engine/mass_0320/mass_0320.cpp",
+  "line": 1856,
+  "address": "0x66414e",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the decompiler mixes node pointers and node indices in the"
+ },
+ {
+  "file": "src/game/mass_0002/mass_0002.cpp",
+  "line": 576,
+  "address": "0x4054a0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: very large town-attack dispatcher (246-line pseudocode with nested"
+ },
+ {
+  "file": "src/game/mass_0002/mass_0002.cpp",
+  "line": 799,
+  "address": "0x406210",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large 3-way rand() dispatcher (guards/shipwright/governor's daughter)"
+ },
+ {
+  "file": "src/game/mass_0002/mass_0002.cpp",
+  "line": 1128,
+  "address": "0x406f60",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: tavern main loop (~1600-line pseudocode, do-while true over tavern menu"
+ },
+ {
+  "file": "src/game/mass_0002/mass_0002.cpp",
+  "line": 1210,
+  "address": "0x40be00",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: governor's daughter reward dispatch (~250-line 4-way branch: random memento"
+ },
+ {
+  "file": "src/game/mass_0002/mass_0002.cpp",
+  "line": 1292,
+  "address": "0x40c730",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: governor's residence main routine (~1500-line pseudocode: nationality dispatch"
+ },
+ {
+  "file": "src/game/mass_0006/mass_0006.cpp",
+  "line": 457,
+  "address": "0x41b1d0",
+  "class": "elided_or_condensed",
+  "reason": "// and the main render loop. NEEDS_MANUAL: ~5200-line listing; the display /"
+ },
+ {
+  "file": "src/game/mass_0006/mass_0006.cpp",
+  "line": 757,
+  "address": "0x425ad0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: full frame-timing loops condensed to observed order/constants."
+ },
+ {
+  "file": "src/game/mass_0008/mass_0008.cpp",
+  "line": 244,
+  "address": "0x42cb80",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: lines 30-33, 69-73 and loop body 100-106 were elided in the corpus read; below preserves all observed operations and reconstructs the elided loop from the visible header/footer pattern."
+ },
+ {
+  "file": "src/game/mass_0009/mass_0009.cpp",
+  "line": 858,
+  "address": "0x42fee0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: Listing is non-contiguous and very long (modal menu/input loop); reconstructing verbatim would exceed practical fidelity without original symbols. Substantive loop preserved below."
+ },
+ {
+  "file": "src/game/mass_0011/mass0011.cpp",
+  "line": 6,
+  "address": null,
+  "class": "other",
+  "reason": "// NEEDS_MANUAL notes; the small ones are line-faithful head reconstructions."
+ },
+ {
+  "file": "src/game/mass_0011/mass0011.cpp",
+  "line": 325,
+  "address": null,
+  "class": "other",
+  "reason": "// Range: 0x433cf0-0x435135 (non-contiguous). NEEDS_MANUAL: full 770-line walk."
+ },
+ {
+  "file": "src/game/mass_0011/mass0011.cpp",
+  "line": 373,
+  "address": null,
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 700-line float/waypoint choreography beyond head sketch."
+ },
+ {
+  "file": "src/game/mass_0011/mass0011.cpp",
+  "line": 407,
+  "address": "0xff9d",
+  "class": "other",
+  "reason": "// 0xff9d/0x76/0x77. NEEDS_MANUAL: approach-level only; see corpus."
+ },
+ {
+  "file": "src/game/mass_0011/mass0011.cpp",
+  "line": 428,
+  "address": "0xff9d",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: ~600-line loop body; switch after key scan elided."
+ },
+ {
+  "file": "src/game/mass_0011/mass0011.cpp",
+  "line": 570,
+  "address": "0x05",
+  "class": "other",
+  "reason": "// FUN_0050c550/FUN_0050c5d0 timer gates. NEEDS_MANUAL: full panel loop."
+ },
+ {
+  "file": "src/game/mass_0011/mass0011.cpp",
+  "line": 582,
+  "address": "0x05",
+  "class": "other",
+  "reason": "// preserved (DAT_0085a26c/8 axes, DAT_007261ec/e4/f0 hooks). NEEDS_MANUAL."
+ },
+ {
+  "file": "src/game/mass_0011/mass0011.cpp",
+  "line": 607,
+  "address": "0x05",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: full panel; census anchors preserved below."
+ },
+ {
+  "file": "src/game/mass_0012/mass_0012.cpp",
+  "line": 25,
+  "address": "0x128",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 442-line listing truncated in one read; middle span"
+ },
+ {
+  "file": "src/game/mass_0012/mass_0012.cpp",
+  "line": 175,
+  "address": "0x1d",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_ receiver roles inferred from listings."
+ },
+ {
+  "file": "src/game/mass_0012/mass_0012.cpp",
+  "line": 734,
+  "address": "0x4461c0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 1620-line listing; middle widget/city branches are"
+ },
+ {
+  "file": "src/game/mass_0013/mass_0013.cpp",
+  "line": 375,
+  "address": "0x44a710",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: large UI display routine (596 lines) with nested switch on city names and pirate info display; full reconstruction appended below is structurally faithful but uses simplified pointer arithmetic for some "
+ },
+ {
+  "file": "src/game/mass_0013/mass_0013.cpp",
+  "line": 1022,
+  "address": "0x44d2e0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: very large dispatch switch (cases 1-11, 13, 20-21, 40-42) handling all ship arrival outcomes; structurally complete but lengthy"
+ },
+ {
+  "file": "src/game/mass_0013/mass_0013.cpp",
+  "line": 1477,
+  "address": "0x44eb10",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large ship-spawn routine (220+ lines); structure preserved, some nested math compressed"
+ },
+ {
+  "file": "src/game/mass_0013/mass_0013.cpp",
+  "line": 1647,
+  "address": "0x44f150",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large full-screen UI with camera setup, message loop and refcount cleanup (325 lines)"
+ },
+ {
+  "file": "src/game/mass_0013/mass_0013.cpp",
+  "line": 1814,
+  "address": "0x450110",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large island-rescue cutscene (390 lines); structure preserved, exact float math simplified"
+ },
+ {
+  "file": "src/game/mass_0013/mass_0013.cpp",
+  "line": 2090,
+  "address": "0x451e50",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large rescue cutscene (380 lines) with model loading and story branch"
+ },
+ {
+  "file": "src/game/mass_0015/mass_0015.cpp",
+  "line": 581,
+  "address": "0x45ae30",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: very long non-contiguous routine (~220 lines observed); transcription preserves loop structure, distance computations, flag handling and call order, but auxiliary label layout is approximated."
+ },
+ {
+  "file": "src/game/mass_0015/mass_0015.cpp",
+  "line": 900,
+  "address": "0x45bbf0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: large routine; transcription preserves observed loops, thresholds, crew adjustments and global updates, with secondary table offsets expressed via pointer arithmetic."
+ },
+ {
+  "file": "src/game/mass_0015/mass_0015.cpp",
+  "line": 1115,
+  "address": "0x45c270",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: long setup routine (~240 lines); transcription preserves observed phases: counter reset, tree-object allocation grid (10 x 0x15), heightfield scan with random scatter, and post-init state flags."
+ },
+ {
+  "file": "src/game/mass_0015/mass_0015.cpp",
+  "line": 1367,
+  "address": "0x45cc70",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: long routine with float10/extraout noise; transcription preserves observed bounds checks, grid init 0x1010101 x 0x1a4, heightfield resampling loops and shift loop."
+ },
+ {
+  "file": "src/game/mass_0015/mass_0015.cpp",
+  "line": 1501,
+  "address": "0x45d2b0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: very long mixed routine (~500 lines); transcription preserves observed outer loops, terrain scatter tests, fleet movement/treasure event branches, and final menu loop structure."
+ },
+ {
+  "file": "src/game/mass_0015/mass_0015.cpp",
+  "line": 1702,
+  "address": "0x45e700",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: battle outcome dispatcher (~520 lines); transcription preserves switch structure (cases 0-6), flag handling, capture/impress/sink branches and post-battle news loop."
+ },
+ {
+  "file": "src/game/mass_0016/mass_0016.cpp",
+  "line": 363,
+  "address": "0x4600d0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: interior case bodies for 0x460480 elided in provider listing excerpt; outer flow, constants and call order preserved below"
+ },
+ {
+  "file": "src/game/mass_0016/mass_0016.cpp",
+  "line": 533,
+  "address": "0x460f50",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: interior fleet-render loop bodies for 0x4612b0 are extensive; head, sea/land branches, crew/wind reporting and audio tail preserved, fleet loop condensed with observed priority constants"
+ },
+ {
+  "file": "src/game/mass_0016/mass_0016.cpp",
+  "line": 654,
+  "address": "0x4612b0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: interior city-render switch (cases 0-7) and crowd loops for 0x463cd0 are extensive; head, grid walk, nearest-city bookkeeping and departure tail preserved, interior condensed"
+ },
+ {
+  "file": "src/game/mass_0016/mass_0016.cpp",
+  "line": 761,
+  "address": "0x465b40",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: switch interior cases for 0x465db0 (terrain types 0x10-0x1b) condensed; head map-legend/port checks, clearing, and exit tail preserved"
+ },
+ {
+  "file": "src/game/mass_0016/mass_0016.cpp",
+  "line": 1007,
+  "address": "0x467df0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: interior ship-AI blocks for 0x467f90 (speed scheduling, targeting, boarding) are extensive; head fleet sync, player pace, speed merge, landing-party prompts and tail return values preserved, interior con"
+ },
+ {
+  "file": "src/game/mass_0017/mass_0017.cpp",
+  "line": 488,
+  "address": "0x46c8d0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 0x46c8d0 has 900+ lines of intricate map/city generation; core file-load and regen paths preserved above, remaining city/cannon loops follow same rand/switch pattern as switch((int)cVar6) cases 4-7"
+ },
+ {
+  "file": "src/game/mass_0018/mass_0018.cpp",
+  "line": 178,
+  "address": "0x471e00",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 909-line function; dispatch tail condensed: observed calls,"
+ },
+ {
+  "file": "src/game/mass_0018/mass_0018.cpp",
+  "line": 592,
+  "address": "0x4750c0",
+  "class": "register_modeling",
+  "reason": "// NOTE: corpus reads in_EAX (shifted cell index). We preserve structure with 0; see NEEDS_MANUAL."
+ },
+ {
+  "file": "src/game/mass_0020/mass_0020.cpp",
+  "line": 242,
+  "address": "0x482e60",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 400+ line conditional/UI state machine body elided in corpus view; observed prologue, mode dispatch, and epilogue preserved."
+ },
+ {
+  "file": "src/game/mass_0020/mass_0020.cpp",
+  "line": 367,
+  "address": "0x4842f0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: body elided in corpus view; observed prologue (DAT_0085a164 bit 0x100000, FUN_00412900) preserved."
+ },
+ {
+  "file": "src/game/mass_0020/mass_0020.cpp",
+  "line": 397,
+  "address": "0x485380",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large non-contiguous (0x485380..0x48622c + 0x486230..0x48625b) body not in view; signature preserved."
+ },
+ {
+  "file": "src/game/mass_0020/mass_0020.cpp",
+  "line": 474,
+  "address": "0x486990",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: ~293-line body elided in corpus view; signature (uint, u8*) preserved."
+ },
+ {
+  "file": "src/game/mass_0020/mass_0020.cpp",
+  "line": 538,
+  "address": "0x4874e0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: mid body 0x4874e0:25-143 elided; prologue/epilogue preserved."
+ },
+ {
+  "file": "src/game/mass_0020/mass_0020.cpp",
+  "line": 645,
+  "address": "0x487fd0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: mid branches 0x487fd0:39-101 elided; signature and gates preserved."
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 109,
+  "address": "0x4891a0",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: provider exposes indirect call via DAT_008ecd78+0x18 without a direct signature; preserved as extern vtable check."
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 119,
+  "address": "0x489210",
+  "class": "indirect_call",
+  "reason": "// NEEDS_MANUAL: provider exposes indirect call via DAT_008ecd78+0x18 without a direct signature; preserved as extern vtable check."
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 157,
+  "address": "0x489300",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: provider exposes both self (in_ECX) and src_holder (in_EAX) as registers; mapped to explicit params."
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 194,
+  "address": "0x489440",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: provider exposes in_EAX/in_ECX as registers; preserved via extern register shadow and documented arithmetic."
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 229,
+  "address": "0x489440",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 0x4894d0 is non-contiguous (0x4894d0-0x4895d6, 0x4895e0-0x4896b9, 0x4896c0-0x489938) with 257 lines elided; observed head preserved below \u2014 genuinely opaque at this length for a faithful single-definitio"
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 333,
+  "address": "0x489940",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 0x4899f0 is non-contiguous (0x4899f0-0x489a0c, 0x489a10-0x489dbb, 0x489dc0-0x489e6a) with 122 lines elided; observed head preserved below."
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 407,
+  "address": "0x4899f0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 0x489e70 is non-contiguous with 1038 lines elided (0x489e70-0x48aba7, 0x48abb0-0x48af09, 0x48af10-0x48b686, 0x48b690-0x48b919, 0x48b920-0x48bbc6, 0x48bbd0-0x48c0d4); observed head preserved below."
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 508,
+  "address": "0x48c0e0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 0x48c160 is non-contiguous with 1380 lines elided (0x48c160-0x48d934, 0x48d940-0x48d9f9, 0x48da00-0x48e41c, 0x48e420-0x48f034); observed head preserved below."
+ },
+ {
+  "file": "src/game/mass_0022/mass_0022.cpp",
+  "line": 537,
+  "address": "0x48c160",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 0x48f160 is non-contiguous with 696 lines elided (0x48f160-0x48f558, 0x48f560-0x48f8f6, 0x48f900-0x4914da) and unreachable blocks removed; observed head preserved below."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 216,
+  "address": "0x491770",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: receiver passed via in_ECX; expressed as explicit void* self."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 498,
+  "address": "0x491f80",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EBX/unaff_EDI are register inputs; expressed as explicit params."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 524,
+  "address": "0x491fd0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_EAX/in_ECX are register inputs; expressed as explicit params."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 596,
+  "address": "0x4923b0",
+  "class": "other",
+  "reason": "// original correspond to DAT_008e6788/0x\u2026 \u2014 see NEEDS_MANUAL note below."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 599,
+  "address": "0x4923b0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 0x4923b0 \u2014 the 32 blocks use distinct globals"
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 651,
+  "address": "0x493440",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 0x493440 \u2014 1000+ line listing; implemented as a structured"
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 815,
+  "address": "0x494e80",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_EAX is a register input; expressed as explicit param."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 958,
+  "address": "0x4953d0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_ECX/in_EDX are register inputs; expressed as explicit params."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 994,
+  "address": "0x4954c0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EDI is a register input; expressed as explicit param."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 1017,
+  "address": "0x495510",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EDI is a register input; expressed as explicit param."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 1045,
+  "address": "0x4955d0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_EAX is a register input; expressed as explicit param."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 1106,
+  "address": "0x495850",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EBX is a register input; expressed as explicit param."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 1160,
+  "address": "0x4959b0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_EAX/in_ECX are register inputs; expressed as explicit params."
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 1186,
+  "address": "0x495a10",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EBX/unaff_EBP are register inputs; unwind state and the"
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 1259,
+  "address": "0x495dc0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EDI is a register input; register0x00000010-0x48 arg"
+ },
+ {
+  "file": "src/game/mass_0023/mass_0023.cpp",
+  "line": 1344,
+  "address": "0x496340",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_ECX is a register input; expressed as explicit param."
+ },
+ {
+  "file": "src/game/mass_0024/mass_0024.cpp",
+  "line": 229,
+  "address": "0x496820",
+  "class": "elided_or_condensed",
+  "reason": "// 0x496820 \u2014 NEEDS_MANUAL: very long multi-block state machine (cases 2/9/10/0xb/0x14/0x15) with float10/atlan locals; pseudocode elided 220 lines in the read, translation below covers the full observed ranges shape com"
+ },
+ {
+  "file": "src/game/mass_0025/mass_0025.cpp",
+  "line": 102,
+  "address": "0x498b50",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: listing body 713 lines elided in evidence; full reconstruction requires re-reading ranges 21-735."
+ },
+ {
+  "file": "src/game/mass_0025/mass_0025.cpp",
+  "line": 115,
+  "address": "0x499810",
+  "class": "other",
+  "reason": "uint32_t FUN_00499810(void) { return 0; // NEEDS_MANUAL: full column-map + row-parse body exceeds evidence window; needs full range read"
+ },
+ {
+  "file": "src/game/mass_0025/mass_0025.cpp",
+  "line": 119,
+  "address": "0x49a010",
+  "class": "other",
+  "reason": "uint32_t FUN_0049a010(void) { return 0; // NEEDS_MANUAL: full body requires full-range read; header-map preserved in analysis"
+ },
+ {
+  "file": "src/game/mass_0025/mass_0025.cpp",
+  "line": 123,
+  "address": "0x49aa50",
+  "class": "other",
+  "reason": "uint32_t FUN_0049aa50(void) { return 0; // NEEDS_MANUAL: full body requires full-range read"
+ },
+ {
+  "file": "src/game/mass_0026/mass_0026.cpp",
+  "line": 595,
+  "address": "0x4a0b70",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: receiver in in_EAX (index/slot) is a scratch register value;"
+ },
+ {
+  "file": "src/game/mass_0027/mass_0027.cpp",
+  "line": 129,
+  "address": "0x4a0df0",
+  "class": "other",
+  "reason": "return; // NEEDS_MANUAL: full vector-insert body with SEH frames is long; grow/alloc/relocate path preserved in listing only"
+ },
+ {
+  "file": "src/game/mass_0032/mass_0032.cpp",
+  "line": 147,
+  "address": "0x4aafd0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: extraout_ST0 source is implicit x87 stack value."
+ },
+ {
+  "file": "src/game/mass_0032/mass_0032.cpp",
+  "line": 389,
+  "address": "0x4ab530",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: LAB_004ab60a control flow flattened."
+ },
+ {
+  "file": "src/game/mass_0033/mass_0033.cpp",
+  "line": 779,
+  "address": "0x4ac8d0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: variadic / inlined argument packing and extra register params (param_1, param_2/in_EAX) inconsistent between call sites; prototype reconstructed from single-listing shape only."
+ },
+ {
+  "file": "src/game/mass_0036/mass_0036.cpp",
+  "line": 981,
+  "address": "0x4b06c0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the listing reads the stack slot at ebp-0x434 as a"
+ },
+ {
+  "file": "src/game/mass_0038/mass_0038.cpp",
+  "line": 974,
+  "address": "0x4b3590",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the listing names ECX live-outs (extraout_ECX/_00) of the two"
+ },
+ {
+  "file": "src/game/mass_0038/mass_0038.cpp",
+  "line": 1033,
+  "address": "0x4b3640",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: call site passes only the range end; the table/start registers"
+ },
+ {
+  "file": "src/game/mass_0038/mass_0038.cpp",
+  "line": 1404,
+  "address": "0x4b4760",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: ECX live-outs of the dialog calls are named (extraout_ECX,"
+ },
+ {
+  "file": "src/game/mass_0038/mass_0038.cpp",
+  "line": 1481,
+  "address": "0x4b4760",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: key register for FUN_004b31e0 is not written here."
+ },
+ {
+  "file": "src/game/mass_0041/mass_0041.cpp",
+  "line": 129,
+  "address": "0x4bc210",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: 0x4bc250 \u2014 contains decompiler-lost control flow (unaff_ESI receiver, float* _uStack00000000 stack arg, linked-list walk with DAT_00727560 check, float ABS path). Observed operations preserved inline."
+ },
+ {
+  "file": "src/game/mass_0043/mass_0043.cpp",
+  "line": 46,
+  "address": "0x4beee0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: receiver aliases (in_ESI/in_EBX) recovered as explicit params below"
+ },
+ {
+  "file": "src/game/mass_0044/mass_0044.cpp",
+  "line": 181,
+  "address": "0x4c03c0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the listing reads a live-in EAX (`in_EAX`) as the ship-colour index used in the"
+ },
+ {
+  "file": "src/game/mass_0044/mass_0044.cpp",
+  "line": 678,
+  "address": "0x4c0cf0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: FUN_004c0d40's receiver registers are live-in from this frame; `self` is threaded"
+ },
+ {
+  "file": "src/game/mass_0047/mass_0047.cpp",
+  "line": 232,
+  "address": "0x4c2f00",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: FUN_004c3000 consumes ambient EAX/EBX/EDI registers that"
+ },
+ {
+  "file": "src/game/mass_0051/mass_0051.cpp",
+  "line": 258,
+  "address": "0x4ce730",
+  "class": "other",
+  "reason": "// Remaining ranges 0x4cf450..0x4cff2a: see corpus file; guarded for NEEDS_MANUAL if needed."
+ },
+ {
+  "file": "src/game/mass_0052/mass_0052.cpp",
+  "line": 447,
+  "address": "0x4d3fd0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large WinMain body with many extern globals (DAT_008cac24, DAT_008c9df8, DAT_008c9df5, DAT_008e9f5c, DAT_008ca929, DAT_008cac27, DAT_008cac28) not fully enumerated in excerpt."
+ },
+ {
+  "file": "src/game/mass_0052/mass_0052.cpp",
+  "line": 599,
+  "address": "0x4d47f0",
+  "class": "register_modeling",
+  "reason": "uint8_t* b = (uint8_t*)\"\"; // placeholder for in_ECX+4 contents \u2014 see NEEDS_MANUAL"
+ },
+ {
+  "file": "src/game/mass_0054/mass_0054.cpp",
+  "line": 521,
+  "address": "0x4d6600",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: very large shipwright/UI loop (670 lines); faithful shape preserved with key branches, globals, and call order; some string/format calls condensed."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 154,
+  "address": "0x4d9630",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EDI and unaff_retaddr are unaffiliated registers in the listing; the released object and the FUN_00500f70 argument are not statically identified."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 268,
+  "address": "0x4d9850",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_ESI and iStack_4 are unaffiliated registers/stack slots in the listing; the loop increment target and callback base are not statically identified."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 370,
+  "address": "0x4d9bf0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_ESI is the unaffiliated receiver in the listing; mapped to an explicit self parameter."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 390,
+  "address": "0x4d9c80",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_ESI is the unaffiliated receiver in the listing; mapped to an explicit self parameter."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 454,
+  "address": "0x4d9f50",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_EAX and in_ECX are register receivers in the listing; in_EAX maps to the added first parameter and in_ECX maps to self. param_1 is a stack param."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 554,
+  "address": "0x4da1e0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EBP is unaffiliated in the listing; the stored result is also used after the label. Preserved as an explicit parameter."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 700,
+  "address": "0x4da6a0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_retaddr is unaffiliated in the listing; the second released object is not statically identified. Mapped to an explicit self-like parameter."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 742,
+  "address": "0x4da940",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EBX is unaffiliated in the listing; mapped to explicit self parameter."
+ },
+ {
+  "file": "src/game/mass_0055/mass_0055.cpp",
+  "line": 774,
+  "address": "0x4daa10",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_EBX and unaff_ESI are unaffiliated registers in the listing; mapped to explicit parameters (unaff_EBX first, unaff_ESI second)."
+ },
+ {
+  "file": "src/game/mass_0057/mass_0057.cpp",
+  "line": 983,
+  "address": "0x4dd8f0",
+  "class": "register_modeling",
+  "reason": "int extraout_EDX = 0;  // NEEDS_MANUAL: live EDX after FUN_004bcd00, not expressed in pseudocode"
+ },
+ {
+  "file": "src/game/mass_0057/mass_0057.cpp",
+  "line": 1321,
+  "address": "0x4de1e0",
+  "class": "register_modeling",
+  "reason": "int extraout_ECX = 0;  // NEEDS_MANUAL: live ECX after FUN_005f0ddc, not expressed in pseudocode"
+ },
+ {
+  "file": "src/game/mass_0063/mass_0063.cpp",
+  "line": 1786,
+  "address": "0x4ed240",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 0x4ec1c0 reads the enabled flag from CL and the"
+ },
+ {
+  "file": "src/game/mass_0068/mass_0068.cpp",
+  "line": 456,
+  "address": "0x4f2620",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: lengthy vsprintf-format scanner; observed structure preserved below"
+ },
+ {
+  "file": "src/game/mass_0068/mass_0068.cpp",
+  "line": 616,
+  "address": "0x4f2aa0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: large backslash-escape decoder over two string buffers with many cases; preserved below"
+ },
+ {
+  "file": "src/game/mass_0069/mass_0069.cpp",
+  "line": 262,
+  "address": "0x4f3560",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: varargs format scanner with register-passed va_list; body elided regions summarized, not verbatim"
+ },
+ {
+  "file": "src/game/mass_0079/mass_0079.cpp",
+  "line": 273,
+  "address": "0x4fe7f0",
+  "class": "elided_or_condensed",
+  "reason": "// NEEDS_MANUAL: 0x4fe9c0 \u2014 very long non-contiguous sync/copy routine with string-manager globals; translated as structural equivalent preserving call order, path handling, copy/mutex flow."
+ },
+ {
+  "file": "src/game/mass_0087/mass_0087.cpp",
+  "line": 23,
+  "address": null,
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: float10 extended (80-bit x87) not representable in standard C++; using long double as placeholder for the ABI artifact."
+ },
+ {
+  "file": "src/game/mass_0087/mass_0087.cpp",
+  "line": 216,
+  "address": "0x506e60",
+  "class": "other",
+  "reason": "int32_t* piStack_268;  // NEEDS_MANUAL: Ghidra reloads stack slot +0x268 after"
+ },
+ {
+  "file": "src/game/mass_0193/mass_0193.cpp",
+  "line": 780,
+  "address": "0x59f870",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 156-line sweep of 8 FUN_0059ce10 candidate orientations"
+ },
+ {
+  "file": "src/game/mass_0193/mass_0193.cpp",
+  "line": 892,
+  "address": "0x5a0500",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 218-line crossing cascade over 4 edge pairs with"
+ },
+ {
+  "file": "src/game/mass_0194/mass_0194.cpp",
+  "line": 173,
+  "address": "0x5a14f0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the supplied listing shows this call as `FUN_005a1280()`"
+ },
+ {
+  "file": "src/game/mass_0195/mass_0195.cpp",
+  "line": 514,
+  "address": "0x5a4c20",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 0x5a57f0 \u2014 1484-line Ghidra listing with switch/case blocks; observed operations preserved in summary form below."
+ },
+ {
+  "file": "src/game/mass_0196/mass_0196.cpp",
+  "line": 1387,
+  "address": "0x5ab040",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: the divisor is the residual x87 ST1 value left by"
+ },
+ {
+  "file": "src/game/mass_0199/mass_0199.cpp",
+  "line": 529,
+  "address": "0x5af100",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the stored byte comes from the unmodelled SI register (unaff_SI)."
+ },
+ {
+  "file": "src/game/mass_0201/mass_0201.cpp",
+  "line": 478,
+  "address": "0x5b1020",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: local_ac/local_a8/local_a4 are read by the range test but never assigned"
+ },
+ {
+  "file": "src/game/mass_0201/mass_0201.cpp",
+  "line": 737,
+  "address": "0x5b2100",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: Ghidra emitted _CIfmod() with no recovered operands; the divisor applied"
+ },
+ {
+  "file": "src/game/mass_0201/mass_0201.cpp",
+  "line": 774,
+  "address": "0x5b2c60",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: Ghidra aliased the float accumulator and the object pointer in param_2"
+ },
+ {
+  "file": "src/game/mass_0212/mass_0212.cpp",
+  "line": 596,
+  "address": "0x5c0dc0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_ESI/unaff_EDI and on-stack capture buffer shape are not fully recovered; preserved observed operations below."
+ },
+ {
+  "file": "src/game/mass_0212/mass_0212.cpp",
+  "line": 753,
+  "address": "0x5c1290",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_retaddr (+0x20) is a caller-provided base whose provenance is not recovered in the listing; preserved as an explicit parameter."
+ },
+ {
+  "file": "src/game/mass_0213/mass_0213.cpp",
+  "line": 388,
+  "address": "0x5c2160",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: long non-contiguous destructor sweep with three joined regions and pointer-table teardown; structured reconstruction preserves all observed deletion, list-walk, ref-count, and cleanup operations below wi"
+ },
+ {
+  "file": "src/game/mass_0213/mass_0213.cpp",
+  "line": 686,
+  "address": "0x5c28d0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: non-contiguous listing (0x5c28d0-0x5c2a09 and 0x5c2a10-0x5c2c46); every"
+ },
+ {
+  "file": "src/game/mass_0213/mass_0213.cpp",
+  "line": 874,
+  "address": "0x5c2c50",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the final dispatch in the listing is based on local_a4, which Ghidra never"
+ },
+ {
+  "file": "src/game/mass_0213/mass_0213.cpp",
+  "line": 922,
+  "address": "0x5c2c50",
+  "class": "other",
+  "reason": "uint32_t local_a4; // NEEDS_MANUAL: never assigned anywhere in the listing"
+ },
+ {
+  "file": "src/game/mass_0213/mass_0213.cpp",
+  "line": 1009,
+  "address": "0x5c3770",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: non-contiguous listing (0x5c3770-0x5c3cdc, 0x5c3ce0-0x5c3dba); Ghidra"
+ },
+ {
+  "file": "src/game/mass_0213/mass_0213.cpp",
+  "line": 1660,
+  "address": "0x5c4760",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: non-contiguous listing (0x5c4760-0x5c495c, 0x5c4960-0x5c4c8e); the vertex"
+ },
+ {
+  "file": "src/game/mass_0214/mass_0214.cpp",
+  "line": 739,
+  "address": "0x5c64b0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: provider loop body never advances iVar7; list traversal details unavailable."
+ },
+ {
+  "file": "src/game/mass_0214/mass_0214.cpp",
+  "line": 844,
+  "address": "0x5c68e0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: iStack_8, unaff_EDI and unaff_ESI are provider-modelled register/stack slots"
+ },
+ {
+  "file": "src/game/mass_0214/mass_0214.cpp",
+  "line": 911,
+  "address": "0x5c6a80",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_retaddr is a caller-supplied stack argument that the provider modelled as"
+ },
+ {
+  "file": "src/game/mass_0214/mass_0214.cpp",
+  "line": 959,
+  "address": "0x5c6c70",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: unaff_retaddr is a caller-supplied stack argument that the provider modelled as"
+ },
+ {
+  "file": "src/game/mass_0214/mass_0214.cpp",
+  "line": 1117,
+  "address": "0x5c6c70",
+  "class": "x87_fpu",
+  "reason": "// NEEDS_MANUAL: the provider discards the two following FPU results; fStack_18 and"
+ },
+ {
+  "file": "src/game/mass_0220/mass_0220.cpp",
+  "line": 959,
+  "address": "0x5cccb0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: the four jump-table targets at 0x005ccdbc are not present in the corpus;"
+ },
+ {
+  "file": "src/game/mass_0224/mass_0224.cpp",
+  "line": 861,
+  "address": "0x5d18e0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: the destination surface arrives in unaff_EDI in the listing; it"
+ },
+ {
+  "file": "src/game/mass_0224/mass_0224.cpp",
+  "line": 1187,
+  "address": "0x5d1c90",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_EDI destination surface is not visible here."
+ },
+ {
+  "file": "src/game/mass_0224/mass_0224.cpp",
+  "line": 1254,
+  "address": "0x5d1fd0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: in_EDI destination surface is not visible here."
+ },
+ {
+  "file": "src/game/mass_0225/mass_0225.cpp",
+  "line": 34,
+  "address": "0x5d20e0",
+  "class": "register_modeling",
+  "reason": "// NEEDS_MANUAL: receiver in_ECX and unaff_EDI (height) used; vtable offsets preserved"
+ },
+ {
+  "file": "src/game/mass_0225/mass_0225.cpp",
+  "line": 88,
+  "address": "0x5d20e0",
+  "class": "register_modeling",
+  "reason": "uint32_t unaff_EDI = *(uint32_t*)((intptr_t)self + 0x3c); // placeholder for unaff_EDI register; see NEEDS_MANUAL"
+ },
+ {
+  "file": "src/game/mass_0226/mass_0226.cpp",
+  "line": 666,
+  "address": "0x5d41e0",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 0x5d4520 body is ~575 lines across two non-contiguous ranges (0x5d4520-0x5d4f4c, 0x5d4f50-0x5d539d) with 5 params; full decompilation was paged out of the read view. Signature and call-through preserved;"
+ },
+ {
+  "file": "src/game/mass_0228/mass_0228.cpp",
+  "line": 993,
+  "address": "0x5d7870",
+  "class": "other",
+  "reason": "// NEEDS_MANUAL: 0x5d7a30 \u2014 intricate nested switch table mapping param_2 (1..0x20) to conversion functions; preserve dispatcher and groups including 0x4, 0x6/0x7, 0x5 cases and FUN_004aaef0 default, but exact label/goto"
+ },
+ {
+  "file": "src/game/mass_0229/mass_0229.cpp",
+  "line": 26,
+  "address": "0x5d7f60",
+  "class": "register_modeling",
+  "reason": "// Therefore we keep listing signature and note NEEDS_MANUAL for receiver."
+ }
+]

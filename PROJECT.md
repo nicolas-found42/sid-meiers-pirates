@@ -39,9 +39,9 @@ python3 tests/run_fixture.py
 # Census: run match.py compare across all units; writes build/progress-census.json
 python3 tools/compare_census.py
 
-# Progress page: regenerate docs/progress.{json,html} from the pinned census
+# Progress page: regenerate docs/progress.json + docs/index.html from the pinned census
 # (refuses a partial or stale-pinned census; publish = commit the outputs;
-# served at https://nicolas-found42.github.io/sid-meiers-pirates/progress.html)
+# served at https://nicolas-found42.github.io/sid-meiers-pirates/)
 python3 tools/make_progress.py
 ```
 

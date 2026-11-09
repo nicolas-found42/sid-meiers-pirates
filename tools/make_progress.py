@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate docs/progress.json + docs/progress.html from the match census.
+"""Generate docs/progress.json + docs/index.html from the match census.
 
 Progress = matchable functions (build/functions.json) whose unit compiled with
 the recovered VC7.1 toolchain and byte-compared identical against the shipped
@@ -18,7 +18,7 @@ Reads:
 Writes:
 - docs/progress.json     data consumed by the page (and shaped so a future
                          decompilati.onl POST needs no rethink)
-- docs/progress.html     self-contained static page (inline JSON, no fetch)
+- docs/index.html        self-contained static page (inline JSON, no fetch)
 
 Run tools/compare_census.py first; this file only reads. Deterministic for a
 given census: no ambient time or network input.
