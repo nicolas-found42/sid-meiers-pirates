@@ -9,37 +9,24 @@
     "id": "vc71",
     "name": "Visual C++ .NET 2003 (cl 13.10.3077)",
     "compile_argv": [
-      "wine",
-      "cl",
+      "tools/wine-cl.sh",
       "/nologo",
       "/c",
       "/Fo{obj}",
       "{flags}",
       "{src}"
     ],
-    "notes": "The image's linker version is 7.10 and the Rich header records build 3077, the VC7.1 RTM toolset. The exact per-unit optimization, runtime, RTTI, exception and inline flags are not yet proven; every unit must declare its own flags and justify them by matching bytes. A wrapper script can replace 'wine cl' when the toolchain lives in a Wine prefix. The verified unit below uses absolute /tmp paths from the 2026-11-09 extraction; those paths are ephemeral and must be restaged from findings/2026-11-08-compiler-availability.md."
+    "notes": "The image's linker version is 7.10 and the Rich header records build 3077, the VC7.1 RTM toolset. The exact per-unit optimization, runtime, RTTI, exception and inline flags are not yet proven; every unit must declare its own flags and justify them by matching bytes. tools/wine-cl.sh sets WINEPREFIX/WINEDEBUG and execs the relocated compiler; {src}/{obj} arrive as Z:-mapped Windows paths.",
+    "path_style": "wine",
+    "install": "analysis/toolchain/ (vc71/bin cl 13.10.3077 + include/lib, wine/mach9 wine-11.20-37-g2362fb0442, prefix2); no Microsoft payload is tracked"
   },
   "units": [
     {
       "id": "tiny_547610",
-      "source": "experiments/2026-11-08-source-reconstruction/out/verified/tiny_547610.cpp",
-      "path_style": "wine",
-      "compile_argv": [
-        "/tmp/pirates-wine-probe/mach9/wine/bin/wine",
-        "/tmp/compiler-research/stage/cl.exe",
-        "/nologo",
-        "/c",
-        "/Fo{obj}",
-        "{flags}",
-        "{src}"
-      ],
+      "source": "src/engine/setter_u32_00547610.cpp",
       "flags": [
         "/O2"
       ],
-      "env": {
-        "WINEPREFIX": "/tmp/pirates-wine-probe/prefix2",
-        "WINEDEBUG": "-all"
-      },
       "functions": [
         {
           "symbol": "?set_value@SetterTarget@@QAEXI@Z",
@@ -50,24 +37,10 @@
     },
     {
       "id": "tiny_54a9f0",
-      "source": "experiments/2026-11-08-source-reconstruction/out/verified/tiny_54a9f0.cpp",
-      "path_style": "wine",
-      "compile_argv": [
-        "/tmp/pirates-wine-probe/mach9/wine/bin/wine",
-        "/tmp/compiler-research/stage/cl.exe",
-        "/nologo",
-        "/c",
-        "/Fo{obj}",
-        "{flags}",
-        "{src}"
-      ],
+      "source": "src/engine/setter_u8_0054a9f0.cpp",
       "flags": [
         "/O2"
       ],
-      "env": {
-        "WINEPREFIX": "/tmp/pirates-wine-probe/prefix2",
-        "WINEDEBUG": "-all"
-      },
       "functions": [
         {
           "symbol": "?set_byte@ByteSetter@@QAEPAU1@E@Z",
@@ -78,24 +51,10 @@
     },
     {
       "id": "tiny_5366b0",
-      "source": "experiments/2026-11-08-source-reconstruction/out/verified/tiny_5366b0.cpp",
-      "path_style": "wine",
-      "compile_argv": [
-        "/tmp/pirates-wine-probe/mach9/wine/bin/wine",
-        "/tmp/compiler-research/stage/cl.exe",
-        "/nologo",
-        "/c",
-        "/Fo{obj}",
-        "{flags}",
-        "{src}"
-      ],
+      "source": "src/engine/triple_copy_005366b0.cpp",
       "flags": [
         "/O2"
       ],
-      "env": {
-        "WINEPREFIX": "/tmp/pirates-wine-probe/prefix2",
-        "WINEDEBUG": "-all"
-      },
       "functions": [
         {
           "symbol": "?copy@T@@QAEXXZ",

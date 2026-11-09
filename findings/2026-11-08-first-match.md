@@ -62,7 +62,7 @@ this host.
 
 ## Source
 
-`experiments/2026-11-08-source-reconstruction/out/verified/tiny_547610.cpp`:
+`src/engine/setter_u32_00547610.cpp` (unit `tiny_547610`):
 
 ```cpp
 struct SetterTarget {
@@ -74,7 +74,7 @@ void SetterTarget::set_value(unsigned int value) {
 }
 ```
 
-`experiments/2026-11-08-source-reconstruction/out/verified/tiny_54a9f0.cpp`:
+`src/engine/setter_u8_0054a9f0.cpp` (unit `tiny_54a9f0`):
 
 ```cpp
 struct ByteSetter {
@@ -87,7 +87,7 @@ ByteSetter* ByteSetter::set_byte(unsigned char value) {
 }
 ```
 
-`experiments/2026-11-08-source-reconstruction/out/verified/tiny_5366b0.cpp`:
+`src/engine/triple_copy_005366b0.cpp` (unit `tiny_5366b0`):
 
 ```cpp
 struct T { void copy(); };
@@ -106,11 +106,14 @@ allocation and fails.
 
 ## Unit and command
 
-`build/units.json` now contains units `tiny_547610`, `tiny_54a9f0` and
-`tiny_5366b0` with
-the exact `cl` and Wine paths used for this run, `/O2`, and the corresponding
+`build/units.json` contains units `tiny_547610`, `tiny_54a9f0` and
+`tiny_5366b0` — sources now under `src/engine/`, `/O2`, and the corresponding
 symbols `?set_value@SetterTarget@@QAEXI@Z`,
-`?set_byte@ByteSetter@@QAEPAU1@E@Z` and `?copy@T@@QAEXXZ`.
+`?set_byte@ByteSetter@@QAEPAU1@E@Z` and `?copy@T@@QAEXXZ`. The toolchain was
+relocated from the `/tmp` staging paths to the durable, gitignored
+`analysis/toolchain/` root and is driven by `tools/wine-cl.sh`; the final
+`match.py compare --all` run re-verified all three PASS from the repo config
+(see [docs/TOOLCHAIN.md](docs/TOOLCHAIN.md) "Installation").
 
 ```sh
 cd games/sid-meiers-pirates
@@ -124,8 +127,8 @@ python3 tools/match.py compare \
   --unit tiny_54a9f0
 ```
 
-`check` now reports `2 claimed / 8181 inventoried`, `2 claimed / 7862
-matchable`, coverage `0.02%`, `config OK`.
+`check` reports `3 claimed / 8181 inventoried`, `3 claimed / 7862
+matchable`, coverage `0.04%`, `config OK` after the third unit landed.
 
 ## Two nearby negatives
 
@@ -143,17 +146,13 @@ negative results show the PASS is not a tautology.
 
 ## Toolchain paths
 
-Ephemeral by design, outside the repository:
-
-- Wine: `/tmp/pirates-wine-probe/mach9/wine/bin/wine`
-  (`wine-11.20-37-g2362fb0442`).
-- Prefix: `/tmp/pirates-wine-probe/prefix2`.
-- Compiler tree: `/tmp/compiler-research/stage/` (`cl.exe`, `link.exe`,
-  `c1.dll`, `c1xx.dll`, `c2.dll`, `mspdb71.dll`, `msvcr71.dll`,
-  `msvcp71.dll`).
-- Headers/libs: `/tmp/compiler-research/vc71tree/{include,lib}`.
-
-The extraction method, hashes and archive.org source are in
+Originally staged under `/tmp` (`/tmp/pirates-wine-probe/`,
+`/tmp/compiler-research/stage/`, `/tmp/compiler-research/vc71tree/`) for the
+first matches, then relocated on 2026-11-09 to the durable, gitignored
+`analysis/toolchain/` root (`vc71/`, `wine/mach9/`, `prefix2`) and wired into
+`build/units.json` through `tools/wine-cl.sh`. See
+[docs/TOOLCHAIN.md](docs/TOOLCHAIN.md) "Installation". The extraction method,
+hashes and archive.org source are in
 `findings/2026-11-08-compiler-availability.md`. No compiler payload is
 copied into the repository.
 

@@ -28,7 +28,32 @@ The New Vegas decompilation (the largest public PC x86 matching project) uses Wi
 
 Apple Silicon is a special case: Rosetta translates x86_64, not i386, and a 32-bit Windows process needs either Wine's WoW64 layer on an x86_64 host, a 32-bit-capable CrossOver build, or a full x86 Windows VM. Do not assume `cl.exe` will run on this Mac. Verify with the version command before building any unit. The safest hosts are an x86_64 Linux machine with Wine, a Windows x86 VM, or an Intel Mac.
 
-## Installation outline (not yet performed here)
+## Installation (performed 2026-11-09)
+
+The exact toolset is installed on this Apple Silicon host under the
+gitignored `analysis/toolchain/` root and driven by `tools/wine-cl.sh`:
+
+| Component | Location | Version (verified) |
+|---|---|---|
+| compiler | `analysis/toolchain/vc71/bin/` (`cl.exe`, `c1/c1xx/c2.dll`, `mspdb71/msvcr71/msvcp71.dll`) | `Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 13.10.3077 for 80x86` |
+| linker | `analysis/toolchain/vc71/bin/link.exe` | `Microsoft (R) Incremental Linker Version 7.10.3077` |
+| headers/libs | `analysis/toolchain/vc71/{include,lib}` | VC7.1 tree extracted from the archived Toolkit |
+| Wine (WoW64/FEX) | `analysis/toolchain/wine/mach9/` | `wine-11.20-37-g2362fb0442`, plus the tarball retained alongside |
+| prefix | `analysis/toolchain/prefix2` | isolated prefix used for every compile |
+
+Extraction provenance and hashes: [findings/2026-11-08-compiler-availability.md](../findings/2026-11-08-compiler-availability.md).
+`build/units.json` references only the wrapper (`tools/wine-cl.sh`); no
+Microsoft payload is tracked. Re-verify versions after moving the root:
+
+```sh
+tools/wine-cl.sh 2>&1 | grep -i 'compiler version'
+analysis/toolchain/wine/mach9/wine/bin/wine analysis/toolchain/vc71/bin/link.exe 2>&1 | grep -i linker
+```
+
+## Historical outline
+
+The steps below describe how the current installation was reached; the
+Apple Silicon caveat was solved with the Mach9 WoW64/FEX Wine build:
 
 1. Choose a host that can execute 32-bit Windows x86: x86_64 Linux with Wine (recommended), a Windows x86 VM, or a verified 32-bit-capable Wine/CrossOver build. On Apple Silicon, test this before installing the compiler.
 2. Create an isolated 32-bit prefix, for example `WINEPREFIX="$HOME/.wine-vc71" WINEARCH=win32 winecfg` (or the equivalent for the host's WoW64 setup).
@@ -64,4 +89,8 @@ Only after that should `src/` grow beyond one file.
 
 ## Status
 
-Not installed on this machine as of 2026-11-08: `wine` and `cl` are absent, and the host is Apple Silicon, where 32-bit x86 execution is not assumed. The harness is validated with a fixture compiler only. Installing the exact toolset on a capable host is the current blocker and the next action.
+Installed and proven on 2026-11-09 (see "Installation" above): three shipped
+functions (`0x00547610`, `0x0054a9f0`, `0x005366b0`) reproduce byte-for-byte
+via `tools/match.py compare --all` with `/O2`. Units live in `build/units.json`
+with sources under `src/engine/`. Remaining functions may need different
+flags; every unit must justify its own.

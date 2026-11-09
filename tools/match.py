@@ -364,7 +364,7 @@ def compiler_path(path: str, style: str) -> str:
     return "Z:" + path.replace("/", "\\")
 
 
-def build_compile_argv(unit: dict, config: dict, workdir: str) -> tuple[list[str], str]:
+def build_compile_argv(unit: dict, config: dict, workdir: str, base_dir: str = ".") -> tuple[list[str], str]:
     compiler = config.get("compiler") or {}
     argv_template = unit.get("compile_argv") or compiler.get("compile_argv")
     if not argv_template:
@@ -392,11 +392,19 @@ def build_compile_argv(unit: dict, config: dict, workdir: str) -> tuple[list[str
                 .replace("{obj}", object_arg)
                 .replace("{flags}", " ".join(flags))
         )
+    # Wrapper/tool paths in the config are relative to the project root (the
+    # config's parent directory); the compile itself runs in a temp workdir.
+    if argv and not os.path.isabs(argv[0]):
+        for base in (base_dir, os.path.dirname(base_dir), os.getcwd()):
+            candidate = os.path.abspath(os.path.join(base, argv[0]))
+            if os.path.exists(candidate):
+                argv[0] = candidate
+                break
     return argv, object_path
 
 
-def compile_unit(unit: dict, config: dict, workdir: str) -> str:
-    argv, object_path = build_compile_argv(unit, config, workdir)
+def compile_unit(unit: dict, config: dict, workdir: str, base_dir: str = ".") -> str:
+    argv, object_path = build_compile_argv(unit, config, workdir, base_dir)
     env = os.environ.copy()
     env.update({str(key): str(value) for key, value in (unit.get("env") or {}).items()})
     print(f"  compile: {' '.join(argv)}")
@@ -511,11 +519,12 @@ def main(argv: list[str]) -> int:
 
     total_passed = 0
     total_failed = 0
+    base_dir = os.path.dirname(os.path.abspath(args.config))
     for unit in selected:
         print(f"unit {unit.get('id')}")
         workdir = tempfile.mkdtemp(prefix="pirates-match-")
         try:
-            object_path = args.obj or compile_unit(unit, config, workdir)
+            object_path = args.obj or compile_unit(unit, config, workdir, base_dir)
             passed, failed, problems = compare_unit(unit, by_address, pe, object_path)
             total_passed += passed
             total_failed += failed
