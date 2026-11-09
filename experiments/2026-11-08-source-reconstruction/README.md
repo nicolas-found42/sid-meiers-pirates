@@ -14,7 +14,7 @@
   - `python3 tools/check_class_layout.py`
   - `python3 tools/merge_reconstruction.py`
   - `python3 tools/match.py compare --unit tiny_547610`, `--unit tiny_54a9f0` and `--unit tiny_5366b0` (byte comparison with VC7.1)
-- `i686-w64-mingw32-g++ -std=c++17 -fsyntax-only -Ireconstruction/include/classes reconstruction/src/**/*.cpp` (diagnostic; not a match)
+- `i686-w64-mingw32-g++ -std=c++17 -fsyntax-only -Ireconstruction/include/classes src/*/*.cpp src/*/*/*.cpp` (diagnostic; not a match)
 - Limits before running: 512 MiB experiment output, 5 min per tool/agent call, 40 GiB free-space floor. The campaign spans multiple bounded calls; no single command exceeded 5 min.
 - Free space before/after: 378 GiB free on the working volume at the final check; experiment output 5.2 MiB.
 - Output locations: `experiments/2026-11-08-source-reconstruction/out/` (5.2 MiB), ignored corpus `analysis/pseudocode/` (77 MiB), generated tree `reconstruction/`.

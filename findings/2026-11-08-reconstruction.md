@@ -28,9 +28,11 @@ The Ghidra 12.2 pseudocode corpus is complete at
 `analysis/pseudocode/functions/`: one `.c` per analyzed function. Its
 tracked index, `reconstruction/DECOMPILATION.md`, lists all 8,181 internal
 functions and 341 external imports; `tools/build_decompile_index.py` re-hashes
-every file and reports `status: complete`. The `reconstruction/src/` layer is
-the readable C++ reconstruction on top of that complete corpus, not the
-decompilation itself.
+every file and reports `status: complete`. The `src/` tree is the readable
+C++ reconstruction on top of that complete corpus, not the decompilation
+itself: wave candidates under `src/<subsystem>/<wave>/` (routed by majority
+band: game/engine/crt; 3,050 / 3,982 / 830 functions) and the verified tier
+of unit files at `src/engine/*.cpp`.
 
 ## Verification performed
 
@@ -45,7 +47,7 @@ decompilation itself.
   receivers) — recorded, not invented. None of the candidates has been
   compiled.
 - `python3 tools/merge_reconstruction.py` (final) — 391 waves, 7,862
-  functions merged into `reconstruction/src/`, 7,166 full-body, 696
+  functions merged into `src/<subsystem>/<wave>/`, 7,166 full-body, 696
   manifest-partial, 0 duplicates, 0 bad; `reconstruction/QUEUE.json`
   count 0.
 - A cross-batch duplicate-definition scan (regex over all 360 batch
@@ -57,7 +59,8 @@ decompilation itself.
   `static_assert(offsetof(...))` per field; compiled with
   `i686-w64-mingw32-g++ -std=c++17 -fsyntax-only` → exit 0.
 - `python3 tools/merge_reconstruction.py` — merges every wave into
-  `reconstruction/src/<wave>/`, copies class headers, recomputes the queue.
+  `src/<subsystem>/<wave>/` (majority-band routing), copies class headers,
+  recomputes the queue.
 
 ## Not verified / blockers
 

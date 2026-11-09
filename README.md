@@ -15,8 +15,8 @@
 
 - `build/functions.json`: 8,181 internal functions with addresses and spans, generated from a Ghidra 12.2 inventory.
 - `build/units.json`: image identity, compiler recipe, and the list of claimed translation units. Empty until the toolchain is verified.
-- `src/`: C++ translation units, organized by subsystem, added only with a unit declaration.
-- `reconstruction/`: complete decompilation index (`DECOMPILATION.md`, `decompilation-index.json`), decompiler-derived unverified candidates, class headers, merged manifest, and remaining queue; regenerate with `tools/build_decompile_index.py` and `tools/merge_reconstruction.py`.
+- `src/`: the decompiled source tree — verified unit files (declared in `build/units.json`, PASS evidence) plus generated wave candidates under `<subsystem>/<wave>/`; see `src/README.md`.
+- `reconstruction/`: complete decompilation index (`DECOMPILATION.md`, `decompilation-index.json`), merged per-address manifest and remaining queue, class headers; regenerate with `tools/build_decompile_index.py` and `tools/merge_reconstruction.py`.
 - `tools/`: PE reader, inventory generator, matching harness, reconstruction validators.
 - `tests/`: end-to-end harness fixture (pass and negative control).
 - `findings/`: conclusions with exact evidence.

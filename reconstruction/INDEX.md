@@ -1,8 +1,10 @@
 # Reconstruction tree
 
 Generated from `experiments/2026-11-08-source-reconstruction/out/` by
-`tools/merge_reconstruction.py`. Every function is **UNVERIFIED**:
-`cl 13.10.3077` is absent, so no byte-match or PASS claim is made.
+`tools/merge_reconstruction.py` into `src/<subsystem>/<wave>/`. Wave
+candidates are **UNVERIFIED** by byte-match; the verified tier is the
+unit files declared in `build/units.json` (currently 3 PASS with
+`cl 13.10.3077`).
 
 - matchable functions: 7862
 - claimed source functions: 7862 (100.0%)
@@ -405,6 +407,7 @@ Generated from `experiments/2026-11-08-source-reconstruction/out/` by
 | `mass_0358` | 20 |
 | `mass_0359` | 19 |
 
-Sources live under `src/<wave>/`; headers from the class map live under
-`include/classes/`. `manifest.json` carries per-function evidence and
-unknowns; `QUEUE.json` is the remaining matchable set.
+Wave sources live under `src/<subsystem>/<wave>/` (subsystem is the
+majority band of the wave's addresses); headers from the class map live
+under `include/classes/`. `manifest.json` carries per-function evidence
+and unknowns; `QUEUE.json` is the remaining matchable set.
