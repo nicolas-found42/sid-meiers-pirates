@@ -1,1 +1,11 @@
 pirates.exe
+analysis/
+experiments/*/output/
+build/tmp/
+build/*.obj
+*.obj
+*.pdb
+*.ilk
+__pycache__/
+*.pyc
+.DS_Store

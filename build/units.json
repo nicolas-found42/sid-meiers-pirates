@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "image": {
+    "sha256": "6e88b90e4e2e30248d9e4de747b521cc03822b7ffeb214fd272b8ad1817447c9",
+    "size": 3323288,
+    "note": "Sid Meier's Pirates! v1.0.2.0 (build 30927), extracted from the 2004 installer"
+  },
+  "compiler": {
+    "id": "vc71",
+    "name": "Visual C++ .NET 2003 (cl 13.10.3077)",
+    "compile_argv": [
+      "wine",
+      "cl",
+      "/nologo",
+      "/c",
+      "/Fo{obj}",
+      "{flags}",
+      "{src}"
+    ],
+    "notes": "The image's linker version is 7.10 and the Rich header records build 3077, the VC7.1 RTM toolset. The exact per-unit optimization, runtime, RTTI, exception and inline flags are not yet proven; every unit must declare its own flags and justify them by matching bytes. A wrapper script can replace 'wine cl' when the toolchain lives in a Wine prefix."
+  },
+  "units": []
+}
